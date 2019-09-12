@@ -15,3 +15,8 @@ Ingénieur
 
 `CYC9105A <http://formation.cnam.fr/rechercher-par-discipline/diplome-d-ingenieur-specialite-informatique-parcours-informatique-systemes-d-information-1003896.kjsp>`_
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Schéma
+------
+
+.. image:: ingénieur.png
