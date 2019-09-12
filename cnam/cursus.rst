@@ -1,6 +1,9 @@
 Cursus
 ======
 
+* `web <https://bedeo.cnam.fr/public/cursus/view/>`_
+* `pdf <https://bedeo.cnam.fr/public/cursus/pdf/>`_
+
 Schéma parcours ingénieur
 -------------------------
 
