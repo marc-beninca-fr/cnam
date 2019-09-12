@@ -1,2 +1,6 @@
 CNAM
 ====
+
+.. toctree::
+
+ spaces
