@@ -3,6 +3,7 @@ CNAM
 
 .. toctree::
 
+ mémoire/index
  cursus
  ingénieur
  architecte
