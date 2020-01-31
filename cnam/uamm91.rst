@@ -1,5 +1,5 @@
-UA MM91
-=======
+UAMM91
+======
 
 `Dépôt Universitaire de Mémoires Après Soutenance <https://dumas.ccsd.cnrs.fr/search/index/?q=%2A&level0_domain_s=info&sort=producedDate_tdate+desc>`_
 ------------------------------------------------------------------------------------------------------------------------------------------------------
