@@ -6,6 +6,7 @@ CNAM
 
    pitch
    présentation
+   recherche
    mémoire/index
 
 .. toctree::

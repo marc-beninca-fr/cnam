@@ -1,0 +1,4 @@
+Recherche
+=========
+
+.. image:: recherche.png
