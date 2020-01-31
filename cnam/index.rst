@@ -4,9 +4,7 @@ CNAM
 .. toctree::
 
  mémoire/index
- cursus
- ingénieur
- architecte
+ cursus/index
  spaces
  unités
  eng221
