@@ -5,8 +5,10 @@ CNAM
    :maxdepth: 2
 
    pitch
-   présentation
    recherche
+   rédaction
+   présentation
+   soutenance
    mémoire/index
 
 .. toctree::
