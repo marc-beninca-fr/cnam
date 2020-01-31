@@ -4,9 +4,10 @@ CNAM
 .. toctree::
 
  mémoire/index
+ pitch
+
+.. toctree::
+
  cursus/index
  sites
- unités
- eng221
- pitch
- uamm91
+ unités/index
