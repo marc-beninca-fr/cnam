@@ -4,4 +4,4 @@ Soutenance
 .. toctree::
 
    stratégie
-   critères
+   critères/index
