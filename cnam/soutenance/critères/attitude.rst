@@ -2,11 +2,11 @@ Attitude
 ========
 
 ============ ============ =========== ===========
-maintien     à l’aise     nerveux     démonté
-enthousiasme débordant    modéré      aucun
-attitude     ouverte      effrayée    renfermée
-présentation séduisante   convenable  rebutante
-gestes       en situation artificiels inexistants
+Maintien     à l’aise     nerveux     démonté
+Enthousiasme débordant    modéré      aucun
+Attitude     ouverte      effrayée    renfermée
+Présentation séduisante   convenable  rebutante
+Gestes       en situation artificiels inexistants
 ============ ============ =========== ===========
 
 Émotivité
