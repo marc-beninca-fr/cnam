@@ -3,8 +3,9 @@ CNAM
 
 .. toctree::
 
-   mémoire/index
    pitch
+   présentation
+   mémoire/index
 
 .. toctree::
    :caption: Public
