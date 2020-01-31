@@ -5,7 +5,7 @@ CNAM
 
  mémoire/index
  cursus/index
- spaces
+ sites
  unités
  eng221
  pitch
