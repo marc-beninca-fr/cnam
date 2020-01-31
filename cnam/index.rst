@@ -3,11 +3,12 @@ CNAM
 
 .. toctree::
 
- mémoire/index
- pitch
+   mémoire/index
+   pitch
 
 .. toctree::
+   :caption: Public
 
- cursus/index
- sites
- unités/index
+   cursus/index
+   sites
+   unités/index
