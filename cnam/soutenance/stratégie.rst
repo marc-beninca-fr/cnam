@@ -1,8 +1,5 @@
-Soutenance
-==========
-
 Stratégie
----------
+=========
 
 * commencer par la valeur ajoutée
 * pourquoi → comment → quoi

@@ -1,0 +1,7 @@
+Soutenance
+==========
+
+.. toctree::
+
+   stratégie
+   critères

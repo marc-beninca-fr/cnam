@@ -8,7 +8,7 @@ CNAM
    recherche
    rédaction
    présentation
-   soutenance
+   soutenance/index
    mémoire/index
 
 .. toctree::
