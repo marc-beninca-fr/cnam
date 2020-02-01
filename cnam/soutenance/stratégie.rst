@@ -9,11 +9,11 @@ Stratégie
 * équilibrer les différentes parties
 * minuter les différentes parties
 
-  ================== ==========
-  probatoire blanc   15 minutes
-  oral probatoire    20 minutes
-  soutenance mémoire 40 minutes
-  ================== ==========
+  ================ ==========
+  probatoire blanc 15 minutes
+  probatoire       20 minutes
+  mémoire          40 minutes
+  ================= =========
 
 * lister des mots clés pour ne pas perdre le fil
 * adapter le vocabulaire à l’auditoire
