@@ -43,5 +43,12 @@ Situation
 Projet
 ======
 
+* évolution dans secteur d’activité
+* exercice de fonction
+* cible
+
+  * types d’entreprises
+  * exemples
+
 Intérêts
 ========
