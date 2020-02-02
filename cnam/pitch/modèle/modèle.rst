@@ -41,6 +41,15 @@ Réalisations
 Situation
 =========
 
+* fonctions
+* tâches et missions
+* organigramme
+* niveau de responsabilité
+* travail en équipe
+* encadrement
+* enjeux financiers et industriels
+* missions ou rôles à l’international
+
 Projet
 ======
 
