@@ -3,5 +3,5 @@ Pitch
 
 .. toctree::
 
-   modèle
-   document
+   modèle/index
+   document/index
