@@ -6,6 +6,7 @@ Identité
 * formation
 * valeurs
 * convictions
+* contributions
 
   * pourquoi
   * comment
