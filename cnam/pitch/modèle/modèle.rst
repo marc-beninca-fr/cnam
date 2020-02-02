@@ -1,3 +1,11 @@
+=========== ===========================================================================
+3 minutes   | identité, chronologie, expertise, réalisations,
+            | situation, projet, intérêts
+2 minutes   identité, chronologie, situation, projet
+1 minute    identité, situation, projet
+30 secondes identité
+=========== ===========================================================================
+
 Identité
 ========
 
