@@ -81,8 +81,10 @@ Points clés
 -----------
 
 * créer et organiser un plan
+
   * déductif : arguments → conclusion (technique)
   * inductif : conclusion → arguments (commercial)
+
 * réaliser un storyboard
 * comporter un seul message par diapositive
   être synthétique tout en étant précis
