@@ -1,0 +1,7 @@
+Rédaction
+=========
+
+.. toctree::
+
+   directives
+   règles

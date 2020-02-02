@@ -3,5 +3,5 @@ Soutenance
 
 .. toctree::
 
-   stratégie
+   directives
    critères/index

@@ -1,5 +1,5 @@
-Rédaction
-=========
+Directives
+==========
 
 Longueur maximale
 -----------------

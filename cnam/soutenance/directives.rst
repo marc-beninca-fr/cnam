@@ -1,5 +1,5 @@
-Stratégie
-=========
+Directives
+==========
 
 * commencer par la valeur ajoutée
 * pourquoi → comment → quoi

@@ -6,7 +6,7 @@ CNAM
 
    pitch
    recherche
-   rédaction
+   rédaction/index
    présentation
    soutenance/index
    mémoire/index
