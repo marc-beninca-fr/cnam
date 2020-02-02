@@ -52,3 +52,6 @@ Projet
 
 Intérêts
 ========
+
+* côté personnel
+* passions
