@@ -4,7 +4,7 @@ CNAM
 .. toctree::
    :maxdepth: 2
 
-   pitch
+   pitch/index
    recherche
    rédaction/index
    présentation
