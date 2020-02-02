@@ -20,6 +20,13 @@ Chronologie
 Expertise
 =========
 
+* expertises
+* spécialisations
+* champs de compétences
+
+  * domaine 1
+  * domaine 2
+
 Réalisations
 ============
 
