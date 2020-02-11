@@ -16,6 +16,11 @@ Rédaction du probatoire
 
 :download:`PDF <rédaction probatoire.pdf>`
 
+Rédaction du mémoire
+--------------------
+
+:download:`PDF <rédaction mémoire.pdf>`
+
 Métaphores
 ----------
 
