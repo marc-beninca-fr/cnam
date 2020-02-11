@@ -1,6 +1,11 @@
 Documents
 =========
 
+Guide
+-----
+
+:download:`PDF <guide.pdf>`
+
 Plans et rédaction
 ------------------
 
