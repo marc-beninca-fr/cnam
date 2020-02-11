@@ -11,6 +11,11 @@ Plans et rédaction
 
 :download:`PDF <plans et rédaction.pdf>`
 
+Rédaction du probatoire
+-----------------------
+
+:download:`PDF <rédaction probatoire.pdf>`
+
 Métaphores
 ----------
 
