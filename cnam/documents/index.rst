@@ -21,6 +21,14 @@ Rédaction du mémoire
 
 :download:`PDF <rédaction mémoire.pdf>`
 
+Développement communication
+---------------------------
+
+* :download:`Guide <développement communication/guide.pdf>`
+* :download:`Base compétences <développement communication/base compétences.pdf>`
+* :download:`Développer compétences <développement communication/développer compétences.pdf>`
+* :download:`Démarche <développement communication/démarche.pdf>`
+
 Métaphores
 ----------
 
