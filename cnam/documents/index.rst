@@ -29,7 +29,7 @@ Développement communication
 * :download:`Développer compétences <développement communication/développer compétences.pdf>`
 * :download:`Démarche <développement communication/démarche.pdf>`
 
-Métaphores
-----------
+Autres
+------
 
-:download:`PDF <métaphores.pdf>`
+:download:`Métaphores <métaphores.pdf>`
