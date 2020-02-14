@@ -6,20 +6,12 @@ Guide
 
 :download:`PDF <guide.pdf>`
 
-Plans et rédaction
-------------------
+Rédaction
+---------
 
-:download:`PDF <plans et rédaction.pdf>`
-
-Rédaction du probatoire
------------------------
-
-:download:`PDF <rédaction probatoire.pdf>`
-
-Rédaction du mémoire
---------------------
-
-:download:`PDF <rédaction mémoire.pdf>`
+* :download:`Plans et rédaction <plans et rédaction.pdf>`
+* :download:`Probatoire <rédaction probatoire.pdf>`
+* :download:`Mémoire <rédaction mémoire.pdf>`
 
 Développement communication
 ---------------------------
