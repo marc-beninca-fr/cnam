@@ -24,4 +24,4 @@ Développement communication
 Autres
 ------
 
-:download:`Métaphores <métaphores.pdf>`
+* :download:`Métaphores <métaphores.pdf>`
