@@ -15,8 +15,8 @@ CNAM
 
 .. toctree::
    :maxdepth: 2
-   :caption: Public
 
+   travaux/index
+   unités/index
    cursus/index
    sites
-   unités/index
