@@ -12,7 +12,7 @@ Synthèse
 +-----------------------------------------------------+----------+---------+----------------------+
 |                                                     |          |   | ↗   |   prévisions  2018   |
 | | Recrutements cadres en CDI et CDD ≥ 1 an          |   2017   |   | %   +----------+-----------+
-| | dans le secteur privé en France métropolitaine    |          |   | ↘   |   moy.   | | hautes  |
+| | dans le secteur privé en France métropolitaine    |          |   | ↘   | moyennes | | hautes  |
 |                                                     |          |         |          | | basses  |
 +-----------------------------------------------------+----------+---------+----------+-----------+
 | Informatique                                        | | 48 200 | | ↗ 16  | | 55 900 | | 58 000  |
