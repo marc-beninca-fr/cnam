@@ -1,12 +1,12 @@
 Énoncé
-------
+======
 
 * :download:`Document <apec.pdf>`
 
 .. image:: apec.png
 
 Chiffres
---------
+========
 
 +-----------------------------------------------------+----------+---------+----------------------+
 |                                                     |          |   | ↗   |   prévisions  2018   |
@@ -48,15 +48,15 @@ Chiffres
 * :download:`Croissances <croissances.png>`
 
 Graphiques
-----------
+==========
 
 Tableur LibreOffice
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 * :download:`Tableur <cadres.ods>`
 
 Images produites
-^^^^^^^^^^^^^^^^
+----------------
 
 * Répartition
 
@@ -67,15 +67,15 @@ Images produites
 .. figure:: volumes.png
 
 Document
---------
+========
 
 Code LaTeX
-^^^^^^^^^^
+----------
 
 .. literalinclude:: cadres.tex
    :language: LaTeX
 
 Fichier final
-^^^^^^^^^^^^^
+-------------
 
 * :download:`PDF <cadres.pdf>`
