@@ -5,7 +5,8 @@ Emploi cadre
 ------
 
 * :download:`Document <apec.pdf>`
-* `Tableau <apec.png>`_
+
+.. image:: apec.png
 
 Chiffres
 --------
@@ -46,3 +47,5 @@ Chiffres
 | Totaux                                              |  240 100 |   ↗ 7,4 |  257 750 | | 266 900 |
 |                                                     |          |         |          | | 248 600 |
 +-----------------------------------------------------+----------+---------+----------+-----------+
+
+* :download:`Tableur <cadres.ods>`
