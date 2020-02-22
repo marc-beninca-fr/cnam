@@ -4,7 +4,7 @@
 Document original
 -----------------
 
-* :download:`PDF <apec.pdf>`
+* :download:`Fichier PDF <apec.pdf>`
 
 Tableau extrait
 ---------------
@@ -59,7 +59,7 @@ Tableau ReStructuredText
 Image produite
 --------------
 
-* :download:`PNG <croissances.png>`
+* :download:`Fichier PNG <croissances.png>`
 
 ----
 
@@ -69,23 +69,25 @@ Graphiques
 Tableur LibreOffice
 -------------------
 
-* :download:`Tableur <cadres.ods>`
+* :download:`Fichier ODS <cadres.ods>`
 
 Images produites
 ----------------
 
-* Répartition
+Répartition
+^^^^^^^^^^^
 
 .. figure:: répartition.png
 
-* Volumes
+Volumes
+^^^^^^^
 
 .. figure:: volumes.png
 
 ----
 
-Document
-========
+Présentation
+============
 
 Code LaTeX
 ----------
@@ -93,7 +95,7 @@ Code LaTeX
 .. literalinclude:: cadres.tex
    :language: LaTeX
 
-Fichier final
--------------
+Document final
+--------------
 
-* :download:`PDF <cadres.pdf>`
+* :download:`Fichier PDF <cadres.pdf>`
