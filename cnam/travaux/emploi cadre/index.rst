@@ -49,3 +49,7 @@ Chiffres
 +-----------------------------------------------------+----------+---------+----------+-----------+
 
 * :download:`Tableur <cadres.ods>`
+
+.. image:: répartition.png
+
+.. image:: volumes.png
