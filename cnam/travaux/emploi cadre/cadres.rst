@@ -95,6 +95,23 @@ Code LaTeX
 .. literalinclude:: cadres.tex
    :language: LaTeX
 
+Commandes
+---------
+
+Indexation
+^^^^^^^^^^
+
+.. code:: shell
+
+ xelatex cadres.tex
+
+Fabrication
+^^^^^^^^^^^
+
+.. code:: shell
+
+ xelatex cadres.tex
+
 Document final
 --------------
 
