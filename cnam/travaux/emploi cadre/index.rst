@@ -62,5 +62,13 @@ Graphiques
 Document
 --------
 
+Code LaTeX
+^^^^^^^^^^
+
 .. literalinclude:: cadres.tex
    :language: LaTeX
+
+Fichier final
+^^^^^^^^^^^^^
+
+* :download:`PDF <cadres.pdf>`
