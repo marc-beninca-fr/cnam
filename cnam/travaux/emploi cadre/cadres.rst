@@ -93,6 +93,7 @@ Code LaTeX
 ----------
 
 .. literalinclude:: cadres.tex
+   :linenos:
    :language: LaTeX
 
 Commandes
