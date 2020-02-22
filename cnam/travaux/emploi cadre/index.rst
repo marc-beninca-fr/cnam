@@ -5,7 +5,7 @@ Emploi cadre
 ------
 
 * :download:`Document <apec.pdf>`
-* :download:`Tableau <apec.png>`
+* `Tableau <apec.png>`_
 
 Chiffres
 --------
