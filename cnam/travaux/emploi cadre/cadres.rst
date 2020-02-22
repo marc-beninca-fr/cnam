@@ -14,6 +14,9 @@ Tableau extrait
 Chiffres
 ========
 
+Tableau ReStructuredText
+------------------------
+
 +-----------------------------------------------------+----------+---------+----------------------+
 |                                                     |          |   | ↗   |   prévisions  2018   |
 | | Recrutements cadres en CDI et CDD ≥ 1 an          |   2017   |   | %   +----------+-----------+
@@ -51,7 +54,10 @@ Chiffres
 |                                                     |          |         |          | | 248 600 |
 +-----------------------------------------------------+----------+---------+----------+-----------+
 
-* :download:`Croissances <croissances.png>`
+Image produite
+--------------
+
+* :download:`PNG <croissances.png>`
 
 Graphiques
 ==========
