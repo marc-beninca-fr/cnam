@@ -48,6 +48,8 @@ Chiffres
 |                                                     |          |         |          | | 248 600 |
 +-----------------------------------------------------+----------+---------+----------+-----------+
 
+* :download:`Croissances <croissances.png>`
+
 * :download:`Tableur <cadres.ods>`
 
 .. image:: répartition.png
