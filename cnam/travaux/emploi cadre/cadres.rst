@@ -11,6 +11,8 @@ Tableau extrait
 
 .. image:: apec.png
 
+----
+
 Chiffres
 ========
 
@@ -59,6 +61,8 @@ Image produite
 
 * :download:`PNG <croissances.png>`
 
+----
+
 Graphiques
 ==========
 
@@ -77,6 +81,8 @@ Images produites
 * Volumes
 
 .. figure:: volumes.png
+
+----
 
 Document
 ========
