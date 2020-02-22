@@ -1,7 +1,13 @@
 Énoncé
 ======
 
-* :download:`Document <apec.pdf>`
+Document original
+-----------------
+
+* :download:`PDF <apec.pdf>`
+
+Tableau extrait
+---------------
 
 .. image:: apec.png
 
