@@ -50,8 +50,17 @@ Chiffres
 
 * :download:`Croissances <croissances.png>`
 
+Graphiques
+----------
+
 * :download:`Tableur <cadres.ods>`
 
 .. image:: répartition.png
 
 .. image:: volumes.png
+
+Document
+--------
+
+.. literalinclude:: cadres.tex
+   :language: LaTeX
