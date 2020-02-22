@@ -1,8 +1,8 @@
 Travaux
 =======
 
+.. image:: cnam.png
+
 .. toctree::
 
    emploi cadre/index
-
-.. image:: cnam.png
