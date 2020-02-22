@@ -4,7 +4,8 @@ Emploi cadre
 Énoncé
 ------
 
-* :download:`APEC <apec.pdf>`
+* :download:`Document <apec.pdf>`
+* :download:`Tableau <apec.png>`
 
 Chiffres
 --------
