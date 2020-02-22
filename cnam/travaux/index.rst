@@ -4,6 +4,6 @@ Travaux
 .. image:: cnam.png
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    emploi cadre/index
