@@ -1,84 +1,78 @@
-Présentation
-============
-
-* mettre en perspective le document rédigé
-* soutenir l’intervention orale
-
 Préambule
----------
+=========
 
 Définir le message principal
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 * prendre du recul
 * structurer le discours
 * définir une accroche
 
 Réfléchir aux éléments visuels
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------
 
 * soutenir le discours
 * ne pas « remplir de la slide »
 
 Rédiger le document d’accompagnement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------
 
 * répéter et compléter le discours
 * diffuser après l’intervention
 
 Méthode
--------
+=======
 
 C QQ C OQP
 
 Combien ?
-^^^^^^^^^
+---------
 
 * personnes
 * temps
 * diapositives
 
 Qui ?
-^^^^^
+-----
 
 * participants
 * qualités
 * rôles
 
 Quoi ?
-^^^^^^
+------
 
 * thèmes
 * contenu
 * problématiques
 
 Comment ?
-^^^^^^^^^
+---------
 
 * matériel
 * logiciels et versions
 * supports et formes
 
 Où ?
-^^^^
+----
 
 * endroit
 * logistique
 
 Quand ?
-^^^^^^^
+-------
 
 * projection
 * retro planning
 
 Pourquoi ?
-^^^^^^^^^^
+----------
 
 * enjeux
 * message
 
 Points clés
------------
+===========
 
 * créer et organiser un plan
 

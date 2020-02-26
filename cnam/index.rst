@@ -8,7 +8,7 @@ CNAM
    pitch/index
    recherche
    rédaction/index
-   présentation
+   présentation/index
    soutenance/index
    mémoire/index
    exemples/index
