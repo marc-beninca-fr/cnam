@@ -80,6 +80,7 @@ Points clés
   * inductif : conclusion → arguments (commercial)
 
 * réaliser un storyboard
+  en rappelant la progression
 * comporter un seul message par diapositive
   être synthétique tout en étant précis
 * modérer les animations
