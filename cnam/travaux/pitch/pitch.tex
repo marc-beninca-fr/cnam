@@ -1,0 +1,59 @@
+\documentclass[20pt]{extarticle}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\usepackage{extsizes}
+\usepackage{fontspec}
+\usepackage[a4paper,landscape,
+bmargin=10mm,lmargin=20mm,rmargin=20mm,tmargin=25mm]{geometry}
+\usepackage{metalogo}
+\usepackage{tocloft}
+\usepackage{wallpaper}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\setcounter{secnumdepth}{1}
+\setmainfont{DejaVu Sans}
+\pagenumbering{gobble}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\begin{document}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\ThisURCornerWallPaper{.25}{../cnam.png}
+\title{Vers une meilleure production de documents}
+\author{Marc BENINCA}
+\date{07 / 04 / 2020}
+\maketitle
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\ThisURCornerWallPaper{.25}{../cnam.png}
+Vers une meilleure production de documents
+\renewcommand{\contentsname}{Sommaire}
+\cftsetindents{section}{1em}{1.5em}
+\cftsetindents{subsection}{2.5em}{2.5em}
+\renewcommand{\cftsecleader}{\hfill}
+\renewcommand{\cftsubsecleader}{\hfill}
+\tableofcontents
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Pourquoi}
+\begin{itemize}
+\item{?}
+\end{itemize}
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Comment}
+\begin{itemize}
+\item{?}
+\end{itemize}
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\subsection{Quoi}
+\begin{itemize}
+\item{?}
+\end{itemize}
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Conclusion}
+\begin{itemize}
+\item{?}
+\end{itemize}
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\end{document}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
