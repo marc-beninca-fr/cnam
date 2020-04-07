@@ -12,35 +12,50 @@ bmargin=10mm,lmargin=20mm,rmargin=20mm,tmargin=25mm]{geometry}
 \setmainfont{DejaVu Sans}
 \pagenumbering{gobble}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\newcommand{\cnam}[0]{\ThisURCornerWallPaper{.25}{../cnam.png}}
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\ThisURCornerWallPaper{.25}{../cnam.png}
-\title{Vers une meilleure\newline
+\cnam
+
+\title{Vers une meilleure\\
 production de documents}
 \author{Marc BENINCA}
 \date{07 / 04 / 2020}
 \maketitle
+
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\ThisURCornerWallPaper{.25}{../cnam.png}
+\cnam
+
 Vers une meilleure production de documents
+
 \renewcommand{\contentsname}{Sommaire}
 \cftsetindents{section}{1em}{1.5em}
 \cftsetindents{subsection}{2.5em}{2.5em}
 \renewcommand{\cftsecleader}{\hfill}
 \renewcommand{\cftsubsecleader}{\hfill}
 \tableofcontents
+
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\cnam
+
 \section{Objectifs}
 
+\subsection{Indépendance}
 \begin{itemize}
-\item{indépendance}
-\item{fiabilité}
+\item{?}
+\end{itemize}
+
+\subsection{Fiabilité}
+\begin{itemize}
+\item{?}
 \end{itemize}
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\cnam
+
 \section{Moyens}
 
 \subsection{Outils}
@@ -56,6 +71,10 @@ Vers une meilleure production de documents
 \item{ouverts}
 \end{itemize}
 
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\cnam
+
 \subsection{Stockage}
 \begin{itemize}
 \item{binaire}
@@ -64,35 +83,50 @@ Vers une meilleure production de documents
 
 \subsection{Rationnalisation}
 \begin{itemize}
-\item{gestion de configuration}
+\item{versionnement}
+\item{fabrication}
 \item{sauvegardes}
 \end{itemize}
 
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\cnam
+
 \subsection{Manipulation}
 \begin{itemize}
-\item{extraction}
-\item{assemblage}
+\item{découpe de documents}
+\item{extraction d’images}
+\item{rotation de pages}
+\item{compression d’images}
+\item{résolution d’impression}
+\item{assemblage de documents}
 \end{itemize}
 
 \subsection{Automatisation}
 \begin{itemize}
-\item{scripts}
+\item{étapes de fabrication}
+\item{scripts d’assemblage}
+\item{scripts de synchronisation}
 \end{itemize}
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\cnam
+
 \section{Existant}
 
 \begin{itemize}
-\item{?}
-\end{itemize}
-
-\pagebreak
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\section{Conclusion}
-
-\begin{itemize}
-\item{?}
+\item{\textbf{Bureautique}\\
+LibreOffice, MicroSoft Office, WPS Office\\
+OpenOffice, StarOffice}
+\item{\textbf{Versionnement}\\
+Git, Mercurial, SubVersioN}
+\item{\textbf{Fabrication}\\
+GraphViz, LaTeX, PanDoc, Sphinx}
+\item{\textbf{Manipulation}\\
+GhostScript, ImageMagick, PDFTK, Poppler}
+\item{\textbf{Automatisation}\\
+BASH, Make, Python}
 \end{itemize}
 
 \pagebreak
