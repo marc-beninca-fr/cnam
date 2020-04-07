@@ -6,4 +6,5 @@ Travaux
 .. toctree::
    :maxdepth: 1
 
+   pitch/index
    emploi cadre/index
