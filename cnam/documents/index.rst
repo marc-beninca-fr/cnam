@@ -27,3 +27,4 @@ Autres
 * :download:`Prise parole <prise parole.pdf>`
 * :download:`Modèles communication <modèles communication.pdf>`
 * :download:`Métaphores <métaphores.pdf>`
+* :download:`Graphique <graphique.pdf>`
