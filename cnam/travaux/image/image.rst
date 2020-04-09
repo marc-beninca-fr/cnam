@@ -12,8 +12,8 @@ titre
 nature de l’image
 -----------------
 
-unique / série
---------------
+image unique / série d’images
+-----------------------------
 
 méthode d’obtention
 -------------------
@@ -24,8 +24,8 @@ méthode d’obtention
 taux d’agrandissement
 ---------------------
 
-source
-------
+source : réalisation, auteur, publication, site
+-----------------------------------------------
 
 Interprétation
 ==============
@@ -42,26 +42,32 @@ identification des axes
 définition des symboles
 -----------------------
 
+légendes
+--------
+
 commentaire
 -----------
 
-scientifique
-------------
+image scientifique ?
+--------------------
 
 Appropriation critique
 ======================
 
-idée principale, valeur informative
------------------------------------
+idée principale apportée, valeur informative
+--------------------------------------------
 
 rôle : observation, visibilité, découverte, résultat
 ----------------------------------------------------
 
-séduction, émotions
--------------------
+image séduisante, émouvante ?
+-----------------------------
 
-compréhension, incompréhension, lisibilité
-------------------------------------------
+compréhensions / incompréhensions, lisibilité
+---------------------------------------------
+
+image inédite ?
+---------------
 
 autres images possibles
 -----------------------
