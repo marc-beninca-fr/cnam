@@ -62,6 +62,7 @@ Les couleurs :
 
 * sont limitées à 5, en dehors des noir et blanc
 * sont tranchées les unes par rapport aux autres
+* ressortent visuellement bien à l’impression
 * correspondent à des thématiques différentes
 
 Identification des axes
@@ -96,12 +97,19 @@ L’unique légende, en haut à gauche, définit 2 notions :
 Commentaire
 -----------
 
-
+L’image tente de schématiser, en le simplifiant le plus possible,
+tout le processus de travail d’un développeur logiciel avec Git.
 
 Image scientifique ?
 --------------------
 
+L’image s’inscrit dans une démarche rationnelle :
 
+* énumération des différents cas d’utilisation possibles
+* décomposition des cas d’utilisation en actions atomiques
+* identifications des différentes situations alternatives
+* réalisation d’un graphe débouchant sur un logigramme
+* agencement du logigramme pour occuper au mieux l’espace
 
 Appropriation critique
 ======================
