@@ -150,8 +150,8 @@ Image inédite ?
 Autres images possibles
 -----------------------
 
-Nous avons fait le choix d’aller au plus synthétique possible.
-Il y aurait donc de nombreuses possibilités d’images différentes :
+| Nous avons fait le choix d’aller au plus synthétique possible.
+| Il y aurait donc de nombreuses possibilités d’images différentes :
 
 * agencement spatial différent pour un support plus étendu
 * symbologie plus exhaustive par types d’actions
