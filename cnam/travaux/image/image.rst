@@ -117,20 +117,47 @@ Appropriation critique
 Idée principale apportée, valeur informative
 --------------------------------------------
 
+| Avoir une vue d’ensemble de tout le processus de développement,
+| pour ne jamais se sentir perdu en ne sâchant plus quoi faire.
+
 Rôle : observation, visibilité, découverte, résultat
 ----------------------------------------------------
+
+| Découverte du fonctionnement global de l’outil, en conclusion
+| d’une étude en présentant tous les tenants et aboutissants.
 
 Image séduisante, émouvante ?
 -----------------------------
 
+| Le couple d’images, conçu pour une impression au format A4,
+| a séduit au moins une partie des collègues de travail,
+| ces derniers l’ayant affiché sur tableau, meuble ou mur.
+
 Compréhensions / incompréhensions, lisibilité
 ---------------------------------------------
+
+La lisibilité découle de la séparation en 2 images :
+
+* la première assure une compréhension fonctionnelle en français
+* seule la deuxième peut engendrer des incompréhensions techniques
 
 Image inédite ?
 ---------------
 
+| Avant de réaliser ce double logigramme, mon collègue et moi-même
+| n’avons pas trouvé de schéma existant synthétisant autant le processus.
+
 Autres images possibles
 -----------------------
+
+Nous avons fait le choix d’aller au plus synthétique possible.
+Il y aurait donc de nombreuses possibilités d’images différentes :
+
+* agencement spatial différent pour un support plus étendu
+* symbologie plus exhaustive par types d’actions
+* représentation de l’état de fichiers au fil des actions
+* décomposition de certaines sous-parties en un autre niveau
+* etc.
 
 .. _technique:
 
