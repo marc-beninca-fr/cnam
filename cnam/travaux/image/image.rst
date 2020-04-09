@@ -92,7 +92,7 @@ Légendes
 L’unique légende, en haut à gauche, définit 2 notions :
 
 * vert → locale : seul le poste de travail est concerné
-* orange → distante : une machine distante est impliquée
+* orange → distante : une machine du réseau est impliquée
 
 Commentaire
 -----------
