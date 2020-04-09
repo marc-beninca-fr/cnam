@@ -20,8 +20,7 @@ Image unique / série d’images
 -----------------------------
 
 | Cette image est la première d’un couple.
-| La deuxième présente une
-| :ref:`version technique du même logigramme <technique>`.
+| La deuxième présente une :ref:`version technique du même logigramme <technique>`.
 
 Méthode d’obtention
 -------------------
@@ -51,6 +50,7 @@ Lisibilité
 ----------
 
 L’image :
+
 * occupe tout l’espace disponible
 * espace ses différentes parties
 * évite la surcharge des sous-parties
@@ -59,6 +59,7 @@ Couleurs signifiantes, contrastées
 ----------------------------------
 
 Les couleurs :
+
 * sont limitées à 5, en dehors des noir et blanc
 * sont tranchées les unes par rapport aux autres
 * correspondent à des thématiques différentes
@@ -67,6 +68,7 @@ Identification des axes
 -----------------------
 
 Deux axes sont présents :
+
 * le temps s’écoule au fil des actions, verticalement et de haut en bas
 * les actions alternatives, horizontalement et de gauche à droite
 
@@ -74,6 +76,7 @@ Définition des symboles
 -----------------------
 
 Par ordre d’apparition :
+
 * les losanges interrogent l’espace de travail
 * les flèches indiquent la prochaine action à effectuer
 * les rectangles représentent des actions atomiques
@@ -86,6 +89,7 @@ Légendes
 --------
 
 L’unique légende, en haut à gauche, définit 2 notions :
+
 * vert → locale : seul le poste de travail est concerné
 * orange → distante : une machine distante est impliquée
 
