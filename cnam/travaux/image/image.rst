@@ -6,71 +6,89 @@ Image
 Identification
 ==============
 
-titre
+Titre
 -----
 
-nature de l’image
+« Travailler en équipe avec Git ».
+
+Nature de l’image
 -----------------
 
-image unique / série d’images
+Logigramme.
+
+Image unique / série d’images
 -----------------------------
 
-méthode d’obtention
+| Cette image est la première d’un couple.
+| La deuxième présente une :ref:`version technique du même logigramme <technique>`.
+
+Méthode d’obtention
 -------------------
 
-échelle
+Construction et rendu PNG réalisés avec LibreOffice.
+
+Échelle
 -------
 
-taux d’agrandissement
+L’image occupe une pleine page A4 orientée portrait.
+
+Taux d’agrandissement
 ---------------------
 
-source : réalisation, auteur, publication, site
+Automatique par rapport aux tailles d’impression et de rendu.
+
+Source : réalisation, auteur, publication, site
 -----------------------------------------------
+
+| Réalisation issue de ma collaboration avec Benjamin FERRAN,
+| dans le cadre de formations de personnels au logiciel Git.
 
 Interprétation
 ==============
 
-lisibilité
+Lisibilité
 ----------
 
-couleurs signifiantes, contrastées
+Couleurs signifiantes, contrastées
 ----------------------------------
 
-identification des axes
+Identification des axes
 -----------------------
 
-définition des symboles
+Définition des symboles
 -----------------------
 
-légendes
+Légendes
 --------
 
-commentaire
+Commentaire
 -----------
 
-image scientifique ?
+Image scientifique ?
 --------------------
 
 Appropriation critique
 ======================
 
-idée principale apportée, valeur informative
+Idée principale apportée, valeur informative
 --------------------------------------------
 
-rôle : observation, visibilité, découverte, résultat
+Rôle : observation, visibilité, découverte, résultat
 ----------------------------------------------------
 
-image séduisante, émouvante ?
+Image séduisante, émouvante ?
 -----------------------------
 
-compréhensions / incompréhensions, lisibilité
+Compréhensions / incompréhensions, lisibilité
 ---------------------------------------------
 
-image inédite ?
+Image inédite ?
 ---------------
 
-autres images possibles
+Autres images possibles
 -----------------------
+
+.. _technique:
 
 Image technique associée
 ========================
