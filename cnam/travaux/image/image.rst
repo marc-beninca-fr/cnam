@@ -97,8 +97,8 @@ L’unique légende, en haut à gauche, définit 2 notions :
 Commentaire
 -----------
 
-L’image tente de schématiser, en le simplifiant le plus possible,
-tout le processus de travail d’un développeur logiciel avec Git.
+| L’image tente de schématiser, en le simplifiant le plus possible,
+| tout le processus de travail d’un développeur logiciel avec Git.
 
 Image scientifique ?
 --------------------
