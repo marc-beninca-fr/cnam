@@ -20,7 +20,7 @@ def clean():
     _, _, files = next(os.walk(directory))
     for file in files:
         name, ext = os.path.splitext(file)
-        if ext in ['.aux', '.log']:
+        if ext in ['.aux', '.log', '.toc']:
             os.remove(file)
 
 
