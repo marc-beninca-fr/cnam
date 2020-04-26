@@ -7,6 +7,15 @@ DOCUMENTS = [
     'document',
     'présentation',
 ]
+PURGE = [
+    '.acn',
+    '.aux',
+    '.glo',
+    '.glsdefs',
+    '.ist',
+    '.log',
+    '.toc',
+]
 
 
 def build(directory):
@@ -22,7 +31,7 @@ def clean(directory):
     _, _, files = next(os.walk(directory))
     for file in files:
         name, ext = os.path.splitext(file)
-        if ext in ['.aux', '.log', '.toc']:
+        if ext in PURGE:
             os.remove(file)
 
 
