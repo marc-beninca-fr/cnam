@@ -8,22 +8,23 @@ DOCUMENTS = [
     'présentation',
 ]
 PURGE = [
-    '.acn',
-    '.aux',
-    '.glo',
-    '.glsdefs',
-    '.ist',
-    '.log',
-    '.toc',
+    '.aux', '.log', '.toc',
+    '.acn', '.acr', '.alg',
+    '.glg', '.glo', '.gls',
+    '.glsdefs', '.ist',
 ]
+
+
+def run(*args):
+    subprocess.call(args)
 
 
 def build(directory):
     os.chdir(directory)
     for document in DOCUMENTS:
-        command = ['xelatex', f'{document}.tex']
-        for _ in range(2):
-            subprocess.call(command)
+        run('xelatex', f'{document}.tex')
+        run('makeglossaries', f'{document}')
+        run('xelatex', f'{document}.tex')
 
 
 def clean(directory):
@@ -38,6 +39,7 @@ def clean(directory):
 def main():
     file = os.path.realpath(__file__)
     directory = os.path.dirname(file)
+    clean(directory)
     build(directory)
     clean(directory)
 
