@@ -1,6 +1,8 @@
 % TODO décaler la numérotation des pages
 \documentclass[12pt]{extarticle}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\usepackage{polyglossia}
+\setmainlanguage{french}
 \usepackage{extsizes}
 \usepackage{fontspec}
 \usepackage[a4paper,portrait,
@@ -8,6 +10,7 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \usepackage{metalogo}
 \usepackage{tocloft}
 \usepackage{wallpaper}
+\usepackage[acronym]{glossaries}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \setcounter{secnumdepth}{2}
 \setmainfont{DejaVu Sans}
@@ -17,6 +20,7 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 %\pagenumbering{gobble}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \newcommand{\cnam}[0]{\ThisURCornerWallPaper{.2}{../cnam.png}}
+\makeglossaries
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \cnam
@@ -28,6 +32,22 @@ concepts et outils}
 \author{Marc BENINCA}
 \date{30 / 04 / 2020}
 \maketitle
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\newacronym{si}{SI}{Système d’Information}
+
+\renewcommand{\acronymname}{Abréviations}
+\printglossary[type=\acronymtype]
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%\printglossaries
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\newglossaryentry{wysiwyg}{name=WYSIWYG, description={What You See Is What You Get}}
+\newglossaryentry{wysiwym}{name=WYSIWYM, description={What You See Is What You Mean}}
+
+\printglossary
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -87,6 +107,11 @@ concepts et outils
 \pagebreak
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Types de formats}
+Dans un \gls{si} :\\
+\gls{wysiwyg}\\
+\gls{wysiwym}\\
+\gls{wysiwym} est préférable à \gls{wysiwyg}
+
 \begin{itemize}
 \item{binaire}
 \item{texte}
