@@ -1,0 +1,169 @@
+% TODO décaler la numérotation des pages
+\documentclass[12pt]{extarticle}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\usepackage{extsizes}
+\usepackage{fontspec}
+\usepackage[a4paper,portrait,
+bmargin=16mm,lmargin=20mm,rmargin=20mm,tmargin=25mm]{geometry}
+\usepackage{metalogo}
+\usepackage{tocloft}
+\usepackage{wallpaper}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\setcounter{secnumdepth}{2}
+\setmainfont{DejaVu Sans}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1}
+%\pagenumbering{gobble}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\newcommand{\cnam}[0]{\ThisURCornerWallPaper{.2}{../cnam.png}}
+\begin{document}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\cnam
+
+\title{\textbf{Produire de\\
+meilleurs documents}\\
+ \\
+concepts et outils}
+\author{Marc BENINCA}
+\date{30 / 04 / 2020}
+\maketitle
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\cnam
+
+\textbf{Produire de meilleurs documents}\\
+concepts et outils
+
+\renewcommand{\contentsname}{Sommaire}
+\cftsetindents{section}{1em}{1.5em}
+\cftsetindents{subsection}{2.5em}{2.5em}
+\renewcommand{\cftsecleader}{\hfill}
+%\renewcommand{\cftsubsecleader}{\hfill}
+\tableofcontents
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Introduction}
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Objectifs}
+
+\subsection{Indépendance numérique}
+\begin{itemize}
+\item{logiciels de production}
+\item{systèmes d’exploitation}
+\item{plateformes d’hébergement}
+\end{itemize}
+
+\subsection{Fiabilité des contenus}
+\begin{itemize}
+\item{reproductibilité}
+\item{disponibilité}
+\item{intégrité}
+\item{authenticité}
+\end{itemize}
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Moyens}
+
+\subsection{Outils logiciels}
+\begin{itemize}
+\item{propriétaires}
+\item{open source}
+\item{libres}
+\end{itemize}
+
+\subsection{Formats de données}
+\begin{itemize}
+\item{fermés}
+\item{obfusqués}
+\item{ouverts}
+\end{itemize}
+
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Types de formats}
+\begin{itemize}
+\item{binaire}
+\item{texte}
+\end{itemize}
+
+\subsection{Rationalisation}
+\begin{itemize}
+\item{gestion de versions}
+\item{processus de fabrication}
+\item{logique de sauvegardes}
+\item{réplication de contenus}
+\item{signature numérique}
+\end{itemize}
+
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Manipulation}
+\begin{itemize}
+\item{découpe de documents}
+\item{extraction d’images}
+\item{rotation d’éléments}
+\item{compression d’images}
+\item{résolution d’impression}
+\item{assemblage de documents}
+\end{itemize}
+
+\subsection{Automatisation}
+\begin{itemize}
+\item{fichiers de fabrication}
+\item{scripts d’assemblage}
+\item{scripts de synchronisation}
+\end{itemize}
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Existant}
+
+\begin{itemize}
+\item{\textbf{Bureautique}\\
+LibreOffice, MicroSoft Office, WPS Office\\
+OpenOffice, StarOffice}
+\item{\textbf{Versionnement}\\
+Git, Mercurial, SubVersioN}
+\item{\textbf{Fabrication}\\
+GraphViz, LaTeX, PanDoc, Sphinx}
+\item{\textbf{Manipulation}\\
+GhostScript, ImageMagick, PDFTK, Poppler}
+\item{\textbf{Automatisation}\\
+BASH, Make, OpenSSH, Python, Rsync}
+\item{\textbf{Authenticité}\\
+GnuPG, OpenPGP}
+\end{itemize}
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Conclusion}
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\newcommand{\hr}[0]{\rule{\textwidth}{1pt}}
+
+\title
+
+Mémoire présenté en vue d’obtenir\\
+UE « Information et communication pour ingénieur »\\
+Spécialité : Informatique\\
+Bordeaux, 2020
+
+\hr
+
+Résumé
+
+\hr
+
+Summary
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\end{document}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
