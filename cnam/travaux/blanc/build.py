@@ -26,6 +26,11 @@ def build():
             '-d', TMP,
             document,
         ])
+        run(['biber',
+            '--input-directory', TMP,
+            '--output-directory', TMP,
+            document,
+        ])
         run(command)
         pdf = f'{document}.pdf'
         os.rename(os.path.join(TMP, pdf), pdf)
