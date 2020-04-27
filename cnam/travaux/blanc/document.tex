@@ -14,6 +14,7 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \usepackage{tocloft}
 \usepackage{wallpaper}
 \usepackage[acronym]{glossaries}
+\usepackage{listings}
 \usepackage{hyperref}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \hypersetup{colorlinks,
@@ -24,6 +25,7 @@ urlcolor=blue
 }
 \setcounter{secnumdepth}{2}
 \setmainfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1em}
 \renewcommand{\baselinestretch}{1}
@@ -185,11 +187,21 @@ GnuPG, OpenPGP}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Fichiers sources pour fabriquer ce document}
 
-\subsection{Programme \XeLaTeX}
+\lstset{
+basicstyle=\ttfamily
+}
+
+\subsection{Script Python}
+
+\lstset{language=Python}
+\lstinputlisting{build.py}
 
 \pagebreak
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
-\subsection{Script Python}
+\subsection{Programme \XeLaTeX}
+
+\lstset{language=[LaTeX]TeX}
+\lstinputlisting{document.tex}
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
