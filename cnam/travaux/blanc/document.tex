@@ -11,8 +11,10 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \usepackage{wallpaper}
 \usepackage[acronym]{glossaries}
 \usepackage{listings}
+\usepackage[sorting=none,backend=biber]{biblatex}
 \usepackage{hyperref}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\bibliography{document}
 \hypersetup{colorlinks,
 citecolor=blue,
 filecolor=blue,
@@ -118,8 +120,8 @@ concepts et outils
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Types de formats}
 Dans un \gls{si} :\\
-\gls{wysiwyg}\\
-\gls{wysiwym}\\
+\gls{wysiwym} \cite{wysiwym}\\
+\gls{wysiwyg} \cite{wysiwyg}\\
 \gls{wysiwym} est préférable à \gls{wysiwyg}
 
 \begin{itemize}
@@ -178,6 +180,12 @@ GnuPG, OpenPGP}
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Conclusion}
+
+\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section*{Bibliographie}
+
+\printbibliography[heading=none]
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
