@@ -20,7 +20,7 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 citecolor=blue,
 filecolor=blue,
 linkcolor=blue,
-urlcolor=blue
+urlcolor=blue,
 }
 \setcounter{secnumdepth}{2}
 \setmainfont{DejaVu Sans}
@@ -188,22 +188,34 @@ GnuPG, OpenPGP}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Fichiers sources pour fabriquer ce document}
 
+\definecolor{bg}{rgb}{0.9,0.9,0.9}
+\definecolor{cm}{rgb}{0.1,0.6,0.1}
+\definecolor{kw}{rgb}{0.8,0.1,0.1}
+\definecolor{str}{rgb}{0.1,0.1,0.8}
+
 \lstset{
+basicstyle=\ttfamily,
 numbers=left,
-basicstyle=\ttfamily
+backgroundcolor=\color{bg},
+commentstyle=\color{cm},
+keywordstyle=\color{kw},
+stringstyle=\color{str},
 }
 
 \subsection{Script Python}
 
-\lstset{language=Python}
-\lstinputlisting{build.py}
+\lstinputlisting[language=Python]{build.py}
 
 \pagebreak
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Programme \XeLaTeX}
 
-\lstset{language=[LaTeX]TeX}
-\lstinputlisting{document.tex}
+\lstinputlisting[language={[LaTeX]TeX},otherkeywords={
+hypersetup,setmainfont,setmonofont,setlength,
+setmainlanguage,
+maketitle,tableofcontents,subsection,appendix,
+gls,makeglossaries,newacronym,newglossaryentry,printglossary
+}]{document.tex}
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
