@@ -9,6 +9,11 @@ INPUT = ["cnam"]
 OUTPUT = "out"
 
 
+def others():
+    import cnam.travaux.blanc.build as blanc
+    blanc.main()
+
+
 def main():
     file = os.path.realpath(__file__)
     directory = os.path.dirname(file)
@@ -28,6 +33,7 @@ def main():
             os.path.join(output_directory, doc),
         ]
         sphinx.build_main(arguments)
+    others()
 
 
 if __name__ == "__main__":
