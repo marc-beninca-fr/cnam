@@ -2,21 +2,26 @@
 
 import os
 import shutil
+import subprocess
 
 import sphinx
 
+TRAVAUX = ['blanc']
 INPUT = ["cnam"]
 OUTPUT = "out"
 
 
 def others():
-    import cnam.travaux.blanc.build as blanc
-    blanc.main()
+    travaux = os.path.join('cnam', 'travaux')
+    for travail in TRAVAUX:
+        subprocess.call([os.path.join(travaux, travail, 'build.py')])
 
 
 def main():
     file = os.path.realpath(__file__)
     directory = os.path.dirname(file)
+    os.chdir(directory)
+    others()
     output_directory = os.path.join(directory, OUTPUT)
     shutil.rmtree(output_directory, ignore_errors=True)
     for doc in INPUT:
@@ -33,7 +38,6 @@ def main():
             os.path.join(output_directory, doc),
         ]
         sphinx.build_main(arguments)
-    others()
 
 
 if __name__ == "__main__":
