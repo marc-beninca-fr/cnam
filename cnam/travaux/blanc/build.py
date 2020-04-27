@@ -32,6 +32,7 @@ def build():
             document,
         ])
         run(command)
+        run(command)
         pdf = f'{document}.pdf'
         os.rename(os.path.join(TMP, pdf), pdf)
 
