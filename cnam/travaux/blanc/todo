@@ -1,3 +1,5 @@
+variable titre aux 3 endroits
+
 bibliographie formatage
 
 bibliographie dans le sommaire
@@ -15,3 +17,5 @@ arranger page de garde
 4° english keywords
 
 syntaxe xelatex ?
+
+apostrophe française inversée dans listings
