@@ -1,3 +1,5 @@
+% TODO répertoire metafiles
+% TODO bibliographie
 % TODO décaler la numérotation des pages
 \documentclass[12pt]{extarticle}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -11,7 +13,14 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \usepackage{tocloft}
 \usepackage{wallpaper}
 \usepackage[acronym]{glossaries}
+\usepackage{hyperref}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\hypersetup{colorlinks,
+citecolor=blue,
+filecolor=blue,
+linkcolor=blue,
+urlcolor=blue
+}
 \setcounter{secnumdepth}{2}
 \setmainfont{DejaVu Sans}
 \setlength{\parindent}{0em}
@@ -171,6 +180,7 @@ GnuPG, OpenPGP}
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\cnam
 \newcommand{\hr}[0]{\rule{\textwidth}{1pt}}
 
 \title
