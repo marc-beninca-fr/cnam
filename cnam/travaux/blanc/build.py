@@ -1,47 +1,48 @@
 #! /usr/bin/python3 -B
 
 import os
+import shutil
 import subprocess
 
 DOCUMENTS = [
     'document',
     'présentation',
 ]
-PURGE = [
-    '.aux', '.log', '.toc',
-    '.acn', '.acr', '.alg',
-    '.glg', '.glo', '.gls',
-    '.glsdefs', '.ist',
-]
+TMP = 'tmp'
 
 
-def run(*args):
+def run(args):
     subprocess.call(args)
 
 
-def build(directory):
-    os.chdir(directory)
+def build():
     for document in DOCUMENTS:
-        run('xelatex', f'{document}.tex')
-        run('makeglossaries', f'{document}')
-        run('xelatex', f'{document}.tex')
+        command = ['xelatex',
+            '-output-directory', TMP,
+            document,
+        ]
+        run(command)
+        run(['makeglossaries',
+            '-d', TMP,
+            document,
+        ])
+        run(command)
+        pdf = f'{document}.pdf'
+        os.rename(os.path.join(TMP, pdf), pdf)
 
 
-def clean(directory):
-    os.chdir(directory)
-    _, _, files = next(os.walk(directory))
-    for file in files:
-        name, ext = os.path.splitext(file)
-        if ext in PURGE:
-            os.remove(file)
+def clean():
+    shutil.rmtree(TMP, ignore_errors=True)
 
 
 def main():
     file = os.path.realpath(__file__)
     directory = os.path.dirname(file)
-    clean(directory)
-    build(directory)
-    clean(directory)
+    os.chdir(directory)
+    clean()
+    os.makedirs(TMP)
+    build()
+    clean()
 
 
 if __name__ == '__main__':
