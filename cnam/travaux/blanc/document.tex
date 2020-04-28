@@ -1,6 +1,7 @@
 \documentclass[12pt]{extarticle}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \usepackage{polyglossia}
+\usepackage{csquotes}
 \setmainlanguage{french}
 \usepackage{extsizes}
 \usepackage{fontspec}
@@ -12,6 +13,7 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \usepackage[acronym,toc]{glossaries}
 \usepackage{listings}
 \usepackage[sorting=none,backend=biber]{biblatex}
+\usepackage{multirow}
 \usepackage{hyperref}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \bibliography{document}
@@ -77,12 +79,13 @@ Soutenu le .. Mai 2020
 
 JURY
 
-PRÉSIDENT :
-
-MEMBRES :\\
-…\\
-…\\
-…
+\begin{tabular}{rllll}
+PRÉSIDENT : & Civilité & Prénom & NOM & \textit{Fonction} \\
+\multirow{3}{*}{MEMBRES :} \\
+& Civilité & Prénom & NOM & \textit{Fonction} \\
+& Civilité & Prénom & NOM & \textit{Fonction} \\
+& Civilité & Prénom & NOM & \textit{Fonction}
+\end{tabular}
 
 \end{large}
 \end{center}
