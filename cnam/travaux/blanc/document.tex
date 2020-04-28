@@ -38,45 +38,53 @@ documents et présentations
 \def\goal{
 Mémoire présenté en vue d’obtenir\\
 UE « Information et communication pour ingénieur »\\
-Spécialité : Informatique
+Spécialité : INFORMATIQUE
 }
 \makeglossaries
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \cnam
 
-\newcommand{\hrh}[0]{\rule{\textwidth}{1pt}}
+\newcommand{\hrq}[0]{\rule{\textwidth/4}{1pt}}
 
 \begin{titlepage}
 \begin{center}
-\vfill
+\begin{large}
 
-Conservatoire National des Arts et Métiers
+\textbf{C}ONSERVATOIRE \textbf{N}ATIONAL\\
+DES \textbf{A}RTS ET \textbf{M}ÉTIERS
 
-Centre régional associé de\\
-Nouvelle-Aquitaine
+CENTRE RÉGIONAL ASSOCIÉ DE\\
+NOUVELLE-AQUITAINE
 
-\hrh
+\hrq
 
 \goal
 
+\vfill
 par
+\vfill
 
 Marc BENINCA
 
-\hrh
+\hrq
 
-\fulltitle
+\begin{huge}\fulltitle\end{huge}
 
-Soutenu le \_\_ Mai 2020
+Soutenu le .. Mai 2020
 
-\hrh
+\hrq
 
-Jury
+JURY
 
-TODO
+PRÉSIDENT :
 
-\vfill
+MEMBRES :\\
+…\\
+…\\
+…
+
+\end{large}
 \end{center}
 \end{titlepage}
 
@@ -108,7 +116,7 @@ description={What You See Is What You Mean}}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \cnam
 
-\section*{\fulltitle}
+\begin{large}\fulltitle\end{large}
 
 \renewcommand{\contentsname}{Plan}
 \cftsetindents{section}{1em}{1.5em}
@@ -282,7 +290,7 @@ keywords={author,howpublished,misc,note,title,url}}
 \cnam
 \newcommand{\hr}[0]{\rule{\textwidth}{1pt}}
 
-\section*{\fulltitle}
+\begin{large}\fulltitle\end{large}
 
 \goal
 
