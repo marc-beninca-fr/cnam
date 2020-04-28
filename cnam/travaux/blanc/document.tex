@@ -9,7 +9,7 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \usepackage{metalogo}
 \usepackage{tocloft}
 \usepackage{wallpaper}
-\usepackage[acronym]{glossaries}
+\usepackage[acronym,toc]{glossaries}
 \usepackage{listings}
 \usepackage[sorting=none,backend=biber]{biblatex}
 \usepackage{hyperref}
@@ -40,26 +40,29 @@ meilleurs documents}\\
  \\
 concepts et outils}
 \author{Marc BENINCA}
-\date{30 / 04 / 2020}
+\date{02 / 05 / 2020}
 \maketitle
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\newacronym{si}{SI}{Système d’Information}
+%\section*{Remerciements}
+%\addcontentsline{toc}{section}{Remerciements}
+%\pagebreak
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\printglossary[title=Abréviations,type=\acronymtype]
 
-\renewcommand{\acronymname}{Abréviations}
-\printglossary[type=\acronymtype]
+\newacronym{si}{SI}{Système d’Information}
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 %\printglossaries
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\printglossary[title=Définitions]
+
 \newglossaryentry{wysiwyg}{name=WYSIWYG,
 description={What You See Is What You Get}}
 \newglossaryentry{wysiwym}{name=WYSIWYM,
 description={What You See Is What You Mean}}
-
-\printglossary
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -183,9 +186,7 @@ GnuPG, OpenPGP}
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\section*{Bibliographie}
-
-\printbibliography[heading=none]
+\printbibliography[heading=bibintoc,title=Bibliographie]
 
 \pagebreak
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
