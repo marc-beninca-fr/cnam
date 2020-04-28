@@ -30,15 +30,17 @@ urlcolor=blue,
 %\pagenumbering{gobble}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \newcommand{\cnam}[0]{\ThisURCornerWallPaper{.2}{../cnam.png}}
+\def\fulltitle{\begin{center}\textbf{
+Méthodes et outils\\
+pour mieux produire\\
+documents et présentations
+}\end{center}}
 \makeglossaries
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \cnam
 
-\title{\textbf{Produire de\\
-meilleurs documents}\\
- \\
-concepts et outils}
+\title{\fulltitle}
 \author{Marc BENINCA}
 \date{02 / 05 / 2020}
 \maketitle
@@ -70,8 +72,7 @@ description={What You See Is What You Mean}}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \cnam
 
-\textbf{Produire de meilleurs documents}\\
-concepts et outils
+\fulltitle
 
 \renewcommand{\contentsname}{Sommaire}
 \cftsetindents{section}{1em}{1.5em}
@@ -245,7 +246,7 @@ keywords={author,howpublished,misc,note,title,url}}
 \cnam
 \newcommand{\hr}[0]{\rule{\textwidth}{1pt}}
 
-\title
+\fulltitle
 
 Mémoire présenté en vue d’obtenir\\
 UE « Information et communication pour ingénieur »\\
