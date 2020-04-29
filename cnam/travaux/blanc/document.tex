@@ -31,35 +31,32 @@ urlcolor=blue,
 \renewcommand{\baselinestretch}{1}
 %\pagenumbering{gobble}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\newcommand{\cnam}[0]{\ThisURCornerWallPaper{.2}{../cnam.png}}
+\newcommand{\cnam}[0]{\begin{center}
+\includegraphics[height=6em]{../cnam.png}\end{center}}
 \def\fulltitle{\begin{center}\textbf{
-Méthodes et outils\\
-pour mieux produire\\
-documents et présentations
+Méthodes et outils pour\\
+mieux produire documents et présentations
 }\end{center}}
 \def\goal{
 Oral probatoire présenté en vue d’obtenir\\
 UE « Information et communication pour ingénieur »\\
-Spécialité : Informatique,\\
-Réseaux, Systèmes et Multimédia
+Spécialité : Informatique, Réseaux, Systèmes et Multimédia
 }
 \makeglossaries
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\cnam
-
 \newcommand{\hrq}[0]{\rule{\textwidth/4}{1pt}}
 
 \begin{titlepage}
+\cnam
 \begin{center}
 
 \begin{large}
 
-CONSERVATOIRE NATIONAL\\
-DES ARTS ET MÉTIERS
+CONSERVATOIRE NATIONAL DES ARTS ET MÉTIERS
 
-CENTRE RÉGIONAL ASSOCIÉ\\
-DE NOUVELLE-AQUITAINE
+CENTRE RÉGIONAL ASSOCIÉ DE\\
+NOUVELLE-AQUITAINE
 
 \hrq
 
@@ -73,7 +70,7 @@ Marc BENINCA
 
 \hrq
 
-\begin{huge}\fulltitle\end{huge}
+\begin{Large}\fulltitle\end{Large}
 
 Soutenu le 12 Mai 2020
 
@@ -123,7 +120,7 @@ description={What You See Is What You Mean}}
 
 \begin{large}\fulltitle\end{large}
 
-\renewcommand{\contentsname}{Plan}
+\renewcommand{\contentsname}{}
 \cftsetindents{section}{1em}{1.5em}
 \cftsetindents{subsection}{2.5em}{2.5em}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
