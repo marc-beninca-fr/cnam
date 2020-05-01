@@ -50,6 +50,8 @@ def build():
         lines = errun(['gpg',
             '--verify', signature, pdf,
         ]).decode('u8').splitlines()
+        using = lines[1].index('using')
+        lines = [lines[0][:using] + lines[1][using:]] + lines[2:]
         buffer = os.linesep.join(lines).encode('u8')
         with open(f'{pdf}.vrf', 'bw') as f:
             f.write(buffer)
