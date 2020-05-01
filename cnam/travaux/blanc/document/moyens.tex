@@ -1,40 +1,74 @@
 \section{Moyens}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
-\subsection{Types de formats}
-Dans un \gls{si} :\\
-\gls{wysiwym} \cite{wysiwym}\\
-\gls{wysiwyg} \cite{wysiwyg}\\
-\gls{wysiwym} est préférable à \gls{wysiwyg}
-
-\subsubsection{Binaire}
-
-\subsubsection{Texte}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Rationalisation}
 
-\subsubsection{Gestion de versions}
+\subsubsection{Production}
 
-\subsubsection{Processus de fabrication}
+\gls{wysiwyg}\\
+LibreOffice, MicroSoft Office, WPS Office.\\
+OpenOffice, StarOffice.
 
-\subsubsection{Logique de sauvegardes}
+\gls{wysiwym}\\
+GraphViz, \LaTeX, Sphinx.
+
+\subsubsection{Conversion}
+
+ImageMagick, PanDoc.
+
+\subsubsection{Logique de sauvegarde}
+
+Enregistrer très souvent son travail, pour ne pas perdre d’information.
+
+\subsubsection{Gestion de configuration}
+
+Utilise un outil permettant à la fois de :
+\begin{itmz}
+\item{sauvegarder des modifications partielles de document en tant que telles}
+\item{travailler séparément sur différents contextes de modifications}
+\item{intégrer à un document des modifications de collaborateurs}
+\end{itmz}
+
+Git, Mercurial, SubVersioN.
 
 \subsubsection{Réplication de contenus}
 
+Répliquer régulièrement à plusieurs endroits, pour une disponibilité constante.
+
 \subsubsection{Signature numérique}
+
+Pouvoir vérifier l’authenticité du document, quand consulté par des personnes.
+
+GnuPG, OpenPGP.
+
+\subsubsection{Processus de fabrication}
+
+Définir un cheminement menant à la reproductibilité d’un document.
 
 \pagebreak
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Manipulation}
 
+De multiples étapes peuvent intervenir dans la reproduction d’un document :
+
 \subsubsection{Découpe de documents}
+
+Extraction de certaines pages d’un document source déjà existant.
 
 \subsubsection{Extraction d’images}
 
+Récupération d’une ou plusieurs images spécifiques d’un autre document.
+
 \subsubsection{Rotation d’éléments}
+
+Ajustement de l’orientation de pages ou images disponibles.
 
 \subsubsection{Compression d’images}
 
+Réduction du volume de données occupé par des images.
+
 \subsubsection{Résolution d’impression}
+
+Modification de la taille d’images par rapport au gabarit du document.
 
 \subsubsection{Assemblage de documents}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
@@ -44,6 +78,10 @@ Dans un \gls{si} :\\
 
 \subsubsection{Scripts d’assemblage}
 
+BASH, Python.
+
 \subsubsection{Scripts de synchronisation}
+
+OpenSSH + Rsync.
 
 \pagebreak
