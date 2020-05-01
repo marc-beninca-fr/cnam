@@ -1,4 +1,6 @@
-bibliographie formatage
+numéros de pages dans acronyms
+
+numéros de pages dans glossary
 
 4° français résumé
 4° français mots-clés
@@ -6,6 +8,10 @@ bibliographie formatage
 4° english summary
 4° english keywords
 
-syntaxe xelatex ?
+formatage de bibliographie
+
+écart : dans listings
 
 apostrophe française inversée dans listings
+
+syntaxe xelatex ?
