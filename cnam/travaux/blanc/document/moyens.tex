@@ -52,6 +52,28 @@ Pouvoir vérifier l’authenticité du document, quand consulté par des personn
 
 GnuPG, OpenPGP.
 
+Signer un document :
+\begin{lstlisting}[language=sh]
+gpg \
+# sous forme textuelle
+--armor \
+# signer dans un fichier séparé
+--detach-sign \
+# le document suivant
+'nom_du_document.pdf'
+\end{lstlisting}
+
+Vérifier une signature :
+\begin{lstlisting}[language=sh]
+gpg \
+# vérifier
+--verify \
+# la validité de cette signature
+'nom_du_document.pdf.asc' \
+# pour le document suivant
+'nom_du_document.pdf'
+\end{lstlisting}
+
 \subsubsection{Processus de fabrication}
 
 Définir un cheminement menant à la reproductibilité d’un document.
