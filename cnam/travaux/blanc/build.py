@@ -5,8 +5,8 @@ import shutil
 import subprocess
 
 DOCUMENTS = [
-    'document',
-    'présentation',
+    ('document', 'mémoire'),
+    ('presentation', 'présentation'),
 ]
 TMP = 'tmp'
 
@@ -21,24 +21,26 @@ def errun(command):
 
 
 def build():
-    for document in DOCUMENTS:
+    for en, fr in DOCUMENTS:
         command = ['xelatex',
             '-output-directory', TMP,
-            document,
+            en,
         ]
         run(command)
         run(['makeglossaries',
             '-d', TMP,
-            document,
+            en,
         ])
         run(['biber',
             '--input-directory', TMP,
             '--output-directory', TMP,
-            document,
+            en,
         ])
         run(command)
         run(command)
-        pdf = f'{document}.pdf'
+        os.rename(os.path.join(TMP, f'{en}.pdf'),
+            os.path.join(TMP, f'{fr}.pdf'))
+        pdf = f'{fr}.pdf'
         run(['gpg',
             '--armor',
             '--detach-sign',
