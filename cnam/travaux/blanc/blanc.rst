@@ -5,11 +5,15 @@ Document
 
 * :download:`Signature numérique <document.pdf.asc>`
 
-#----
+..
+ ----
 
-#Présentation
-#============
+..
+ Présentation
+ ============
 
-#* :download:`Fichier PDF <présentation.pdf>`
+..
+ * :download:`Fichier PDF <présentation.pdf>`
 
-#* :download:`Signature numérique <présentation.pdf.asc>`
+..
+ * :download:`Signature numérique <présentation.pdf.asc>`
