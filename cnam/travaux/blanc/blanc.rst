@@ -3,7 +3,17 @@ Document
 
 * :download:`Fichier PDF <document.pdf>`
 
+Signature numérique
+-------------------
+
 * :download:`Signature numérique <document.pdf.asc>`
+
+.. literalinclude:: document.pdf.asc
+
+Vérification de signature
+-------------------------
+
+.. literalinclude:: document.pdf.vrf
 
 ..
  ----
