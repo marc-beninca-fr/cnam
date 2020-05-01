@@ -1,5 +1,5 @@
-Probatoire blanc
-================
+Mémoire probatoire blanc
+========================
 
 .. toctree::
    :numbered: 2
