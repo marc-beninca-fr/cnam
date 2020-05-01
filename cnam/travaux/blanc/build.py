@@ -47,9 +47,10 @@ def build():
         signature = f'{pdf}.asc'
         for f in [pdf, signature]:
             os.rename(os.path.join(TMP, f), f)
-        buffer = errun(['gpg',
+        lines = errun(['gpg',
             '--verify', signature, pdf,
-        ])
+        ]).decode('u8').splitlines()
+        buffer = os.linesep.join(lines).encode('u8')
         with open(f'{pdf}.vrf', 'bw') as f:
             f.write(buffer)
 
