@@ -16,14 +16,19 @@ urlcolor=blue,
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1em}
 \renewcommand{\baselinestretch}{1.1}
-\newenvironment{itmz}{\begin{itemize}
-\setlength{\itemsep}{0em}
-\setlength{\parskip}{0em}
+\newenvironment{enum}{\begin{enumerate}
+\setlength{\itemsep}{0.1em}
 \setlength{\parsep}{0em}
+\setlength{\parskip}{0em}
+}{\end{enumerate}}
+\newenvironment{itmz}{\begin{itemize}
+\setlength{\itemsep}{0.1em}
+\setlength{\parsep}{0em}
+\setlength{\parskip}{0em}
 }{\end{itemize}}
 %\pagenumbering{gobble}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\newcommand{\cnam}[0]{\begin{center}
+\newcommand{\cnam}{\begin{center}
 \includegraphics[height=6em]{../cnam.png}\end{center}}
 \def\fulltitle{\begin{center}\textbf{
 Méthodes et outils pour\\
@@ -33,7 +38,7 @@ mieux produire documents et présentations
 UE « Information et communication pour ingénieur »\\
 Spécialité :\\
 Informatique, Réseaux, Systèmes et Multimédia}
-\newcommand{\hr}[0]{\rule{\textwidth}{1pt}}
+\newcommand{\hr}{\rule{\textwidth}{1pt}}
 \makeglossaries
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
