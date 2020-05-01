@@ -11,8 +11,13 @@ DOCUMENTS = [
 TMP = 'tmp'
 
 
-def run(args):
-    subprocess.call(args)
+def run(command):
+    subprocess.call(command)
+
+
+def errun(command):
+    return subprocess.check_output(
+        command, stderr=subprocess.STDOUT)
 
 
 def build():
@@ -42,6 +47,11 @@ def build():
         signature = f'{pdf}.asc'
         for f in [pdf, signature]:
             os.rename(os.path.join(TMP, f), f)
+        buffer = errun(['gpg',
+            '--verify', signature, pdf,
+        ])
+        with open(f'{pdf}.vrf', 'bw') as f:
+            f.write(buffer)
 
 
 def clean():
