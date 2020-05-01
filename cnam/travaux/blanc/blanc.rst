@@ -1,32 +1,38 @@
-Document
-========
+Fichiers PDF des documents
+==========================
 
-* :download:`Fichier PDF <document.pdf>`
+* :download:`Mémoire <mémoire.pdf>`
 
-Signature numérique
--------------------
+..
+ * :download:`Présentation <présentation.pdf>`
 
-* :download:`Fichier ASC <document.pdf.asc>`
-
-.. literalinclude:: document.pdf.asc
-
-Vérification de signature
--------------------------
-
-.. literalinclude:: document.pdf.vrf
+.. todo:: Présentation en cours…
 
 ----
 
-Présentation
-============
+Authenticité des documents
+==========================
 
-.. todo:: En cours…
+* :download:`Mémoire <mémoire.pdf.vrf>`
 
-..
- * :download:`Fichier PDF <présentation.pdf>`
+.. literalinclude:: mémoire.pdf.vrf
 
-..
- * :download:`Signature numérique <présentation.pdf.asc>`
+* :download:`Présentation <présentation.pdf.vrf>`
+
+.. literalinclude:: présentation.pdf.vrf
+
+----
+
+Signatures numériques
+=====================
+
+* :download:`Mémoire <mémoire.pdf.asc>`
+
+.. literalinclude:: mémoire.pdf.asc
+
+* :download:`Présentation <présentation.pdf.asc>`
+
+.. literalinclude:: présentation.pdf.asc
 
 ----
 
