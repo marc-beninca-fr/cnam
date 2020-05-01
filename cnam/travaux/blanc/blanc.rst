@@ -6,7 +6,7 @@ Document
 Signature numérique
 -------------------
 
-* :download:`Signature numérique <document.pdf.asc>`
+* :download:`Fichier ASC <document.pdf.asc>`
 
 .. literalinclude:: document.pdf.asc
 
