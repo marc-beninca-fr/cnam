@@ -34,11 +34,13 @@ def build():
         run(command)
         run(command)
         pdf = f'{document}.pdf'
-        os.rename(os.path.join(TMP, pdf), pdf)
         run(['gpg',
             '--armor',
             '--clear-sign', pdf,
         ])
+        signature = f'{pdf}.asc'
+        for f in [pdf, signature]:
+            os.rename(os.path.join(TMP, f), f)
 
 
 def clean():
