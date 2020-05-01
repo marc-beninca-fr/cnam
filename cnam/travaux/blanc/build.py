@@ -36,7 +36,8 @@ def build():
         pdf = f'{document}.pdf'
         run(['gpg',
             '--armor',
-            '--detach-sign', pdf,
+            '--detach-sign',
+            os.path.join(TMP, pdf),
         ])
         signature = f'{pdf}.asc'
         for f in [pdf, signature]:
