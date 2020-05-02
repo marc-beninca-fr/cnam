@@ -81,52 +81,59 @@ De multiples étapes peuvent intervenir dans la production d’un document :
 
 \subsubsection{Conversion de documents}
 
-ImageMagick \cite{imagemagick}, PanDoc \cite{pandoc}.
+Transformation de documents existants dans un format plus propice
+à l’outil d’assemblage retenu pour le processus de fabrication.
+
+Exemples : PanDoc \cite{pandoc}, ImageMagick \cite{imagemagick}.
 
 \subsubsection{Découpe de documents}
 
-Extraction de certaines pages d’un document source déjà existant.
+Extraction de certaines pages de documents finaux déjà compilés.
 
-\gls{pdftk} \cite{pdftk}.
+La référence : \gls{pdftk} \cite{pdftk}.
 
 \subsubsection{Extraction d’éléments}
 
 Récupération d’une ou plusieurs images spécifiques d’un autre document.
 
-Poppler \cite{poppler}, GhostScript \cite{gs}.
+Exemples : Poppler \cite{poppler}, GhostScript \cite{gs}.
 
 \subsubsection{Rotation d’éléments}
 
 Ajustement de l’orientation de pages ou images disponibles.
 
-\gls{pdftk} \cite{pdftk}, ImageMagick \cite{imagemagick}.
+Exemples : \gls{pdftk} \cite{pdftk}, ImageMagick \cite{imagemagick}.
 
 \subsubsection{Compression d’images}
 
 Réduction du volume de données occupé par des images.
 
-ImageMagick \cite{imagemagick}.
+La référence : ImageMagick \cite{imagemagick}.
 
 \subsubsection{Résolution d’impression}
 
 Modification de la taille d’images par rapport au gabarit du document.
 
-ImageMagick \cite{imagemagick}.
+La référence : ImageMagick \cite{imagemagick}.
 
 \subsubsection{Compilation}
 
-Production de rendu du document final, à partir d’un fichier \gls{wysiwym},\\
+Production de rendu du document principal, à partir d’un fichier \gls{wysiwym},\\
 à l’aide d’un moteur de rendu approprié au format \gls{wysiwym} retenu.
 
 Exemples : \LaTeX \cite{latex}, Sphinx \cite{sphinx}.
 
 \subsubsection{Assemblage de documents}
 
-\gls{pdftk} \cite{pdftk}.
+Quand il est nécessaire pour obtenir un document final de mettre bout à bout\\
+des extraits préparés, le document principal compilé et certaines annexes.
+
+La référence : \gls{pdftk} \cite{pdftk}.
 
 \subsubsection{Signature numérique}
 
-Pouvoir vérifier l’authenticité du document, quand consulté par des personnes.
+Afin de pouvoir vérifier l’authenticité du document,\\
+quand il est consulté par des personnes souhaitant s’en assurer.
 
 Le standard : \gls{gpg} \cite{gpg},\\
 une implémentation libre du standard ouvert \gls{pgp} \cite{pgp}.
@@ -149,8 +156,8 @@ gpg
 
 \subsubsection{Réplication de contenus}
 
-Répliquer régulièrement à plusieurs endroits, pour une disponibilité constante.
+Répliquer vers plusieurs serveurs, pour une disponibilité à toute épreuve.
 
-\gls{ssh} \cite{ssh} + Rsync \cite{rsync}.
+Exemple : Rsync \cite{rsync} via une connexion sécurisée \gls{ssh} \cite{ssh}.
 
 \pagebreak
