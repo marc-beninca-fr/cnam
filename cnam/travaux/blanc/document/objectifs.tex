@@ -99,22 +99,35 @@ Quelques critères importants pour le choix d’un \gls{si} :
 
 \subsubsection{Formats de fichiers}
 
-Tout \gls{si} 
+Tout \gls{si} permet de lire et écrire à partir de différents formats de fichiers.
 
-Le format du document :
+Réflexions afin de retenir un format de fichier pour un document :
 \begin{itmz}
-\item{peut-il être modifié par plusieurs logiciels ou bien un seul ?}
+\item{dispose-t-il d’une documentation publique détaillant sa structure,\\
+permettant d’être lu et écrit par tout logiciel respectant ce standard ?}
 \item{est-il documenté pour une plus grande pérennité ?
     \begin{itmz}
-    \item{fermé}
-    \item{obfusqué}
-    \item{ouvert}
+    \item{\textbf{fermé} : non documenté\\
+    seul le logiciel de l’édtieur en permet une manipulation correcte}
+    \item{\textbf{obfusqué} : partiellement documenté\\
+    afin de faire dysfonctionner les logiciels tiers au fil des versions,\\
+    pour inciter à utiliser le logiciel éditeur, tout en feignant l’ouverture}
+    \item{\textbf{ouvert} : complètement documenté\\
+    permettant à de nombreux logiciels de s’interfacer avec}
     \end{itmz}
 }
-\item{de quel type est-il ?
+\item{de quel type de format s’agit-il ?
     \begin{itmz}
-    \item{binaire}
-    \item{textuel}
+    \item{\textbf{binaire} :\\
+    plus performant à l’utilisation par une machine,\\
+    mais nécessite des logiciels compatibles pour pouvoir les manipuler
+    }
+    \item{\textbf{textuel} :\\
+    humainement lisible et modifiable avec n’importe quel éditeur de texte,\\
+    plus facile à utiliser pour détecter et appliquer des modifications,\\
+    mais prend un peu plus de temps à être interprété par une machine\\
+    (écart minime, avec la puissance de calcul disponible de nos jours)
+    }
     \end{itmz}
 }
 \end{itmz}
