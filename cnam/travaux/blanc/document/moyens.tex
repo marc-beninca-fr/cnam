@@ -27,6 +27,7 @@ Utiliser un outil permettant à la fois de :
 \item{sauvegarder des modifications partielles de document en tant que telles}
 \item{bénéficier d’un contrôle d’intégrité automatique de ces sauvegardes}
 \item{travailler séparément sur différents contextes de modifications}
+\item{pouvoir revenir à un état antérieur cohérent à tout moment}
 \item{intégrer des modifications provenant de divers collaborateurs}
 \item{répliquer ces sauvegardes sur plusieurs serveurs pour plus de disponibilité}
 \end{itmz}
@@ -44,7 +45,7 @@ La plupart du temps :
 \item{extractions d’éléments depuis des documents sources}
 \item{préparations ou conversions d’éléments à intégrer}
 \item{compilation du document avec intégration de ressources}
-\item{assemblage final avec d’autres documents si besoin}
+\item{assemblage final avec d’autres documents si nécessaire}
 \item{signature du document, si besoin d’authentification}
 \item{déploiement du document final vers des hébergements}
 \end{itmz}
@@ -77,7 +78,8 @@ Les plus courants : \gls{bash} \cite{bash}, Python \cite{py}.
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Opérations automatisables}
 
-De multiples étapes peuvent intervenir dans la production d’un document :
+De multiples étapes peuvent intervenir dans la production d’un document,\\
+et ainsi être intégrées au sein d’un fichier d’automatisation :
 
 \subsubsection{Conversion de documents}
 
@@ -160,4 +162,5 @@ Répliquer vers plusieurs serveurs, pour une disponibilité à toute épreuve.
 
 Exemple : Rsync \cite{rsync} via une connexion sécurisée \gls{ssh} \cite{ssh}.
 
-\pagebreak
+\hr
+%\pagebreak

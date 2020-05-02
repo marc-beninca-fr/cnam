@@ -54,8 +54,8 @@ Quelques questions à se poser au sujet d’un \gls{se} :
 \begin{itmz}
 \item{dispose-t-il de systèmes de fichiers modernes à base de transactions,\\
 permettant de minimiser grandement le risque de corruption de données ?}
-\item{permet-il aux utilisateurs de plannifier les mises à jour du système,\\
-en respectant leurs desiderata pour éviter toute indisponibilité de travail ?}
+\item{permet-il aux utilisateurs de planifier les mises à jour du système,\\
+en respectant leurs desideratas pour éviter toute indisponibilité de travail ?}
 \item{quel est son coût réel ?
     \begin{itmz}
     \item{impose-t-il de la publicité et/ou d’autres distractions gênantes ?}
@@ -161,7 +161,7 @@ Deux options peuvent être utilisées :
 \begin{itmz}
 \item{stocker sur des systèmes de fichiers à transaction et somme de contrôle}
 \item{utiliser des outils de gestion de configuration,\\
-calculant eux-mêmés des sommes de contrôle au fil des sauvegardes}
+calculant eux-mêmes des sommes de contrôle au fil des sauvegardes}
 \end{itmz}
 
 \subsubsection{Authenticité}
@@ -178,14 +178,11 @@ Deux mécanismes sont à mettre en œuvre, pour permettre :
 
 Deux philosophies de fabrication de documents s’opposent :
 
-L’approche reproductible consiste à être capable de reconstruire un document
-à partir de ses éléments constituants.
-
 \begin{itmz}
 \item{\textbf{\gls{wysiwyg}} : la plus courante\\
 permettant de modifier un document visuellement depuis son rendu final
     \begin{itmz}
-    \item{suite bureautique : LibreOffice, MicroSoft Office, WPS Office}
+    \item{bureautique : LibreOffice \cite{lo}, MicroSoft Office \cite{mso}, WPS Office \cite{wps}}
     \end{itmz}
 }
 \item{\textbf{\gls{wysiwym}} : la plus pérenne\\

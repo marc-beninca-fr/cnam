@@ -50,10 +50,10 @@ def build(sign):
             lines = errun(['gpg',
                 '--verify', signature, pdf,
             ]).decode('u8').splitlines()
-            using = lines[1].index('using')
             id = lines[2].index('"')
             lines = [
-                lines[0][:using] + lines[1][using:],
+                lines[0],
+                lines[1],
                 lines[2][:id] + lines[4][id:]
                 .replace('@', ' @ ')
                 .replace('.', ' ⋅ ')
