@@ -7,8 +7,8 @@ Choix d’outils pour l’implémentation de trois grandes phases :
 
 \begin{itmz}
 \item{mettre en place des opérations clés incontournables}
-\item{automatiser l’exécution de ces tâches cohérentes}
-\item{étendre le spectre de manipulations automatisables}
+\item{automatiser l’exécution de ces tâches maîtresses}
+\item{étendre le spectre des sous-opérations automatisables}
 \end{itmz}
 
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
@@ -17,10 +17,13 @@ Choix d’outils pour l’implémentation de trois grandes phases :
 
 \subsection{Rationalisation}
 
+Au moins deux piliers sont indispensables :
+
 \subsubsection{Gestion de configuration distribuée}
 
 Utiliser un outil permettant à la fois de :
 \begin{itmz}
+\item{garder une trace de toutes les tâches prévues et réalisées}
 \item{sauvegarder des modifications partielles de document en tant que telles}
 \item{bénéficier d’un contrôle d’intégrité automatique de ces sauvegardes}
 \item{travailler séparément sur différents contextes de modifications}
@@ -29,10 +32,6 @@ Utiliser un outil permettant à la fois de :
 \end{itmz}
 Les plus connus étant :
 Git \cite{git}, Mercurial \cite{hg}, Fossil \cite{fossil}, Bazaar \cite{bazaar}.
-
-\subsubsection{Production}
-
-…
 
 \subsubsection{Processus de fabrication}
 
@@ -45,6 +44,7 @@ La plupart du temps :
 \item{compilation du document avec intégration de ressources}
 \item{assemblage final avec d’autres documents si besoin}
 \item{signature du document, si besoin d’authentification}
+\item{déploiement du document final vers des hébergements}
 \end{itmz}
 
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
@@ -53,17 +53,22 @@ La plupart du temps :
 
 \subsection{Automatisation}
 
+Il s’agit ici d’implémenter et orchestrer le processus de fabrication défini.
+
+Deux approches sont possibles :
+
 \subsubsection{Fichiers de fabrication}
 
-Make
+Fichiers textuels très simples, se contentant de lister les différentes étapes,
+ainsi que toutes les commandes associées à chacune des étapes recensées.
+
+Exemple : Make \cite{make}.
 
 \subsubsection{Scripts d’assemblage}
 
-BASH, Python.
 
-\subsubsection{Scripts de synchronisation}
 
-OpenSSH + Rsync.
+Le plus courants : \gls{bash} \cite{bash}, Python \cite{py}.
 
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \hr
@@ -107,6 +112,10 @@ Modification de la taille d’images par rapport au gabarit du document.
 
 ImageMagick.
 
+\subsubsection{Compilation}
+
+…
+
 \subsubsection{Assemblage de documents}
 
 \gls{pdftk}.
@@ -137,6 +146,6 @@ gpg
 
 Répliquer régulièrement à plusieurs endroits, pour une disponibilité constante.
 
-Rsync.
+OpenSSH + Rsync.
 
 \pagebreak
