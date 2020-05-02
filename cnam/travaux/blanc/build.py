@@ -23,15 +23,9 @@ def errun(command):
 
 def build(sign):
     for en, fr in DOCUMENTS:
-        command = ['xelatex',
-            '-output-directory', TMP,
-            en,
-        ]
+        command = ['xelatex', '-output-directory', TMP, en]
         run(command)
-        run(['makeglossaries',
-            '-d', TMP,
-            en,
-        ])
+        run(['makeglossaries', '-d', TMP, en])
         run(['biber',
             '--input-directory', TMP,
             '--output-directory', TMP,
