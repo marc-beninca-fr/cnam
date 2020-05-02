@@ -46,28 +46,6 @@ Git, Mercurial, SubVersioN.
 
 Répliquer régulièrement à plusieurs endroits, pour une disponibilité constante.
 
-\subsubsection{Signature numérique}
-
-Pouvoir vérifier l’authenticité du document, quand consulté par des personnes.
-
-GnuPG, OpenPGP.
-
-Signer un document :
-\begin{lstlisting}[language=sh]
-gpg
---armor               # sous forme textuelle
---detach-sign         # signer dans un fichier séparé
-'nom_du_document.pdf' # ce document
-\end{lstlisting}
-
-Vérifier une signature :
-\begin{lstlisting}[language=sh]
-gpg
---verify                  # vérifier la validité
-'nom_du_document.pdf.asc' # de cette signature
-'nom_du_document.pdf'     # pour ce document
-\end{lstlisting}
-
 \subsubsection{Processus de fabrication}
 
 Définir un cheminement menant à la reproductibilité d’un document.
@@ -140,5 +118,27 @@ ImageMagick.
 \subsubsection{Assemblage de documents}
 
 PDFTK.
+
+\subsubsection{Signature numérique}
+
+Pouvoir vérifier l’authenticité du document, quand consulté par des personnes.
+
+GnuPG, OpenPGP.
+
+Signer un document :
+\begin{lstlisting}[language=sh]
+gpg
+--armor               # sous forme textuelle
+--detach-sign         # signer dans un fichier séparé
+'nom_du_document.pdf' # ce document
+\end{lstlisting}
+
+Vérifier une signature :
+\begin{lstlisting}[language=sh]
+gpg
+--verify                  # vérifier la validité
+'nom_du_document.pdf.asc' # de cette signature
+'nom_du_document.pdf'     # pour ce document
+\end{lstlisting}
 
 \pagebreak
