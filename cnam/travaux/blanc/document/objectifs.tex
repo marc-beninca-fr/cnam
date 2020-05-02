@@ -138,20 +138,41 @@ permettant d’être lu et écrit par tout logiciel respectant ce standard ?}
 
 \subsection{Fiabilité des contenus}
 
-Quatre axes rendent les contenus produits plus fiables :
+Quatre grands axes rendent les contenus produits plus fiables :
 
 \subsubsection{Disponibilité}
 
 Il s’agit de l’assurance de pouvoir accéder à son document à tout moment.
 
+Cela peut passer par deux voies :
+\begin{itmz}
+\item{choisir de l’hébergement garantissant une forte disponibilité}
+\item{multiplier les hébergements pour être résilient à toute panne}
+\end{itmz}
+
+\pagebreak
+
 \subsubsection{Intégrité}
 
 La garantie qu’un document n’a pas été altéré
-entre sa production et sa consultation.
+entre sa dernière modification et sa prochaine consultation.
+
+Deux options peuvent être utilisées :
+\begin{itmz}
+\item{stocker sur des systèmes de fichiers à transaction et somme de contrôle}
+\item{utiliser des outils de gestion de configuration,\\
+calculant eux-mêmés des sommes de contrôle au fil des sauvegardes}
+\end{itmz}
 
 \subsubsection{Authenticité}
 
 La preuve qu’un document a bien été produit par son auteur déclaré.
+
+Deux mécanismes sont à mettre en œuvre, pour permettre :
+\begin{itmz}
+\item{à l’auteur de signer numériquement les documents qu’il produit}
+\item{aux utilisateurs de vérifier eux-mêmes la validité de cette signature}
+\end{itmz}
 
 \subsubsection{Reproductibilité}
 
