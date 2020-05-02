@@ -39,18 +39,18 @@ def build(sign):
         ])
         run(command)
         run(command)
+        pdf = f'{fr}.pdf'
         os.rename(os.path.join(TMP, f'{en}.pdf'),
-            os.path.join(TMP, f'{fr}.pdf'))
+            os.path.join(TMP, pdf))
+        os.rename(os.path.join(TMP, pdf), pdf)
         if sign:
-            pdf = f'{fr}.pdf'
             run(['gpg',
                 '--armor',
                 '--detach-sign',
                 os.path.join(TMP, pdf),
             ])
             signature = f'{pdf}.asc'
-            for f in [pdf, signature]:
-                os.rename(os.path.join(TMP, f), f)
+            os.rename(os.path.join(TMP, signature), signature)
             lines = errun(['gpg',
                 '--verify', signature, pdf,
             ]).decode('u8').splitlines()
