@@ -6,7 +6,7 @@ Fichiers PDF des documents
 ..
  * :download:`Présentation <présentation.pdf>`
 
-.. todo:: Présentation en cours…
+.. todo:: Présentation à venir…
 
 ----
 
