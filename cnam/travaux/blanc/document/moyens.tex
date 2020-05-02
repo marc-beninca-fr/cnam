@@ -1,6 +1,7 @@
 \section{Moyens}
 
-
+L’accent sera ici mis sur l’utilisation de logiciels libres
+et de l’approche \gls{wysiwym} pour améliorer la fiabilité de la production.
 
 Choix d’outils pour l’implémentation de trois grandes phases :
 
@@ -16,22 +17,21 @@ Choix d’outils pour l’implémentation de trois grandes phases :
 
 \subsection{Rationalisation}
 
-\subsubsection{Production}
+\subsubsection{Gestion de configuration distribuée}
 
-\subsubsection{Gestion de configuration}
-
-Utilise un outil permettant à la fois de :
+Utiliser un outil permettant à la fois de :
 \begin{itmz}
 \item{sauvegarder des modifications partielles de document en tant que telles}
+\item{bénéficier d’un contrôle d’intégrité automatique de ces sauvegardes}
 \item{travailler séparément sur différents contextes de modifications}
-\item{intégrer à un document des modifications de collaborateurs}
+\item{intégrer des modifications provenant de divers collaborateurs}
+\item{répliquer ces sauvegardes sur plusieurs serveurs pour plus de disponibilité}
 \end{itmz}
+Les plus connus étant : Git, Mercurial, Fossil, Bazaar.
 
-Git, Mercurial, SubVersioN.
+\subsubsection{Production}
 
-\subsubsection{Réplication de contenus}
-
-Répliquer régulièrement à plusieurs endroits, pour une disponibilité constante.
+…
 
 \subsubsection{Processus de fabrication}
 
@@ -131,5 +131,11 @@ gpg
 'nom_du_document.pdf.asc' # de cette signature
 'nom_du_document.pdf'     # pour ce document
 \end{lstlisting}
+
+\subsubsection{Réplication de contenus}
+
+Répliquer régulièrement à plusieurs endroits, pour une disponibilité constante.
+
+Rsync.
 
 \pagebreak
