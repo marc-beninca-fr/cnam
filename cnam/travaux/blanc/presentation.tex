@@ -1,33 +1,50 @@
 \documentclass[20pt]{extarticle}
+\newcommand{\import}[1]{\input{presentation/#1}}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \usepackage{extsizes}
 \usepackage{fontspec}
 \usepackage[a4paper,landscape,
-bmargin=16mm,lmargin=20mm,rmargin=20mm,tmargin=25mm]{geometry}
+bmargin=15mm,lmargin=10mm,rmargin=10mm,tmargin=5mm]{geometry}
 \usepackage{metalogo}
 \usepackage{tocloft}
 \usepackage{wallpaper}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \setcounter{secnumdepth}{1}
 \setmainfont{DejaVu Sans}
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
 %\pagenumbering{gobble}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\newcommand{\cnam}[0]{\ThisURCornerWallPaper{.25}{../cnam.png}}
+\newcommand{\cnam}{\begin{center}
+\includegraphics[height=6em]{../cnam.png}\end{center}}
+\def\fulltitle{\begin{center}\textbf{
+Concepts et outils pour\\
+mieux produire des documents
+}\end{center}}
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\begin{titlepage}
 \cnam
+\begin{center}
+{\bfseries
+\begin{large}
 
-\title{\textbf{Produire de\\
-meilleurs documents}\\
- \\
-concepts et outils\\
- }
-\author{Marc BENINCA}
-\date{?? / 05 / 2020}
-\maketitle
+{\LARGE C}ONSERVATOIRE {\LARGE N}ATIONAL DES {\LARGE A}RTS ET {\LARGE M}ÉTIERS
 
-\pagebreak
+{\normalsize CENTRE RÉGIONAL ASSOCIÉ DE NOUVELLE-AQUITAINE}
+
+\vfill
+
+{\Large \fulltitle}
+
+Marc BENINCA
+
+12 Mai 2020
+
+\end{large}
+}
+\end{center}
+\end{titlepage}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \cnam
 
