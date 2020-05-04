@@ -15,11 +15,9 @@ Authenticité des documents
 
 .. literalinclude:: mémoire.pdf.vrf
 
-..
- * :download:`Présentation <présentation.pdf.vrf>`
+* :download:`Présentation <présentation.pdf.vrf>`
 
-..
- .. literalinclude:: présentation.pdf.vrf
+.. literalinclude:: présentation.pdf.vrf
 
 ----
 
@@ -30,11 +28,9 @@ Signatures numériques
 
 .. literalinclude:: mémoire.pdf.asc
 
-..
- * :download:`Présentation <présentation.pdf.asc>`
+* :download:`Présentation <présentation.pdf.asc>`
 
-..
- .. literalinclude:: présentation.pdf.asc
+.. literalinclude:: présentation.pdf.asc
 
 ----
 
