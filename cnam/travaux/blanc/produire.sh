@@ -1,6 +1,6 @@
 #! /bin/bash
 
-NOM='présentation'
+FICHIER='présentation'
 TEMPORAIRE='tmp'
 
 #
@@ -8,14 +8,14 @@ rm --force --recursive "${TEMPORAIRE}"
 #
 mkdir "${TEMPORAIRE}"
 #
-xelatex -output-directory "${TEMPORAIRE}" "${NOM}.tex"
+xelatex -output-directory "${TEMPORAIRE}" "${FICHIER}.tex"
 #
-xelatex -output-directory "${TEMPORAIRE}" "${NOM}.tex"
+xelatex -output-directory "${TEMPORAIRE}" "${FICHIER}.tex"
 #
-gpg --armor --detach-sign "${TEMPORAIRE}/${NOM}.pdf"
+gpg --armor --detach-sign "${TEMPORAIRE}/${FICHIER}.pdf"
 #
-mv "${TEMPORAIRE}/${NOM}.pdf" "${TEMPORAIRE}/${NOM}.pdf.asc" '.'
+mv "${TEMPORAIRE}/${FICHIER}.pdf" "${TEMPORAIRE}/${FICHIER}.pdf.asc" '.'
 #
 rm --force --recursive "${TEMPORAIRE}"
 #
-gpg --verify "${NOM}.pdf.asc" "${NOM}.pdf" 2> "${NOM}.pdf.vrf"
+gpg --verify "${FICHIER}.pdf.asc" "${FICHIER}.pdf" 2> "${FICHIER}.pdf.vrf"
