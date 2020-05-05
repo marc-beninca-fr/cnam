@@ -1,21 +1,21 @@
 #! /bin/bash
 
 FICHIER='présentation'
-TEMPORAIRE='tmp'
+DOSSIER='production'
 
 #
-rm --force --recursive "${TEMPORAIRE}"
+rm --force --recursive "${DOSSIER}"
 #
-mkdir "${TEMPORAIRE}"
+mkdir "${DOSSIER}"
 #
-xelatex -output-directory "${TEMPORAIRE}" "${FICHIER}.tex"
+xelatex -output-directory "${DOSSIER}" "${FICHIER}.tex"
 #
-xelatex -output-directory "${TEMPORAIRE}" "${FICHIER}.tex"
+xelatex -output-directory "${DOSSIER}" "${FICHIER}.tex"
 #
-gpg --armor --detach-sign "${TEMPORAIRE}/${FICHIER}.pdf"
+gpg --armor --detach-sign "${DOSSIER}/${FICHIER}.pdf"
 #
-mv "${TEMPORAIRE}/${FICHIER}.pdf" "${TEMPORAIRE}/${FICHIER}.pdf.asc" '.'
+mv "${DOSSIER}/${FICHIER}.pdf" "${DOSSIER}/${FICHIER}.pdf.asc" '.'
 #
-rm --force --recursive "${TEMPORAIRE}"
+rm --force --recursive "${DOSSIER}"
 #
 gpg --verify "${FICHIER}.pdf.asc" "${FICHIER}.pdf" 2> "${FICHIER}.pdf.vrf"
