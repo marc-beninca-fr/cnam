@@ -18,4 +18,4 @@ mv "${TEMPORAIRE}/${NOM}.pdf" "${TEMPORAIRE}/${NOM}.pdf.asc" '.'
 #
 rm --force --recursive "${TEMPORAIRE}"
 #
-gpg --verify "${NOM}.pdf.asc"
+gpg --verify "${NOM}.pdf.asc" "${NOM}.pdf"
