@@ -1,16 +1,10 @@
 Fichiers PDF des documents
 ==========================
-
 * :download:`Mémoire <mémoire.pdf>`
-
-..
- * :download:`Présentation <présentation.pdf>`
-
-----
+* :download:`Présentation <présentation.pdf>`
 
 Authenticité des documents
 ==========================
-
 * :download:`Mémoire <mémoire.pdf.vrf>`
 
 .. literalinclude:: mémoire.pdf.vrf
@@ -19,11 +13,8 @@ Authenticité des documents
 
 .. literalinclude:: présentation.pdf.vrf
 
-----
-
 Signatures numériques
 =====================
-
 * :download:`Mémoire <mémoire.pdf.asc>`
 
 .. literalinclude:: mémoire.pdf.asc
@@ -32,11 +23,8 @@ Signatures numériques
 
 .. literalinclude:: présentation.pdf.asc
 
-----
-
 Clé publique personnelle
 ========================
-
 * :download:`Fichier ASC <https://keys.openpgp.org/vks/v1/by-fingerprint/08EDA7006234A0EB29A3A8471DBD5EC4BADA5579>`
 
 .. literalinclude:: ../gpg.asc
