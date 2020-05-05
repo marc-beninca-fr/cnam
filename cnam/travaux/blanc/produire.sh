@@ -3,16 +3,19 @@
 NOM='presentation'
 TEMPORAIRE='tmp'
 
-function produire {
-xelatex -output-directory "${TEMPORAIRE}" "${NOM}.tex" }
-
-function purger {
-rm --force --recursive "${TEMPORAIRE}" }
-
-purger
-produire
-produire
+#
+rm --force --recursive "${TEMPORAIRE}"
+#
+mkdir "${TEMPORAIRE}"
+#
+xelatex -output-directory "${TEMPORAIRE}" "${NOM}.tex"
+#
+xelatex -output-directory "${TEMPORAIRE}" "${NOM}.tex"
+#
 mv "${TEMPORAIRE}/${NOM}.pdf" '.'
-purger
+#
+rm --force --recursive "${TEMPORAIRE}"
+#
 gpg --armor --detach-sign "${NOM}.pdf"
+#
 gpg --verify "${NOM}.pdf.asc"
