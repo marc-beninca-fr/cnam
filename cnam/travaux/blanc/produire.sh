@@ -1,6 +1,6 @@
 #! /bin/bash
 
-NOM='presentation'
+NOM='présentation'
 TEMPORAIRE='tmp'
 
 #
