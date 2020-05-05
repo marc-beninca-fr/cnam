@@ -1,18 +1,19 @@
+% apparence visuelle et numérotation
 \usetheme{Berkeley}\usecolortheme{seahorse}
-
+\addtobeamertemplate{navigation symbols}{}{\hspace{1em}
+\normalsize\insertframenumber}
+% polices de caractères
 \usepackage{fontspec}
 \setmainfont{DejaVu Sans}\setmonofont{DejaVu Sans Mono}
-
-\usepackage{multicol}
-
-\usepackage{listings}
-
+% gestion des colonnes et listings
+\usepackage{multicol}\usepackage{listings}
+% coloration des liens
 \hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
-
+% définition des titre et sous-titre
 \def\hititle{Mieux produire des documents}
 \def\lotitle{concepts et outils}
 \def\bititle{\hititle, \lotitle}
-
+% éléments de la page de titre
 \logo{\includegraphics[height=7.6em]{../cnam.png}}
 \title[\hititle]{\hititle}
 \subtitle{\lotitle}
