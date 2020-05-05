@@ -14,8 +14,8 @@ xelatex -output-directory "${DOSSIER}" "${FICHIER}.tex"
 #
 gpg --armor --detach-sign "${DOSSIER}/${FICHIER}.pdf"
 #
-mv "${DOSSIER}/${FICHIER}.pdf" "${DOSSIER}/${FICHIER}.pdf.asc" '.'
+mv "${DOSSIER}/${FICHIER}".{pdf,pdf.asc} '.'
 #
 rm --force --recursive "${DOSSIER}"
 #
-gpg --verify "${FICHIER}.pdf.asc" "${FICHIER}.pdf" 2> "${FICHIER}.pdf.vrf"
+gpg --verify "${FICHIER}.pdf.asc" 2> "${FICHIER}.pdf.vrf"

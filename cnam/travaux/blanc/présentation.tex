@@ -2,6 +2,7 @@
 \newcommand{\import}[1]{\input{présentation/#1}}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \usepackage{multicol}
+\usepackage{listings}
 \usetheme{Berkeley}
 \usecolortheme{seahorse}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -136,13 +137,24 @@
 \end{frame}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Présentation}
+\definecolor{bg}{rgb}{0.92,0.92,0.92}
+\definecolor{cm}{rgb}{0.1,0.6,0.1}
+\definecolor{kw}{rgb}{0.8,0.1,0.1}
+\definecolor{str}{rgb}{0.1,0.1,0.8}
+\lstset{
+basicstyle=\ttfamily\scriptsize,
+numbers=left,
+numbersep=0.25em,
+backgroundcolor=\color{bg},
+commentstyle=\color{cm},
+keywordstyle=\color{kw},
+stringstyle=\color{str},
+}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{truc}
 \begin{frame}
 \frametitle{\fulltitle\\Moyens / Opérations}
-\begin{itemize}
-\item<1-> ?
-\end{itemize}
+\lstinputlisting[language=bash]{produire.sh}
 \end{frame}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{machin}
