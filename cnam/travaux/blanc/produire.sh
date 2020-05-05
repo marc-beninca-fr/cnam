@@ -12,10 +12,10 @@ xelatex -output-directory "${TEMPORAIRE}" "${NOM}.tex"
 #
 xelatex -output-directory "${TEMPORAIRE}" "${NOM}.tex"
 #
-mv "${TEMPORAIRE}/${NOM}.pdf" '.'
+gpg --armor --detach-sign "${TEMPORAIRE}/${NOM}.pdf"
+#
+mv "${TEMPORAIRE}/${NOM}.pdf" "${TEMPORAIRE}/${NOM}.pdf.asc" '.'
 #
 rm --force --recursive "${TEMPORAIRE}"
-#
-gpg --armor --detach-sign "${NOM}.pdf"
 #
 gpg --verify "${NOM}.pdf.asc"
