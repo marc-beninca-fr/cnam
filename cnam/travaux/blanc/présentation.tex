@@ -1,23 +1,23 @@
 \documentclass{beamer}
 \newcommand{\import}[1]{\input{présentation/#1}}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \usepackage{multicol}
 \usepackage{listings}
 \usetheme{Berkeley}
 \usecolortheme{seahorse}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \def\hititle{Mieux produire des documents}
 \def\lotitle{concepts et outils}
 \def\fulltitle{\hititle, \lotitle}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \AtBeginSection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
 \tableofcontents[currentsection]\end{multicols}\end{frame}}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \AtBeginSubsection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
 \tableofcontents[currentsection,currentsubsection]\end{multicols}\end{frame}}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \begin{document}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \title[\hititle]{\hititle}
 \subtitle{\lotitle}
 \author[M. Beninca]{Marc Beninca}
@@ -25,14 +25,14 @@
 \date[Blanc 2020]{Oral probatoire blanc, 12 Mai 2020}
 \logo{\includegraphics[height=7.6em]{../cnam.png}}
 \maketitle
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \begin{frame}{\hititle\\\lotitle}
 \begin{multicols}{2}\tableofcontents\end{multicols}\end{frame}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \addtocontents{toc}{{\LARGE Mémoire}}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Objectifs}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Indépendance numérique}
 \begin{frame}{\fulltitle\\Objectifs / Indépendance numérique}
 \begin{itemize}
@@ -58,7 +58,7 @@
     \end{itemize}
 \end{itemize}
 \end{frame}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Fiabilité des contenus}
 \begin{frame}{\fulltitle\\Objectifs / Fiabilité des contenus}
 \begin{itemize}
@@ -84,9 +84,9 @@
     \end{itemize}
 \end{itemize}
 \end{frame}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Moyens}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Rationalisation}
 \begin{frame}{\fulltitle\\Moyens / Rationalisation}
 \begin{itemize}
@@ -94,7 +94,7 @@
 \item<2-> Processus de fabrication
 \end{itemize}
 \end{frame}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Automatisation}
 \begin{frame}{\fulltitle\\Moyens / Automatisation}
 \begin{itemize}
@@ -102,7 +102,7 @@
 \item<2-> Scripts d’assemblage
 \end{itemize}
 \end{frame}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Opérations}
 \begin{frame}{\fulltitle\\Moyens / Opérations}
 \begin{itemize}
@@ -118,45 +118,24 @@
 \item<10-> Réplication de contenus
 \end{itemize}
 \end{frame}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \addtocontents{toc}{\newpage{\LARGE Présentation}}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\section{Choix}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
-\subsection{Opérations}
-\begin{frame}{\fulltitle\\Moyens / Opérations}
-\begin{itemize}
-\item<1-> ?
-\end{itemize}
-\end{frame}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\section{Présentation}
-\definecolor{bg}{rgb}{0.92,0.92,0.92}
-\definecolor{cm}{rgb}{0.1,0.6,0.1}
-\definecolor{kw}{rgb}{0.8,0.1,0.1}
-\definecolor{str}{rgb}{0.1,0.1,0.8}
-\lstset{
-basicstyle=\ttfamily\scriptsize,
-numbers=left,
-numbersep=0.25em,
-backgroundcolor=\color{bg},
-commentstyle=\color{cm},
-keywordstyle=\color{kw},
-stringstyle=\color{str},
-}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
-\subsection{truc}
-\begin{frame}{\fulltitle\\Moyens / Opérations}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Fichiers}\import{listings}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Production}
+\begin{frame}{\fulltitle\\Fichiers / ProduOpérations}
 \lstinputlisting[language=bash]{produire.sh}
 \end{frame}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
-\subsection{machin}
-\begin{frame}{\fulltitle\\Moyens / Opérations}
-\begin{itemize}
-\item<1-> ?
-\end{itemize}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Document}
+\begin{frame}{\fulltitle\\Fichiers / Document}
+\lstinputlisting[language=TeX]{présentation.tex}
 \end{frame}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\section{Questions}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\end{document}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Listings}
+\begin{frame}{\fulltitle\\Fichiers / Listings}
+\lstinputlisting[language=TeX]{présentation/listings.tex}
+\end{frame}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Questions}\end{document}
