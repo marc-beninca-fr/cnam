@@ -7,7 +7,7 @@ import sys
 
 DOCUMENTS = [
     # ('document', 'mémoire'),
-    ('presentation', 'présentation'),
+    ('présentation', 'présentation'),
 ]
 TMP = 'tmp'
 
