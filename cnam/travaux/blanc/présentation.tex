@@ -1,30 +1,13 @@
 \documentclass{beamer}
 \newcommand{\import}[1]{\input{présentation/#1}}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\usepackage{fontspec}
-\usepackage{multicol}
-\usepackage{listings}
-\usetheme{Berkeley}
-\usecolortheme{seahorse}
-\setmainfont{DejaVu Sans}
-\setmonofont{DejaVu Sans Mono}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\def\hititle{Mieux produire des documents}
-\def\lotitle{concepts et outils}
-\def\bititle{\hititle, \lotitle}
+\import{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \AtBeginSection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
 \tableofcontents[currentsection]\end{multicols}\end{frame}}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \AtBeginSubsection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
 \tableofcontents[currentsection,currentsubsection]\end{multicols}\end{frame}}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\title[\hititle]{\hititle}
-\subtitle{\lotitle}
-\author[M. Beninca]{Marc Beninca}
-\institute[CNAM]{Conservatoire National des Arts et Métiers}
-\date[Blanc 2020]{Oral probatoire blanc, 12 Mai 2020}
-\logo{\includegraphics[height=7.6em]{../cnam.png}}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \begin{document}\maketitle
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -117,9 +100,14 @@
 \lstinputlisting[language=bash]{produire.sh}
 \end{frame}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Présentation}
+\begin{frame}{\bititle\\Fichiers / Présentation}
+\lstinputlisting[language=TeX]{présentation}
+\end{frame}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Document}
 \begin{frame}{\bititle\\Fichiers / Document}
-\lstinputlisting[language=TeX]{présentation}
+\lstinputlisting[language=TeX]{présentation/document}
 \end{frame}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Listings}
