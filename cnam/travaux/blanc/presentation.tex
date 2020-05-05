@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usepackage{multicol}
 \usetheme{Berkeley}
 \usecolortheme{seahorse}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -6,11 +7,11 @@
 \def\lotitle{concepts et outils}
 \def\fulltitle{\hititle, \lotitle}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\AtBeginSection[]{\begin{frame}\frametitle{\hititle\\\lotitle}
-\tableofcontents[currentsection]\end{frame}}
+\AtBeginSection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
+\tableofcontents[currentsection]\end{multicols}\end{frame}}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
-\AtBeginSubsection[]{\begin{frame}\frametitle{\hititle\\\lotitle}
-\tableofcontents[currentsection,currentsubsection]\end{frame}}
+\AtBeginSubsection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
+\tableofcontents[currentsection,currentsubsection]\end{multicols}\end{frame}}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \begin{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -19,11 +20,13 @@
 \author[M. Beninca]{Marc Beninca}
 \institute[CNAM]{Conservatoire National des Arts et Métiers}
 \date[Blanc 2020]{Oral probatoire blanc, 12 Mai 2020}
-\logo{\includegraphics[height=8em]{../cnam.png}}
+\logo{\includegraphics[height=7.6em]{../cnam.png}}
 \maketitle
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\begin{frame}\frametitle{\hititle\\\lotitle}
-\tableofcontents\end{frame}
+\begin{frame}{\hititle\\\lotitle}
+\begin{multicols}{2}\tableofcontents\end{multicols}\end{frame}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\addtocontents{toc}{{\LARGE Mémoire}\vfill}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Objectifs}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
@@ -115,6 +118,36 @@
 \item<8-> Assemblage de documents
 \item<9-> Signature numérique
 \item<10-> Réplication de contenus
+\end{itemize}
+\end{frame}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\addtocontents{toc}{\newpage{\LARGE Présentation}}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Choix}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Opérations}
+\begin{frame}
+\frametitle{\fulltitle\\Moyens / Opérations}
+\begin{itemize}
+\item<1-> ?
+\end{itemize}
+\end{frame}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\section{Présentation}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{truc}
+\begin{frame}
+\frametitle{\fulltitle\\Moyens / Opérations}
+\begin{itemize}
+\item<1-> ?
+\end{itemize}
+\end{frame}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{machin}
+\begin{frame}
+\frametitle{\fulltitle\\Moyens / Opérations}
+\begin{itemize}
+\item<1-> ?
 \end{itemize}
 \end{frame}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
