@@ -3,18 +3,7 @@
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \import{document}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\AtBeginSection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
-\tableofcontents[currentsection]\end{multicols}\end{frame}}
-%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
-\AtBeginSubsection[]{\begin{frame}{\hititle\\\lotitle}\begin{multicols}{2}
-\tableofcontents[currentsection,currentsubsection]\end{multicols}\end{frame}}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\begin{document}\maketitle
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\begin{frame}{\hititle\\\lotitle}
-\begin{multicols}{2}\tableofcontents\end{multicols}\end{frame}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\addtocontents{toc}{{\LARGE Mémoire}}
+\import{plan}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Objectifs}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
@@ -91,8 +80,6 @@
 \item<10-> Réplication de contenus
 \end{itemize}\end{frame}
 %–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-\addtocontents{toc}{\newpage{\LARGE Présentation}}
-%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \section{Fichiers}\import{listings}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Production}\begin{frame}
@@ -102,17 +89,22 @@
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Présentation}\begin{frame}
 {\bititle\\Présentation / Fichiers / Présentation}
-\lstinputlisting[language=TeX]{présentation}
+\lstinputlisting[language={[LaTeX]TeX]{présentation}
 \end{frame}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Document}\begin{frame}
 {\bititle\\Présentation / Fichiers / Document}
-\lstinputlisting[language=TeX]{présentation/document}
+\lstinputlisting[language={[LaTeX]TeX]{présentation/document}
+\end{frame}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\subsection{Plan}\begin{frame}
+{\bititle\\Présentation / Fichiers / Plan}
+\lstinputlisting[language={[LaTeX]TeX}]{présentation/plan}
 \end{frame}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Listings}\begin{frame}
 {\bititle\\Présentation / Fichiers / Listings}
-\lstinputlisting[language=TeX]{présentation/listings}
+\lstinputlisting[language={[LaTeX]TeX]{présentation/listings}
 \end{frame}
 %⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
 \subsection{Page web}\begin{frame}
