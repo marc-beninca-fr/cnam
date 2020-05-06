@@ -5,9 +5,8 @@
 \beamertemplatenavigationsymbolsempty
 \addtobeamertemplate{navigation symbols}{}{
 \color{black}\normalsize\textbf\insertframenumber}
-% polices de caractères
-\usepackage{fontspec}
-\setmainfont{DejaVu Sans}\setmonofont{DejaVu Sans Mono}
+\newcommand{\img}[2]{\includegraphics[#1]{images/#2}}
+\newcommand{\imgbig}[1]{\img{width=.86\textwidth}{#1}}
 % éléments de la page de titre
 \def\hi{Mieux produire des documents}
 \def\lo{concepts et outils}\def\bititle{\hi, \lo}
@@ -16,8 +15,8 @@
 \author[M. Beninca]{Marc Beninca}
 \institute[CNAM]{Conservatoire National des Arts et Métiers}
 \date[Blanc 2020]{Oral probatoire blanc\\Mardi 12 Mai 2020}
-% coloration des liens
+% liens, polices, logos, colonnes, listings
 \hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
-% gestion des colonnes, listings, logos
+\usepackage{fontspec}\usepackage{metalogo}
+\setmainfont{DejaVu Sans}\setmonofont{DejaVu Sans Mono}
 \usepackage{multicol}\usepackage{listings}
-\usepackage{metalogo}
