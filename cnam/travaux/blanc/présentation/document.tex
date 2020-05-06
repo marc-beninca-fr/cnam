@@ -1,6 +1,7 @@
 \documentclass[aspectratio=43]{beamer}\usetheme{Berkeley}
 \usecolortheme{seahorse}\usebackgroundtemplate
 {\includegraphics[width=\paperwidth]{paper.png}}
+\setbeamercovered{transparent}
 \beamertemplatenavigationsymbolsempty
 \addtobeamertemplate{navigation symbols}{}{
 \color{black}\normalsize\textbf\insertframenumber}
@@ -12,11 +13,10 @@
 % coloration des liens
 \hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
 % éléments de la page de titre
-\def\hititle{Mieux produire des documents}
-\def\lotitle{concepts et outils}
-\def\bititle{\hititle, \lotitle}
+\def\hi{Mieux produire des documents}
+\def\lo{concepts et outils}\def\bititle{\hi, \lo}
 \logo{\includegraphics[height=7.6em]{../cnam.png}}
-\title[\hititle]{\hititle}\subtitle{\lotitle}
+\title[\hi]{\hi}\subtitle{\lo}
 \author[M. Beninca]{Marc Beninca}
 \institute[CNAM]{Conservatoire National des Arts et Métiers}
 \date[Blanc 2020]{Oral probatoire blanc\\Mardi 12 Mai 2020}
