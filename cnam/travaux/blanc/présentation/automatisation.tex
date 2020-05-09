@@ -1,20 +1,23 @@
 \subsection{Automatisation}\begin{frame}
 {\bititle\\Mémoire / Moyens / Automatisation}
-\begin{multicols}{2}\begin{itemize}
+\begin{columns}\begin{column}{.5\textwidth}\begin{itemize}
+
 \item<1-> Fichiers de fabrication\begin{itemize}
-    \item<2-> simplicité
-    \end{itemize}
-\columnbreak
-\item<3-> Make
-\end{itemize}
-\end{multicols}\begin{multicols}{2}
-\begin{itemize}
-\item<4-> Scripts d’assemblage\begin{itemize}
-    \item<5-> possibilités
-    \end{itemize}
-\end{itemize}
-\columnbreak
-\begin{itemize}
-\item<6-> BASH
-\item<6-> Python
-\end{itemize}\end{multicols}\end{frame}
+    \item<2-> simplicité\end{itemize}\vspace{2em}
+\item<3-> Scripts d’assemblage\begin{itemize}
+    \item<4-> possibilités\end{itemize}\end{itemize}
+
+\end{column}\begin{column}{.5\textwidth}
+
+\only<1>{\imgico{7}{makefile}}
+\only<2>{\begin{itemize}\item<1-> Make\end{itemize}}
+\vspace{1em}\only<2>{\imgico{7}{gnu}}
+\only<3>{\imgico{7}{shebang}}
+\only<4->{\begin{itemize}
+\item<4-> BASH
+\item<5-> Python
+\end{itemize}}
+\only<4>{\imgico{7}{bash}}
+\only<5>{\imgico{7}{python}}
+
+\end{column}\end{columns}\end{frame}
