@@ -3,60 +3,79 @@
 \begin{columns}\begin{column}{.5\textwidth}
 \begin{itemize}
 \item<1-> Conversion de documents
-\item<2-> Découpe de documents
-\item<3-> Extraction d’éléments
-\item<4-> Rotation d’éléments
-\item<5-> Compression d’images
-\item<6-> Résolution d’impression
-\item<7-> Compilation
-\item<8-> Assemblage de documents
-\item<9-> Signature numérique
-\item<10-> Réplication de contenus
+\item<3-> Découpe de documents
+\item<4-> Extraction d’éléments
+\item<6-> Rotation d’éléments
+\item<8-> Compression d’images
+\item<9-> Résolution d’impression
+\item<10-> Compilation
+\item<12-> Assemblage de documents
+\item<13-> Signature numérique
+\item<14-> Réplication de contenus
 \end{itemize}\end{column}\begin{column}{.5\textwidth}
+\begin{itemize}
 
-\only<1>{\begin{itemize}
-\item PanDoc
-\item ImageMagick
-\end{itemize}}
+\only<1-2>{
+\item<1-> PanDoc
+\item<2-> ImageMagick
+}
+\only<3>{
+\item<3-> PDFTK
+}
+\only<4-5>{
+\item<4-> Poppler
+\item<5-> GhostScript
+}
+\only<6-7>{
+\item<6-> PDFTK
+\item<7-> ImageMagick
+}
+\only<8>{
+\item<8-> ImageMagick
+}
+\only<9>{
+\item<9-> ImageMagick
+}
+\only<10-11>{
+\item<10-> LaTeX
+\item<11-> Sphinx
+}
+\only<12>{
+\item<12-> PDFTK
+}
+\only<13>{
+\item<13-> GPG
+}
+\only<14-15>{
+\item<14-> Rsync
+\item<15-> SSH
+}
+\end{itemize}
+\vspace{1em}
 
-\only<2>{\begin{itemize}
-\item PDFTK
-\end{itemize}}
+\only<1>{\imgico{7}{pandoc}}
+\only<2>{\imgico{7}{imagemagick}}
 
-\only<3>{\begin{itemize}
-\item Poppler
-\item GhostScript
-\end{itemize}}
+\only<3>{\imgico{7}{pdftk}}
 
-\only<4>{\begin{itemize}
-\item PDFTK
-\item ImageMagick
-\end{itemize}}
+\only<4>{\imgico{5}{poppler}}
+\only<5>{\imgico{6.25}{ghostscript}}
 
-\only<5>{\begin{itemize}
-\item ImageMagick
-\end{itemize}}
+\only<6>{\imgico{7}{pdftk}}
+\only<7>{\imgico{7}{imagemagick}}
 
-\only<6>{\begin{itemize}
-\item ImageMagick
-\end{itemize}}
+\only<8>{\imgico{7}{imagemagick}}
 
-\only<7>{\begin{itemize}
-\item \TeX : \XeLaTeX, \LaTeX
-\item Sphinx
-\end{itemize}}
+\only<9>{\imgico{7}{imagemagick}}
 
-\only<8>{\begin{itemize}
-\item PDFTK
-\end{itemize}}
+\only<10>{\imgico{5}{latex}}
+\only<11>{\imgico{5}{sphinx}}
 
-\only<9>{\begin{itemize}
-\item GPG
-\end{itemize}}
+\only<12>{\imgico{7}{pdftk}}
 
-\only<10>{\begin{itemize}
-\item Rsync
-\item SSH
-\end{itemize}}
+\only<13>{\imgico{7}{gnupg}}
+
+\only<14>{\imgico{6}{rsync}}
+\only<15>{\imgico{6}{ssh}}
 
 \end{column}\end{columns}\end{frame}
