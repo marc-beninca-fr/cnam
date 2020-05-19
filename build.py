@@ -4,7 +4,7 @@ import os
 import shutil
 import subprocess
 
-import sphinx
+import sphinx.cmd.build
 
 TRAVAUX = ['blanc']
 INPUT = ["cnam"]
@@ -37,7 +37,7 @@ def main():
             os.path.join(directory, doc),
             os.path.join(output_directory, doc),
         ]
-        sphinx.build_main(arguments)
+        sphinx.cmd.build.build_main(arguments)
 
 
 if __name__ == "__main__":
