@@ -51,10 +51,9 @@ def build(sign):
                 '--verify', signature, pdf,
             ]).decode('u8').splitlines()
             id = lines[2].index('"')
-            using = lines[1].index('using')
             lines = [
-                lines[0][:using]+
-                lines[1][using:],
+                lines[0],
+                lines[1],
                 lines[2][:id] + lines[4][id:]
                 .replace('@', ' @ ')
                 .replace('.', ' ⋅ ')
