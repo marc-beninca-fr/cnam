@@ -1,7 +1,7 @@
 Sujet
 =====
 
-* :download:`SVM <sujet.pdf>`
+* :download:`SVM : Machine à Vecteurs de Support <sujet.pdf>`
 
 Livrables
 =========
