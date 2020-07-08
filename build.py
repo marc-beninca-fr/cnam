@@ -6,7 +6,7 @@ import subprocess
 
 import sphinx.cmd.build
 
-TRAVAUX = ['blanc']
+TRAVAUX = ['probatoire']
 INPUT = ["cnam"]
 OUTPUT = "out"
 

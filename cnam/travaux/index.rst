@@ -6,6 +6,7 @@ Travaux
 .. toctree::
    :maxdepth: 1
 
+   probatoire/index
    blanc/index
    image/index
    pitch/index
