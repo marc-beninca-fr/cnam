@@ -73,7 +73,7 @@ def main():
     os.chdir(directory)
     clean()
     os.makedirs(TMP)
-    build(len(sys.argv) > 1)
+    build(len(sys.argv) == 1)
     clean()
 
 
