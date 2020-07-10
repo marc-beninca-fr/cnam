@@ -39,4 +39,5 @@ Serveur OpenPGP
 Serveur personnel
 -----------------
 
+* :download:`meta.sr.ht <https://meta.sr.ht/~mspe.pgp>`
 * :download:`cnam.marc-beninca.fr <../gpg.asc>`
