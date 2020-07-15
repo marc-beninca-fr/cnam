@@ -1,12 +1,104 @@
 \documentclass[12pt]{extarticle}
 \newcommand{\import}[1]{\input{document/#1}}
-
+% imports ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \import{packages}
-
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \bibliography{document}
-
+\hypersetup{colorlinks,
+citecolor=blue,
+filecolor=blue,
+linkcolor=blue,
+urlcolor=blue,
+}
+\setcounter{secnumdepth}{3}
+\setmainfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+% commands –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\renewcommand{\baselinestretch}{1.1}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\newcommand{\cnam}{\begin{center}
+\includegraphics[height=6em]{../cnam.png}\end{center}}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\newcommand{\hr}{\rule{\textwidth}{1pt}}
+% definitions ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\def\fulltitle{\begin{center}\textbf{
+SVM\\
+Machine à Vecteurs de Support
+}\end{center}}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\def\goal{%
+Mémoire probatoire présenté en vue d’obtenir\\
+UE « Information et communication pour ingénieur »\\
+Spécialité :\\
+Informatique, Réseaux, Systèmes et Multimédia
+}
+% environments –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\newenvironment{enum}{\begin{enumerate}
+\setlength{\itemsep}{0.2em}
+\setlength{\parsep}{0em}
+\setlength{\parskip}{0em}
+}{\end{enumerate}}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\newenvironment{itmz}{\begin{itemize}
+\setlength{\itemsep}{0.2em}
+\setlength{\parsep}{0em}
+\setlength{\parskip}{0em}
+}{\end{itemize}}
+% processing –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\makeglossaries
+% begin ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \begin{document}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\import{glossaries}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\import{toc}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\import{introduction}
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\section{Principes}
+
+\cite{csd}
 
 …
 
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\section{Exemple d’application}
+
+\cite{svm}
+
+…
+
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\section{Avantages}
+
+…
+
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\section{Inconvénients}
+
+…
+
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\section{Limitations}
+
+…
+
+\pagebreak
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+\import{conclusion}
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\printbibliography[heading=bibintoc,title=Références]
+\pagebreak
+% appendicies ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\appendix
+%⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅
+%–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\import{back}
+% document –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \end{document}
