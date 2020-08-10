@@ -3,33 +3,44 @@
 \subsection{Avantages}
 
 \begin{itmz}
+\item{le modèle \gls{svm} est considéré comme plutôt stable, car\\
+de petits changements dans les données impactent peu les \glspl{hpp}}
+\item{ce même modèle peut être utilisé à la fois pour\\
+résoudre des problèmes de régression ou de classification}
 \item{très efficace avec une marge de séparation nette}
 \item{fonctionne avec un grand nombres d’espaces dimensionnels}
 \item{reste pertinent même avec plus de dimensions que d’éléments}
-\item{économise la mémoire avec des \gls{sv} dans la fonction de décision}
-
-\item{extension du concept de perceptron\\
-afin de maximiser la marge géométrique ???}
+\item{capacité de régularisation pour rester générique,\\
+afin d’éviter les risques de surentraînement}
+\item{économise la mémoire nécessaire aux fonctions de décision,\\
+en ne leur faisant traiter que des \glspl{sv}}
+\item{permet de gérer efficacement des données non linéaires,\\
+par l’intermédiaire de différentes fonctions noyau}
+\item{une variété de fonctions noyau existe pour les fonctions de décision}
+\item{il est possible de combiner plusieurs fonctions noyau,\\
+pour pouvoir travailler avec des \glspl{hpp} plus complexes}
 \end{itmz}
-
-…
 
 \subsection{Inconvénients}
 
 \begin{itmz}
+\item{le choix d’une fonction noyau appropriée n’est pas facile,\\
+et peut facilement mener à un trop grand nombre de \glspl{sv}}
+\item{la mémoire nécessaire augmente avec le nombre de \glspl{sv},\\
+car ces derniers doivent y être intégralement stockés}
 \item{le temps d’entraînement augmente avec le nombre d’éléments}
-\item{fonctionne mal quand des classes se recouvrent}
 \item{les calculs de probabilité de justesse sont très coûteux}
-
-\item{compréhension difficile}
-\item{hautement mathématique}
-\item{effet boîte noire}
+\item{les modèles sont difficilement interprétables par des humains,\\
+contrairement par exemple aux arbres de décisions}
+\item{effet boîte noire si compréhension insuffisante des outils mathématiques}
 \end{itmz}
-
-…
 
 \subsection{Limitations}
 
-…
+\begin{itmz}
+\item{fonctionne mal quand des classes se recouvrent}
+\item{une normalisation préalable des données est nécessaire,\\
+pour que les fonctions objectifs restent pertinentes}
+\end{itmz}
 
 \pagebreak
