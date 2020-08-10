@@ -1,11 +1,10 @@
 \section{Principes}
 
-L’approche \gls{svm} est une méthode supervisée de classification d’éléments
-utilisant :
+L’approche \gls{svm} est un ensemble de méthodes supervisées utilisant :
 \begin{enum}
-\item{un \gls{dataset} d’apprentissage pour entraîner l’algorithme,\\
+\item{un \gls{ds} d’apprentissage pour entraîner l’algorithme,\\
 et qui fait donc office de superviseur}
-\item{un \gls{dataset} de test pour vérifier sa pertinence}
+\item{un \gls{ds} de test pour vérifier sa pertinence}
 \end{enum}
 
 Cette approche se révèle appropriée dans de nombreux cas d’utilisation :
@@ -22,14 +21,29 @@ Cette approche se révèle appropriée dans de nombreux cas d’utilisation :
 \item{classification de documents en différentes catégories}
 \end{itmz}
 
-En fonction du type de problèmes à résoudre,
-deux types de résolution sont disponibles :
+En fonction du type de problèmes, deux types de résolution :
 \begin{itmz}
-\item{régression linéaire}
-\item{régression non linéaire}
-\item{classification linéaire}
-\item{classification non linéaire}
+\item{\textbf{régression}}
+\item{\textbf{classification}}
 \end{itmz}
+
+En fonction des \glspl{ds}, deux types d’approches mathématiques :
+\begin{itmz}
+\item{\textbf{linéaire}}
+\item{\textbf{non linéaire}}
+\end{itmz}
+
+Quatre paramètres permettent d’affiner le modèle :
+\begin{itmz}
+\item{\textbf{noyau} : linéaire, \gls{rbf}, polynominal ou \gls{sigmoid}}
+\item{\textbf{degré} : aide à trouver un \gls{hpp} séparateur en contexte polynominal,
+faisant rapidement augmenter le temps nécessaire à l’entraînement}
+\item{\textbf{gamma} : pour les \glspl{hpp} non linéaires}
+\item{\textbf{C} : pénalité augmentant la distance des données prises en compte,\\
+au risque d’engendrer un surentraînement si trop importante}
+\end{itmz}
+
+\pagebreak
 
 \subsection{Régression}
 
