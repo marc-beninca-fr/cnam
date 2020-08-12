@@ -1,53 +1,120 @@
 \section{Analyse critique}
 
+
 \subsection{Avantages}
 
+
 \begin{itmz}
+
 \item{le modèle \gls{svm} est considéré comme plutôt stable, car\\
 de petits changements dans les données impactent peu les \glspl{hpp}}
+
+\end{itmz}\begin{itmz}
+
 \item{ce même modèle peut être utilisé à la fois pour\\
 résoudre des problèmes de régression ou de classification}
+
+\end{itmz}\begin{itmz}
+
 \item{est une alternative aux réseaux de neurones,\\
 dans le cas de \glspl{ds} de taille réduite}
+
+\end{itmz}\begin{itmz}
+
 \item{très précis avec une marge de séparation nette}
+
+\end{itmz}\begin{itmz}
+
 \item{peut capturer des relations complexes dans des \glspl{ds}}
+
+\end{itmz}\begin{itmz}
+
 \item{fonctionne avec un grand nombres d’espaces dimensionnels}
+
+\end{itmz}\begin{itmz}
+
 \item{reste pertinent même avec plus de dimensions que d’éléments}
+
+\end{itmz}\begin{itmz}
+
 \item{capacité de régularisation pour rester générique,\\
 afin d’éviter les risques de surentraînement}
+
+\end{itmz}\begin{itmz}
+
 \item{économise la mémoire nécessaire aux fonctions de décision,\\
 en ne leur faisant traiter que des \glspl{sv}}
+
+\end{itmz}\begin{itmz}
+
 \item{permet de gérer efficacement des données non linéaires,\\
 par l’intermédiaire de différentes \glspl{kf}}
+
+\end{itmz}\begin{itmz}
+
 \item{une variété de \glspl{kf} existe pour les fonctions de décision}
+
+\end{itmz}\begin{itmz}
+
 \item{il est possible de combiner plusieurs \glspl{kf},\\
 pour pouvoir travailler avec des \glspl{hpp} plus complexes}
+
+\end{itmz}\begin{itmz}
+
 \item{pendant longtemps considéré inadapté aux très grands \glspl{ds},\\
 de nouveaux algorithmes ont été mis à contribution depuis \cite{large-scale}}
+
 \end{itmz}
+
 
 \subsection{Inconvénients}
 
+
 \begin{itmz}
+
 \item{le choix d’une \gls{kf} appropriée n’est pas facile,\\
 et peut facilement mener à un trop grand nombre de \glspl{sv}}
+
+\end{itmz}\begin{itmz}
+
 \item{la mémoire nécessaire augmente avec le nombre de \glspl{sv},\\
 car ces derniers doivent y être intégralement stockés}
+
+\end{itmz}\begin{itmz}
+
 \item{le temps d’entraînement augmente avec le nombre d’éléments}
+
+\end{itmz}\begin{itmz}
+
 \item{les calculs de probabilité de justesse sont très coûteux,\\
 nécessitant une validation croisée en plusieurs étapes}
+
+\end{itmz}\begin{itmz}
+
 \item{les modèles sont difficilement interprétables par des humains,\\
 contrairement par exemple aux arbres de décisions}
+
+\end{itmz}\begin{itmz}
+
 \item{effet boîte noire si compréhension insuffisante des outils mathématiques}
+
 \end{itmz}
+
 
 \subsection{Limitations}
 
+
 \begin{itmz}
+
 \item{fonctionne mal quand des classes se recouvrent, car\\
 plusieurs paramètres varient, contrairement à d’autres méthodes}
+
+\end{itmz}\begin{itmz}
+
 \item{une normalisation préalable des données est nécessaire,\\
 pour que les fonctions objectifs restent pertinentes}
+
 \end{itmz}
+
 
 \pagebreak
