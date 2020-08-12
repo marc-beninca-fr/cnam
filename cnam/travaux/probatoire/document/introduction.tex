@@ -57,15 +57,16 @@ Exemples d’algorithmes :
 
 \subsection{Méthodes supervisées}
 
-Ces dernières méthodes utilisent un ensemble d’éléments intégralement étiquetés,
+Ces méthodes utilisent 2 sous-ensembles d’éléments intégralement étiquetés,
 ayant une valeur de sortie pour plusieurs valeurs de variables en entrée.
-Ces données d’apprentissage permettent après entraînement de pouvoir
-prévoir des valeurs de sortie correctes à partir de nouvelles valeurs en entrée.
+Les données d’apprentissage permettent un entraînement préalable du modèle.
+Les données de test permettent ensuite d’en évaluer la pertinence.
 
-Ces prédictions sont de 2 types :
+Le modèle permet enfin, à partir de nouvelles valeurs en entrée,
+de fournir des valeurs de sortie prédictives de 2 types :
 \begin{itmz}
-\item{régression → la valeur sortante est un nombre}
-\item{classification → la valeur sortante est une catégorie}
+\item{régression → la valeur est un nombre}
+\item{classification → la valeur est une catégorie, parmi un ensemble défini}
 \end{itmz}
 
 Exemples d’algorithmes :
@@ -79,9 +80,7 @@ Exemples d’algorithmes :
 \end{itmz}
 
 Ce sont ces \gls{svm} qui feront l’objet d’étude du présent document.
-Après en avoir abordé les différents principes sous-jacents,
-une analyse critique sera proposée en se basant sur les avantages,
-inconvénients et limitations de ce type d’algorithmes
-dans le cadre d’un exemple d’application.
+En seront passés en revue les différents principes techniques sous-jacents,
+un exemple d’application, ainsi qu’un regard critique sur ce type d’algorithmes.
 
 \pagebreak
