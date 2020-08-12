@@ -47,21 +47,23 @@ au risque d’engendrer un surentraînement si trop importante}
 
 \subsection{Régression}
 
-…
+Un hyperparamètre \textbf{ε} permet de fait varier l’épaisseur de la marge,
+afin d’y inclure le plus de données possible.
 
 \subsubsection{Régression linéaire}
 
-\bifig{}{Régression linéaire \cite{homl-linear}}
-{16em}{regression_linear_left}{regression_linear_right}
+Régression la plus simple : une approximation affine est suffisante.
 
-…
+\bifig{}{Régression linéaire, variation d’ε \cite{homl-linear}}
+{15em}{regression_linear_left}{regression_linear_right}
 
 \subsubsection{Régression non linéaire}
 
-\bifig{}{Régression non linéaire \cite{homl-nonlinear}}
-{16em}{regression_nonlinear_left}{regression_nonlinear_right}
+Régression nécessitant l’utilisation d’une fonction noyau.
+Une grande valeur de C intègre des données plus éloignées.
 
-…
+\bifig{}{Régression polynominale de degré 2, variation de C \cite{homl-nonlinear}}
+{15em}{regression_nonlinear_left}{regression_nonlinear_right}
 
 \subsection{Classification}
 
