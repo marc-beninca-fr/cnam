@@ -23,8 +23,8 @@ Cette approche se révèle appropriée dans de nombreux cas d’utilisation :
 
 En fonction du type de problèmes, deux types de résolution :
 \begin{itmz}
-\item{\textbf{régression}}
-\item{\textbf{classification}}
+\item{\textbf{régression} → nombre}
+\item{\textbf{classification} → catégorie}
 \end{itmz}
 
 En fonction des \glspl{ds}, deux types d’approches mathématiques :
@@ -48,7 +48,8 @@ au risque d’engendrer un surentraînement si trop importante}
 \subsection{Régression}
 
 Un hyperparamètre \textbf{ε} permet de fait varier l’épaisseur de la marge,
-afin d’y inclure le plus de données possible.
+pour y inclure le plus de données possible.
+Les éléments exclus sont identifiés en rose.
 
 \subsubsection{Régression linéaire}
 
@@ -73,19 +74,42 @@ Il s’agit du type de résolution le plus fréquemment utilisé.
 
 \subsubsection{Classification linéaire}
 
-…
+Cette section se penche sur la classification de 2 espèces d’iris,
+en fonction des longueurs et largeurs de leurs pétales.
 
-\bifig{}{Vaste marge \cite{homl-large-scale}}
+La figure de gauche montre que dans l’absolu, un grand nombre de droites
+peut séparer correctement les 2 ensembles à classifier.
+La figure de droite montre cependant qu’en utilisant les éléments
+les plus proches, appelés dans ce cas \glspl{sv}, il est alors possible
+de définir une marge de séparation la plus large qui soit, afin de
+déterminer la droite médiane de séparation la plus efficace.
+
+Ce processus est couramment appelé Séparation à Vaste Marge.
+
+\bifig{}{Séparation à Vaste Marge \cite{homl-large-scale}}
 {9em}{margin_large_left}{margin_large_right}
 
-…
+Un changement d’échelle préalable aide à la séparation des données,
+et peut mener à une meilleure efficacité du modèle pour la classification.
+\cite{scaling}
 
-\bifig{}{ \cite{homl-large-scale}}
+La figure de droite montre l’inclusion d’un \gls{sv} supplémentaire.
+
+\bifig{}{Changements d’échelles de dimensions \cite{homl-large-scale}}
 {10em}{margin_scale_left}{margin_scale_right}
 
-…
+\pagebreak
 
-\bifig{}{ \cite{homl-hard-few}}
+Cette approche peut être perturbée par 2 problématiques distinctes.
+
+La figure de droite montre par exemple des \glspl{sv} tellement proches,
+que la pertinence du modèle s’en trouve forcément impactée, réduisant
+ainsi la fiabilité de la séparation.
+
+La figure de gauche montre quant à elle une anomalie (outlier),
+rendant de fait toute séparation linéaire impossible.
+
+\bifig{}{Sensibilité de vaste marge aux anomalies \cite{homl-hard-few}}
 {9em}{margin_hard_left}{margin_hard_right}
 
 …
@@ -94,6 +118,8 @@ Il s’agit du type de résolution le plus fréquemment utilisé.
 {9em}{margin_few_left}{margin_few_right}
 
 …
+
+\pagebreak
 
 \subsubsection{Classification non linéaire}
 
