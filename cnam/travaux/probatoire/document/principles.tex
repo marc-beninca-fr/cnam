@@ -136,14 +136,27 @@ et donc en précision.
 
 \subsubsection{Classification non linéaire}
 
-…
+Toutes les données ne sont pas forcément séparables de façon linéaire.
 
-\bifig{}{Séparabilité linéaire \cite{homl-nonlinear-linear}}
+Pour y adapter un modèle, il est donc nécessaire de passer par la création
+de nouvelles variables résultant de la transformation des données.
+
+Sur la ligne de la figure de gauche, des éléments verts sont entourés d’éléments bleus, inséparables linéairement tels quels.
+
+La figure de droite introduit alors une variable $X_{2}$, élévation
+au carré de la variable d’origine $X_{1}$, permettant ainsi
+une séparation linéaire des données.
+
+\bifig{}{Séparation linéaire par ajout de variable \cite{homl-nonlinear-linear}}
 {14.5em}{nonlinear_linear_left}{nonlinear_linear_right}
 
-…
+L’ajout de variables polynomiales autorise donc des séparations sous
+forme de courbes, et non plus seulement de droites.
 
-\fig{}{ \cite{homl-feat-poly}}
+La figure suivante montre un exemple de séparation curviligne régulière,
+correspondant à la répartition des 2 catégories présentes.
+
+\fig{}{Classification utilisant des variables polynomiales \cite{homl-feat-poly}}
 {14em}{features_polynomial}
 
 \pagebreak
