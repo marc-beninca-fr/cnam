@@ -112,14 +112,25 @@ La figure de gauche montre quant à elle une anomalie (outlier),
 rendant de fait toute séparation linéaire impossible.
 
 \bifig{}{Sensibilité de vaste marge aux anomalies \cite{homl-hard-few}}
-{9em}{margin_hard_left}{margin_hard_right}
+{9.5em}{margin_hard_left}{margin_hard_right}
 
-…
+Il faut donc utiliser un modèle plus flexible pour pouvoir éviter
+ce type de problèmes. Le but étant de trouver le meilleur compromis
+entre avoir la marge la plus large, et y retrouver le moins possible
+d’éléments intrus, appelés violations de marge.
 
-\bifig{}{ \cite{homl-hard-few}}
-{9em}{margin_few_left}{margin_few_right}
+Il est ainsi possible d’utiliser l’hyperparamètre \textbf{C} pour faire
+varier la distance de prise en compte des éléments proches de la marge.
 
-…
+Plus la valeur de \textbf{C} augmente, plus le nombre de violations de
+marge diminiue, mais plus le modèle se spécialise.
+
+Une attention particulière doit donc être portée à la réduction de marge,
+sans quoi le modèle perdrait en capacité de généralisation
+et donc en précision.
+
+\bifig{}{Plus ou moins de violations de marge, variation de C \cite{homl-hard-few}}
+{9.5em}{margin_few_left}{margin_few_right}
 
 \pagebreak
 
