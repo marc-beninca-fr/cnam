@@ -3,6 +3,14 @@
 \usetheme{Berkeley}
 \usecolortheme{seahorse}
 
+\setbeamercovered{transparent}
+\beamertemplatenavigationsymbolsempty
+\addtobeamertemplate{navigation symbols}{}{
+\color{black}\normalsize\textbf\insertframenumber}
+\newcommand{\img}[2]{\includegraphics[#1]{images/#2}}
+\newcommand{\imgbig}[1]{\img{width=.86\textwidth}{#1}}
+\newcommand{\imgico}[2]{\img{height=#1em}{#2}}
+
 \def\hi{SVM}
 \def\lo{Machine à Vecteurs de Support}
 \def\bititle{\hi, \lo}
@@ -12,3 +20,8 @@
 \author[M. Beninca]{Marc Beninca}
 \institute[CNAM]{Conservatoire National des Arts et Métiers}
 \date[Probatoire 2020]{Oral probatoire\\Mercredi 16 Septembre 2020}
+
+\hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}\setmonofont{DejaVu Sans Mono}
+\usepackage{multicol}
