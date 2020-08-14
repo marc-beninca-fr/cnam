@@ -174,8 +174,11 @@ Un outil mathématique appelé \gls{kt} permet de contourner ce problème.
 Se basant sur le théorème de Mercer, il permet de remplacer dans un espace
 de grande dimension, un produit scalaire par une \gls{kf} facile à calculer.
 
-Ce \gls{kt} simplifie donc les calculs, et permet d’affiner le modèle
-en jouant plus efficacement sur les hyperparamètres de ce dernier.
+Ce \gls{kt} simplifie donc les calculs ultérieurs d’affinage.
+La technique \gls{gs}, limitant les hyperparamètres à des sous-ensembles
+de valeurs prédéfinies respectant un certain pas, permet ensuite un bon
+compromis de temps de calcul pour trouver les valeurs de réglages
+les plus appropriées.
 
 \bifig{}{\Gls{kf} polynomiale \cite{homl-poly}}
 {14em}{kernel_polynomial_left}{kernel_polynomial_right}
@@ -210,7 +213,6 @@ La figure suivante \textbf{γ} \textbf{C}.
 
 …
 
-Grid search ?
 Autres noyaux
 String kernels documents texte, séquences d’ADN
 
