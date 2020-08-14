@@ -182,12 +182,23 @@ en jouant plus efficacement sur les hyperparamètres de ce dernier.
 
 \textbf{Similarité}
 
-…
+Une autre façon de gérer des données non linéairement séparables
+est d’utiliser une fonction de similarité, comme la \gls{rbf} gaussienne.
 
-\bifig{}{ \cite{homl-feat-simi}}
+Le principe est de transformer les éléments en fonction de leur similitude
+avec des points de repères déterminés dans l’ensemble d’origine.
+Utiliser chacun des éléments comme point de repère augmente la probabilité
+de séparabilité linéaire, mais également le nombre de variables et donc
+le temps de calcul.
+
+La figure de gauche montre les 2 points de repère choisis en rose,
+ainsi que leur courbe gaussienne associée.
+
+La figure de droite montre tous les points transformés avec la \gls{rbf}
+gaussienne, devenant également linéairement séparables.
+
+\bifig{}{Variables de similarité utilisant la \gls{rbf} gaussienne \cite{homl-feat-simi}}
 {14em}{features_similar_left}{features_similar_right}
-
-\pagebreak
 
 \textbf{Noyau gaussien \gls{rbf}}
 
