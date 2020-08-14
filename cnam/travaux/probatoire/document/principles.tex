@@ -163,7 +163,19 @@ correspondant à la répartition des 2 catégories présentes.
 
 \textbf{Noyau polynomial}
 
-…
+Combiner des polynomes de degrés faibles est simple, pratique et
+relativement rapide à calculer.
+
+Mais plus les \glspl{ds} seront complexes, plus il faudra composer avec
+des polynomes de plus haut degré, générant un grand nombre de variables,
+et rendant ainsi le modèle trop lent.
+
+Un outil mathématique appelé \gls{kt} permet de contourner ce problème.
+Se basant sur le théorème de Mercer, il permet de remplacer dans un espace
+de grande dimension, un produit scalaire par une \gls{kf} facile à calculer.
+
+Ce \gls{kt} simplifie donc les calculs, et permet d’affiner le modèle
+en jouant plus efficacement sur les hyperparamètres de ce dernier.
 
 \bifig{}{\Gls{kf} polynomiale \cite{homl-poly}}
 {14em}{kernel_polynomial_left}{kernel_polynomial_right}
