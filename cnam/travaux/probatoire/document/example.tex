@@ -1,68 +1,62 @@
-\section{Exemple}
+\section{Exemples}
 
-L’exemple suivant, en 2 parties (linéaire et non linéaire),
-illustre bien le propos.
+Les 2 cas suivants,
+linéaire \cite{ex-linear} et non linéaire \cite{ex-nonlinear},
+illustrent bien le propos.
 
-\textbf{Linéaire} \cite{ex-linear}
+\subsection{Linéaire}
 
 Une classification est voulue pour pouvoir déterminer si un étudiant
 sera bon ou non en \gls{ml}, à partir des 2 notes qu’il a obtenu
 aux examens de Mathématiques et de Statistiques.
 
 \fig{}{\Gls{ds} très bien distribué}
-{24em}{ex-linear-plot}
+{16em}{ex-linear-plot}
 
-…
+Avec un tel \gls{ds}, l’identification des \glspl{sv} est aisée,
+et une marge la plus large possible est facilement applicable.
 
 \fig{}{Séparation à Vaste Marge très nette}
-{24em}{ex-linear-svm}
-
-…
-
-\fig{}{Anomalies dans le \gls{ds}, violations de marge}
-{24em}{ex-linear-out}
-
-…
-
-\fig{}{Différentes séparations à marge souple, variation de C}
-{28em}{ex-linear-soft}
-
-…
+{16em}{ex-linear-svm}
 
 \pagebreak
 
-\textbf{Non linéaire} \cite{ex-nonlinear}
+\fig{}{Anomalies dans le \gls{ds}, violations de marge}
+{16em}{ex-linear-out}
 
-…
+Pour un \gls{ds} avec aberrations, faire varier une marge souple permet
+de trouver un compromis entre généralisation et spécialisation.
+
+\fig{}{Différentes séparations à marge souple, variation de C}
+{32em}{ex-linear-soft}
+
+\pagebreak
+
+\subsection{Non linéaire}
 
 \fig{}{\Gls{ds} inséparable de façon linéaire}
-{24em}{ex-nonlinear-plot}
+{16em}{ex-nonlinear-plot}
 
-…
+Création d’un nouvel espace dimensionnel avec des transformations
+non linéaires des variables d’origine.
 
-{\LARGE
-$X_{1}=x_{1}^{2}$
-
-$X_{2}=x_{2}^{2}$
-
-$X_{3}=\sqrt{2} × x_{1} × x_{2}$
+{\large
+$X_{1}=x_{1}^{2}$ ; $X_{2}=x_{2}^{2}$ ; $X_{3}=\sqrt{2} × x_{1} × x_{2}$
 }
 
-…
+Ce nouvel espace permet de trouver une marge et un \gls{hpp} séparateur.
 
 \fig{}{\Gls{hpp} séparateur linéaire dans le nouvel espace dimensionnel}
 {24em}{ex-nonlinear-linear}
 
-…
-
-\fig{}{Fonction de décision non linéaire dans l’espace d’origine}
-{24em}{ex-nonlinear-svm}
-
-…
+\pagebreak
 
 \fig{}{Projection de la marge de séparation dans l’espace d’origine}
 {24em}{ex-nonlinear-sv}
 
-…
+Le retour à l’espace de départ permet ainsi marge et séparation non linéaires.
+
+\fig{}{Fonction de décision finale non linéaire dans l’espace d’origine}
+{24em}{ex-nonlinear-svm}
 
 \pagebreak
