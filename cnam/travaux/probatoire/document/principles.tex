@@ -23,8 +23,8 @@ Cette approche se révèle appropriée dans de nombreux cas d’utilisation :
 
 En fonction du type de problèmes, deux types de résolution :
 \begin{itmz}
-\item{\textbf{régression} → nombre}
-\item{\textbf{classification} → catégorie}
+\item{\textbf{régression} (\gls{svr}) → nombre}
+\item{\textbf{classification} (\gls{svc}) → catégorie}
 \end{itmz}
 
 En fonction des \glspl{ds}, deux types d’approches mathématiques :
@@ -35,7 +35,7 @@ En fonction des \glspl{ds}, deux types d’approches mathématiques :
 
 Quatre paramètres permettent d’affiner le modèle :
 \begin{itmz}
-\item{\textbf{noyau} : linéaire, \gls{rbf}, polynomial ou \gls{sigmoid}}
+\item{\textbf{noyau} : linéaire, \gls{rbf}, polynomial, \gls{sigmoid}, etc.}
 \item{\textbf{degré} : aide à trouver un \gls{hpp} séparateur en contexte polynomial,
 faisant rapidement augmenter le temps nécessaire à l’entraînement}
 \item{\textbf{γ} : pour les \glspl{hpp} non linéaires}
@@ -217,9 +217,17 @@ Faire varier \textbf{γ} (rangées) modifie l’épaisseur de la « cloche » 
 
 \textbf{Autres noyaux}
 
+En complément aux plus courants vus précédemment, un certain nombre
+d’autres noyaux existe :
+
 \begin{itmz}
-\item{String kernels documents texte, séquences d’ADN}
-\item{hyperbolic tangent}
+\item{\gls{rbf} de Laplace}
+\item{tangente hyperbolique}
+\item{sigmoïde}
+\item{fonction de Bessel de première espèce}
+\item{\gls{rbf} \gls{anova}}
+\item{sillon linéaire à 1 dimension}
+\item{chaîne (utilisé pour les documents texte ou séquences d’ADN)}
 \end{itmz}
 
 \textbf{Autres outils}
@@ -227,8 +235,8 @@ Faire varier \textbf{γ} (rangées) modifie l’épaisseur de la « cloche » 
 Des algorithmes récents se sont montrés plus efficaces avec de grands \glspl{ds} :
 
 \begin{itmz}
-\item{sub-gradient descent}
-\item{coordinate descent}
+\item{descente par sous-gradient, avec des techniques de décomposition}
+\item{descente par coordonnée, en effectuant des minimisations itératives}
 \end{itmz}
 
 \subsubsection{Classification multi-classes}
