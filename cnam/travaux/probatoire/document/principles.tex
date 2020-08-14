@@ -38,7 +38,7 @@ Quatre paramètres permettent d’affiner le modèle :
 \item{\textbf{noyau} : linéaire, \gls{rbf}, polynomial ou \gls{sigmoid}}
 \item{\textbf{degré} : aide à trouver un \gls{hpp} séparateur en contexte polynomial,
 faisant rapidement augmenter le temps nécessaire à l’entraînement}
-\item{\textbf{gamma} : pour les \glspl{hpp} non linéaires}
+\item{\textbf{γ} : pour les \glspl{hpp} non linéaires}
 \item{\textbf{C} : pénalité augmentant la distance des données prises en compte,\\
 au risque d’engendrer un surentraînement si trop importante}
 \end{itmz}
@@ -202,12 +202,17 @@ gaussienne, devenant également linéairement séparables.
 
 \textbf{Noyau gaussien \gls{rbf}}
 
-…
+Le \gls{kt} marche également dans un tel contexte de similarité.
+La figure suivante \textbf{γ} \textbf{C}.
 
 \bifig{}{\Gls{kf} gaussien \gls{rbf} \cite{homl-rbf}}
 {26em}{kernel_rbf_left}{kernel_rbf_right}
 
 …
+
+Grid search ?
+Autres noyaux
+String kernels documents texte, séquences d’ADN
 
 Référence multi-classes \cite{multi-class}
 
