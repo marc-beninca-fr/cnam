@@ -13,18 +13,7 @@ Rédaction
 * :download:`Probatoire <rédaction probatoire.pdf>`
 * :download:`Mémoire <rédaction mémoire.pdf>`
 
-Développement communication
----------------------------
-
-* :download:`Guide <développement communication/guide.pdf>`
-* :download:`Base compétences <développement communication/base compétences.pdf>`
-* :download:`Développer compétences <développement communication/développer compétences.pdf>`
-* :download:`Démarche <développement communication/démarche.pdf>`
-
 Autres
 ------
 
 * :download:`Prise parole <prise parole.pdf>`
-* :download:`Modèles communication <modèles communication.pdf>`
-* :download:`Métaphores <métaphores.pdf>`
-* :download:`Graphique <graphique.pdf>`
