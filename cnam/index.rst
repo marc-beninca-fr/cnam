@@ -6,7 +6,6 @@ CNAM
 
    documents/index
    pitch/index
-   recherche
    rédaction/index
    présentation/index
    soutenance/index

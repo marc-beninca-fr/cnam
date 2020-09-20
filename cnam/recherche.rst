@@ -1,4 +1,0 @@
-Recherche
-=========
-
-.. image:: recherche.png
