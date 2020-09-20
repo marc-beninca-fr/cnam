@@ -8,6 +8,3 @@ Travaux
 
    probatoire/index
    blanc/index
-   image/index
-   pitch/index
-   emploi cadre/index
