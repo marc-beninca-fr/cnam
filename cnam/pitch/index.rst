@@ -2,6 +2,6 @@ Pitch
 =====
 
 .. toctree::
+   :numbered: 1
 
-   modèle/index
-   document/index
+   pitch
