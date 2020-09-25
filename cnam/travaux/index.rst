@@ -6,5 +6,6 @@ Travaux
 .. toctree::
    :maxdepth: 1
 
+   mémoire/index
    probatoire/index
    blanc/index
