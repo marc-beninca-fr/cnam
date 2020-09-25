@@ -6,9 +6,9 @@ import subprocess
 
 import sphinx.cmd.build
 
-TRAVAUX = ['probatoire']
-INPUT = ["cnam"]
-OUTPUT = "out"
+TRAVAUX = ['mémoire']
+INPUT = ['cnam']
+OUTPUT = 'out'
 
 
 def others():
@@ -26,19 +26,19 @@ def main():
     shutil.rmtree(output_directory, ignore_errors=True)
     for doc in INPUT:
         arguments = [
-            "-E",
-            "-j", "2",
-            "-b", "html",
-            "-D", "project={}".format(doc),
-            "-D", "master_doc={}".format("index"),
-            "-D", "html_theme={}".format("sphinx_rtd_theme"),
-            # "-C",
-            "-c", directory,
+            '-E',
+            '-j', '2',
+            '-b', 'html',
+            '-D', 'project={}'.format(doc),
+            '-D', 'master_doc={}'.format('index'),
+            '-D', 'html_theme={}'.format('sphinx_rtd_theme'),
+            # '-C',
+            '-c', directory,
             os.path.join(directory, doc),
             os.path.join(output_directory, doc),
         ]
         sphinx.cmd.build.build_main(arguments)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

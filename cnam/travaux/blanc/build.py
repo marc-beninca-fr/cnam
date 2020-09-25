@@ -6,8 +6,8 @@ import subprocess
 import sys
 
 DOCUMENTS = [
-    ('document', 'mémoire'),
-    ('présentation', 'présentation'),
+    # ('document', 'mémoire'),
+    # ('présentation', 'présentation'),
 ]
 TMP = 'tmp'
 
