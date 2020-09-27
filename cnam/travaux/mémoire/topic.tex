@@ -1,6 +1,149 @@
-\documentclass[12pt]{extarticle}
+\documentclass[12pt]{article}
+
+\usepackage{fontspec}
+\usepackage[a4paper,portrait,
+bmargin=10mm,lmargin=15mm,rmargin=15mm,tmargin=10mm]{geometry}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+\setmainfont{DejaVu Sans}
+
+\newcommand{\hr}{\rule{\textwidth}{1pt}}
+
+\newenvironment{itmz}{\begin{itemize}
+\setlength{\itemsep}{0em}
+}{\end{itemize}}
+
 \begin{document}
 
-\pagebreak
+CNAM / UAMM91 \hfill Mémoire ingénieur / Sujet \hfill IRSM (CYC9104A)
+
+Marc Beninca \hfill Systèmes d’exploitation incrémentaux \hfill 2020 → 2021
+
+\hr
+
+\section{Problématique de l’existant}
+
+\subsection{Partitions systèmes avec accès en écriture}
+
+\subsubsection{Système de fichiers sans gestion d’instantanés}
+
+\begin{itmz}
+\item{avantages :}
+\item{inconvénients :}
+\end{itmz}
+
+\subsubsection{Système de fichiers avec gestion d’instantanés}
+
+\begin{itmz}
+\item{avantages :}
+\item{inconvénients :}
+\end{itmz}
+
+\subsection{Images « à la volée » avec accès en lecture seule}
+
+\subsubsection{Amorçage sans gestion de persistance de données}
+
+\begin{itmz}
+\item{avantages :}
+\item{inconvénients :}
+\end{itmz}
+
+\subsubsection{Amorçage avec gestion de persistance de données}
+
+\begin{itmz}
+\item{avantages :}
+\item{inconvénients :}
+\end{itmz}
+
+\section{Proposition : fonctionnement incrémental}
+
+\subsection{Fabrication}
+
+\subsubsection{Miroirs de dépôts officiels distribution et éditeurs}
+
+\begin{itmz}
+\item{synchronisation locale pour accès rapide, stable et hors-ligne : apt-mirror}
+\item{vérification d’intégrité avant utilisation des paquets synchronisés}
+\end{itmz}
+
+\subsubsection{Construction d’un système de fichiers}
+
+\begin{itmz}
+\item{prise en compte du type de machine cible : physique, virtuelle, conteneur}
+\item{détermination des paquets logiciels à installer et à configurer}
+\item{transformation en système d’exploitation « à la volée »}
+\end{itmz}
+
+\subsubsection{Encapsulation dans un fichier image}
+
+\begin{itmz}
+\item{choix d’un format adapté au montage en lecture seule : squashfs}
+\item{algorithmes de compression disponibles : gz, xz, zstd}
+\item{niveau supplémentaire d’encapsulation avec un format hybride : iso}
+\end{itmz}
+
+\subsubsection{Sécurité}
+
+\begin{itmz}
+\item{intégrité par calcul de sommes de contrôle : sha512sum}
+\item{authenticité via signature des images produites : gpg}
+\end{itmz}
+
+\subsection{Amorçage}
+
+\begin{itmz}
+\item{utilisation d’un chargeur de démarrage signé : grub, secure boot}
+\item{création d’un menu de démarrage à choix multiple d’images}
+\item{vérification d’authenticité et d’intégrité des images}
+\item{chargement d’image(s) en mémoire vive : complet, partiel}
+\end{itmz}
+
+\subsection{Mise à niveau}
+
+\begin{itmz}
+\item{système d’exploitation en cours d’exécution}
+\item{nouvelle image pour le prochain redémarrage}
+\end{itmz}
+
+\section{Scripts d’automatisation potentiels}
+
+\begin{itmz}
+\item{synchronisation locale et vérification d’intégrité, de façon parallélisée}
+\item{construction de systèmes de fichiers à partir de profils versionnés}
+\item{génération à la volée de menu de démarrage}
+\end{itmz}
+
+\hr
+
+\appendix
+
+\section{Contexte professionnel}
+
+M’étant engagé à compter de 2001 envers le Ministère des Armées, je travaille :
+\begin{itmz}
+\item{depuis 2001 pour le corps des sous-officiers de l’Armée de l’Air}
+\item{depuis 2016 sous la Direction Interarmées des Réseaux d’Infrastructure et SI}
+\end{itmz}
+
+\subsection{Restrictions}
+
+\begin{itmz}
+\item{aucun droit d’administration sur l’infrastructure virtuelle attribuée}
+\end{itmz}
+
+\subsection{Propriété intellectuelle}
+
+\begin{itmz}
+\item{toute solution développée sur le temps de travail devient la propriété du Ministère}
+\end{itmz}
+
+\section{Cadre de production du mémoire ingénieur}
+
+\begin{itmz}
+\item{interdiction statutaire d’exercer simultanément une autre activité}
+\end{itmz}
+Est-il possible de manière indépendante ?
 
 \end{document}
