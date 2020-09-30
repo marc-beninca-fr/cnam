@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage{fontspec}
 \usepackage[a4paper,portrait,
@@ -23,22 +23,22 @@ Marc Beninca \hfill Systèmes d’exploitation incrémentaux \hfill 2020 → 202
 
 \hr
 
-\section{Problématique de l’existant}
+\section{Problématiques d’utilisation des systèmes d’exploitation}
 
 \subsection{Partitions systèmes avec accès en écriture}
 
 \subsubsection{Système de fichiers sans gestion d’instantanés}
 
 \begin{itmz}
-\item{avantages :}
-\item{inconvénients :}
+\item{avantages : instantanéité des modifications faites aux fichiers systèmes}
+\item{inconvénients : nécessiter de régulièrement faire et tester des sauvegardes}
 \end{itmz}
 
 \subsubsection{Système de fichiers avec gestion d’instantanés}
 
 \begin{itmz}
-\item{avantages :}
-\item{inconvénients :}
+\item{avantages : permet de sauvegarder et restaurer un état des fichiers à tout moment}
+\item{inconvénients : peu d’implémentations, pas encore utilisés par défaut}
 \end{itmz}
 
 \subsection{Images « à la volée » avec accès en lecture seule}
@@ -47,24 +47,29 @@ Marc Beninca \hfill Systèmes d’exploitation incrémentaux \hfill 2020 → 202
 
 \begin{itmz}
 \item{avantages :}
-\item{inconvénients :}
+\item{inconvénients : perte de toutes modifications faites aux fichiers systèmes}
 \end{itmz}
 
 \subsubsection{Amorçage avec gestion de persistance de données}
 
 \begin{itmz}
-\item{avantages :}
-\item{inconvénients :}
+\item{avantages : conservation des modifications faites aux fichiers systèmes}
+\item{inconvénients : pas de séparation entre persistance de fichiers systèmes et de données}
 \end{itmz}
 
 \section{Proposition : fonctionnement incrémental}
+
+\begin{itmz}
+\item{avantages : restauration très rapide, chaque mise à jour devient une sauvegarde}
+\item{inconvénients : maintenance exhaustive si effectuée sans assistances}
+\end{itmz}
 
 \subsection{Fabrication}
 
 \subsubsection{Miroirs de dépôts officiels distribution et éditeurs}
 
 \begin{itmz}
-\item{synchronisation locale pour accès rapide, stable et hors-ligne : apt-mirror}
+\item{synchronisation locale pour accès rapide, stable et hors-ligne : apt-mirror, debmirror, ftpsync}
 \item{vérification d’intégrité avant utilisation des paquets synchronisés}
 \end{itmz}
 
@@ -123,27 +128,31 @@ Marc Beninca \hfill Systèmes d’exploitation incrémentaux \hfill 2020 → 202
 
 M’étant engagé à compter de 2001 envers le Ministère des Armées, je travaille :
 \begin{itmz}
-\item{depuis 2001 pour le corps des sous-officiers de l’Armée de l’Air}
-\item{depuis 2016 sous la Direction Interarmées des Réseaux d’Infrastructure et SI}
+\item{depuis 2001 pour le corps des sous-officiers de l’Armée de l’Air et de l’espace}
+\item{depuis 2016 sous la Direction Interarmées des Réseaux d’Infrastructure et Systèmes d’Information}
 \end{itmz}
 
 \subsection{Restrictions}
 
 \begin{itmz}
-\item{aucun droit d’administration sur l’infrastructure virtuelle attribuée}
+\item{interdiction statutaire d’exercer simultanément une autre activité professionnelle}
+\item{pas de droits d’administration sur le gestionnaire de l’infrastructure virtuelle distante}
+\item{stations de travail locales administrées par une entité extérieure}
+\item{ordinateurs portables réquisitionnés pour le personnel exerçant son activité en télétravail}
 \end{itmz}
 
 \subsection{Propriété intellectuelle}
 
 \begin{itmz}
-\item{toute solution développée sur le temps de travail devient la propriété du Ministère}
+\item{les développements effectués sur le temps de travail deviennent la propriété du Ministère}
+\item{les scripts auraient bien plus de portée s’ils étaient publiés sous licence libre}
 \end{itmz}
 
 \section{Cadre de production du mémoire ingénieur}
 
+Compte tenu des conditions citées ci-dessus, est-il possible :
 \begin{itmz}
-\item{interdiction statutaire d’exercer simultanément une autre activité}
+\item{de construire mon mémoire ingénieur Hors Temps de Travail ?}
 \end{itmz}
-Est-il possible de manière indépendante ?
 
 \end{document}
