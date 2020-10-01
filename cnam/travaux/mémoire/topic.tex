@@ -25,13 +25,20 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 
 \section{Problématiques d’utilisation des systèmes d’exploitation}
 
-\subsection{Partitions systèmes avec accès en écriture}
+\subsection{Systèmes de fichiers, installés sur partitions, avec accès en écriture}
 
-\subsubsection{Système de fichiers sans gestion d’instantanés}
+\subsubsection{Système de fichiers conventionnel}
 
 \begin{itmz}
 \item{\textbf{avantages} : instantanéité des modifications faites aux fichiers systèmes}
 \item{\textbf{inconvénients} : nécessiter de régulièrement faire et tester des sauvegardes}
+\end{itmz}
+
+\subsubsection{Système de fichiers géré par des recettes d’automatisation}
+
+\begin{itmz}
+\item{\textbf{avantages} : possibilité de remettre rapidement en état des pans du système}
+\item{\textbf{inconvénients} : pas de résolution des écarts de configuration non gérés par les recettes}
 \end{itmz}
 
 \subsubsection{Système de fichiers avec gestion d’instantanés}
@@ -41,7 +48,7 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 \item{\textbf{inconvénients} : peu d’implémentations, pas encore utilisés par défaut}
 \end{itmz}
 
-\subsection{Images autonomes avec accès en lecture seule}
+\subsection{Images autonomes, sans installation, avec accès en lecture seule}
 
 \subsubsection{Amorçage sans gestion de persistance}
 
@@ -53,7 +60,7 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 \subsubsection{Amorçage avec gestion de persistance}
 
 \begin{itmz}
-\item{\textbf{avantages} : conservation des modifications faites aux fichiers systèmes}
+\item{\textbf{avantages} : conservation sur une partition sélectionnée des modifications faites aux fichiers}
 \item{\textbf{inconvénients} : pas de séparation entre persistance de fichiers systèmes et de données}
 \end{itmz}
 
@@ -70,7 +77,7 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 
 \begin{itmz}
 \item{synchronisation locale pour accès rapide, stable et hors-ligne : apt-mirror, debmirror, ftpsync}
-\item{vérification d’intégrité avant utilisation des paquets synchronisés}
+\item{vérification d’intégrité des dépôts avant utilisation des paquets synchronisés}
 \end{itmz}
 
 \subsubsection{Construction d’un système de fichiers}
@@ -89,7 +96,7 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 \item{niveau supplémentaire d’encapsulation avec un format hybride : iso}
 \end{itmz}
 
-\subsubsection{Sécurité}
+\subsection{Sécurité}
 
 \begin{itmz}
 \item{intégrité par calcul de sommes de contrôle : sha512sum}
