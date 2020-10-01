@@ -43,21 +43,21 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 
 \subsection{Images autonomes avec accès en lecture seule}
 
-\subsubsection{Amorçage sans gestion de persistance de données}
+\subsubsection{Amorçage sans gestion de persistance}
 
 \begin{itmz}
-\item{\textbf{avantages} :}
-\item{\textbf{inconvénients} : perte de toutes modifications faites aux fichiers systèmes}
+\item{\textbf{avantages} : démarrage d’un système autonome dans un état figé au préalable}
+\item{\textbf{inconvénients} : perte au redémarrage de toutes modifications faites aux fichiers systèmes}
 \end{itmz}
 
-\subsubsection{Amorçage avec gestion de persistance de données}
+\subsubsection{Amorçage avec gestion de persistance}
 
 \begin{itmz}
 \item{\textbf{avantages} : conservation des modifications faites aux fichiers systèmes}
 \item{\textbf{inconvénients} : pas de séparation entre persistance de fichiers systèmes et de données}
 \end{itmz}
 
-\section{Proposition : fonctionnement incrémental}
+\section{Proposition : fonctionnement autonome incrémental}
 
 \begin{itmz}
 \item{\textbf{avantages} : restauration très rapide, chaque mise à jour devient une sauvegarde}
@@ -85,7 +85,7 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 
 \begin{itmz}
 \item{choix d’un format adapté au montage en lecture seule : squashfs}
-\item{algorithmes de compression disponibles : gz, xz, zstd}
+\item{algorithmes de compression disponibles : gzip, lzma, lzo, lz4, xz, zstd}
 \item{niveau supplémentaire d’encapsulation avec un format hybride : iso}
 \end{itmz}
 
