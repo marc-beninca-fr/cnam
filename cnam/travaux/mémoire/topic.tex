@@ -19,7 +19,7 @@ bmargin=10mm,lmargin=15mm,rmargin=15mm,tmargin=10mm]{geometry}
 
 CNAM / UAMM91 \hfill Mémoire ingénieur / Sujet \hfill IRSM (CYC9104A)
 
-Marc Beninca \hfill Systèmes d’exploitation incrémentaux \hfill 2020 → 2021
+Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 2020 → 2021
 
 \hr
 
@@ -30,38 +30,38 @@ Marc Beninca \hfill Systèmes d’exploitation incrémentaux \hfill 2020 → 202
 \subsubsection{Système de fichiers sans gestion d’instantanés}
 
 \begin{itmz}
-\item{avantages : instantanéité des modifications faites aux fichiers systèmes}
-\item{inconvénients : nécessiter de régulièrement faire et tester des sauvegardes}
+\item{\textbf{avantages} : instantanéité des modifications faites aux fichiers systèmes}
+\item{\textbf{inconvénients} : nécessiter de régulièrement faire et tester des sauvegardes}
 \end{itmz}
 
 \subsubsection{Système de fichiers avec gestion d’instantanés}
 
 \begin{itmz}
-\item{avantages : permet de sauvegarder et restaurer un état des fichiers à tout moment}
-\item{inconvénients : peu d’implémentations, pas encore utilisés par défaut}
+\item{\textbf{avantages} : permet de sauvegarder et restaurer un état des fichiers à tout moment}
+\item{\textbf{inconvénients} : peu d’implémentations, pas encore utilisés par défaut}
 \end{itmz}
 
-\subsection{Images « à la volée » avec accès en lecture seule}
+\subsection{Images autonomes avec accès en lecture seule}
 
 \subsubsection{Amorçage sans gestion de persistance de données}
 
 \begin{itmz}
-\item{avantages :}
-\item{inconvénients : perte de toutes modifications faites aux fichiers systèmes}
+\item{\textbf{avantages} :}
+\item{\textbf{inconvénients} : perte de toutes modifications faites aux fichiers systèmes}
 \end{itmz}
 
 \subsubsection{Amorçage avec gestion de persistance de données}
 
 \begin{itmz}
-\item{avantages : conservation des modifications faites aux fichiers systèmes}
-\item{inconvénients : pas de séparation entre persistance de fichiers systèmes et de données}
+\item{\textbf{avantages} : conservation des modifications faites aux fichiers systèmes}
+\item{\textbf{inconvénients} : pas de séparation entre persistance de fichiers systèmes et de données}
 \end{itmz}
 
 \section{Proposition : fonctionnement incrémental}
 
 \begin{itmz}
-\item{avantages : restauration très rapide, chaque mise à jour devient une sauvegarde}
-\item{inconvénients : maintenance exhaustive si effectuée sans assistances}
+\item{\textbf{avantages} : restauration très rapide, chaque mise à jour devient une sauvegarde}
+\item{\textbf{inconvénients} : maintenance exhaustive si effectuée sans assistances}
 \end{itmz}
 
 \subsection{Fabrication}
