@@ -21,9 +21,10 @@ CNAM / UAMM91 \hfill Mémoire ingénieur / Sujet \hfill IRSM (CYC9104A)
 
 Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 2020 → 2021
 
-\hr
+\section{Problématiques de maintenance des systèmes d’exploitation}
 
-\section{Problématiques d’utilisation des systèmes d’exploitation}
+Aujourd’hui, en fonction des cas d’utilisation, maintenir des systèmes d’exploitation nécessite de penser :
+mises à jour, indisponibilité, sauvegardes, tests, instantanés, restaurations, recettes de configuration.
 
 \subsection{Systèmes de fichiers, installés sur partitions, avec accès en écriture}
 
@@ -34,7 +35,7 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 \item{\textbf{inconvénients} : nécessiter de régulièrement faire et tester des sauvegardes}
 \end{itmz}
 
-\subsubsection{Système de fichiers géré par des recettes d’automatisation}
+\subsubsection{Système de fichiers géré par des recettes de configuration}
 
 \begin{itmz}
 \item{\textbf{avantages} : possibilité de remettre rapidement en état des pans du système}
@@ -66,6 +67,8 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 
 \section{Proposition : fonctionnement autonome incrémental}
 
+Solution.
+
 \begin{itmz}
 \item{\textbf{avantages} : restauration très rapide, chaque mise à jour devient une sauvegarde}
 \item{\textbf{inconvénients} : maintenance exhaustive si effectuée sans assistances}
@@ -84,30 +87,32 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 
 \begin{itmz}
 \item{prise en compte du type de machine cible : physique, virtuelle, conteneur}
-\item{détermination des paquets logiciels à installer et à configurer}
-\item{transformation en système d’exploitation « à la volée »}
+\item{création d’un système de fichiers de base minimal de système d’exploitation : \textbf{debootstrap}}
+\item{intégration des paquets nécessaires à la construction de systèmes autonomes, si besoin}
+\item{transformation effective en système d’exploitation autonome : \textbf{live-boot}, \textbf{update-initramfs}}
+\item{détermination des autres paquets logiciels à installer et à configurer, en fonction des besoins}
 \end{itmz}
 
-\subsubsection{Encapsulation dans un fichier image}
+\subsection{Encapsulation dans un fichier image}
 
 \begin{itmz}
-\item{choix d’un format adapté au montage en lecture seule : squashfs}
-\item{algorithmes de compression disponibles : gzip, lzma, lzo, lz4, xz, zstd}
-\item{niveau supplémentaire d’encapsulation avec un format hybride : iso}
+\item{choix d’un format adapté au montage en lecture seule : \textbf{squashfs}}
+\item{algorithmes de compression disponibles : \textbf{gzip}, \textbf{lzma}, \textbf{lzo}, \textbf{lz4}, \textbf{xz}, \textbf{zstd}}
+\item{niveau supplémentaire d’encapsulation avec un format hybride : \textbf{iso}}
 \end{itmz}
 
-\subsection{Sécurité}
+\subsection{Sécurité du fichier image produit}
 
 \begin{itmz}
-\item{intégrité par calcul de sommes de contrôle : sha512sum}
-\item{authenticité via signature des images produites : gpg}
+\item{intégrité par calcul de sommes de contrôle : \textbf{sha256}, \textbf{sha512}}
+\item{authenticité via signature des images produites : \textbf{gpg}}
 \end{itmz}
 
 \subsection{Amorçage}
 
 \begin{itmz}
-\item{utilisation d’un chargeur de démarrage signé : grub, secure boot}
-\item{création d’un menu de démarrage à choix multiple d’images}
+\item{utilisation d’un chargeur de démarrage signé : \textbf{grub}, \textbf{bios}, \textbf{uefi}, secure boot}
+\item{création d’un menu de démarrage à choix multiple d’images : \textbf{grub.cfg}, \textbf{squash4}, \textbf{iso9660}}
 \item{vérification d’authenticité et d’intégrité des images}
 \item{chargement d’image(s) en mémoire vive : complet, partiel}
 \end{itmz}
@@ -133,13 +138,13 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 
 \section{Contexte professionnel}
 
-Étant engagé de carrière, depuis 19 ans envers le Ministère des Armées, je travaille :
+En tant que militaire engagé de carrière, depuis 19 ans envers le Ministère des Armées, je travaille :
 \begin{itmz}
-\item{depuis 2001 pour le corps des sous-officiers de l’Armée de l’Air et de l’Espace}
+\item{depuis 2001 pour le corps des sous-officiers de l’actuelle Armée de l’Air et de l’Espace}
 \item{depuis 2016 sous la Direction Interarmées des Réseaux d’Infrastructure et Systèmes d’Information}
 \end{itmz}
 
-\subsection{Restrictions}
+\subsection{Restrictions diverses}
 
 \begin{itmz}
 \item{interdiction statutaire d’exercer simultanément une autre activité professionnelle}
@@ -151,13 +156,13 @@ Marc Beninca \hfill Systèmes d’exploitation autonomes incrémentaux \hfill 20
 \subsection{Propriété intellectuelle}
 
 \begin{itmz}
-\item{les développements effectués sur le temps de travail deviennent la propriété du Ministère}
-\item{des scripts d’automatisation auraient bien plus de portée s’ils étaient publiés sous licence libre}
+\item{tout développement effectué sur le temps de travail devient de fait la propriété du Ministère}
+\item{une solution d’automatisation aurait bien plus de portée en étant publiée sous licence libre}
 \end{itmz}
 
 \section{Cadre de production du mémoire ingénieur}
 
-Compte tenu des contraintes énoncées ci-dessus, est-il possible :
+Compte tenu des différentes contraintes énoncées ci-dessus, est-il possible :
 \begin{itmz}
 \item{de construire mon mémoire ingénieur Hors Temps de Travail ?}
 \end{itmz}
