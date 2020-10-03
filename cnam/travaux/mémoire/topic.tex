@@ -21,9 +21,9 @@ CNAM / UAMM91 \hfill Mémoire ingénieur / Sujet (version n°1) \hfill IRSM (CYC
 
 Marc Beninca \hfill \textbf{Systèmes d’exploitation autonomes incrémentaux} \hfill 2020 → 2021
 
-\section{Problématiques de maintenance des systèmes d’exploitation}
+\section{Problématique : maintenance des systèmes d’exploitation}
 
-Aujourd’hui, en fonction des cas d’utilisation, maintenir des systèmes d’exploitation nécessite de penser :
+En fonction des cas d’utilisation, maintenir des systèmes d’exploitation nécessite de penser :\\
 mises à jour, indisponibilité, sauvegardes, tests, instantanés, restaurations, recettes de configuration.
 
 \subsection{Systèmes de fichiers, installés sur partitions, avec accès en écriture}
@@ -67,11 +67,12 @@ mises à jour, indisponibilité, sauvegardes, tests, instantanés, restaurations
 
 \section{Proposition : fonctionnement autonome incrémental}
 
-Solution.
+Proposition :\\
+proposition.
 
 \begin{itmz}
-\item{\textbf{avantages} : restauration très rapide, chaque mise à jour devient une sauvegarde}
-\item{\textbf{inconvénients} : maintenance exhaustive si effectuée sans assistances}
+\item{\textbf{avantages} : redémarrage = restauration, mise à jour = sauvegarde, plus de partition système}
+\item{\textbf{inconvénients} : maintenance exhaustive si effectuée manuellement}
 \end{itmz}
 
 \subsection{Fabrication}
