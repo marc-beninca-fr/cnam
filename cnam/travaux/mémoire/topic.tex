@@ -67,8 +67,8 @@ mises à jour, indisponibilité, sauvegardes, tests, instantanés, restaurations
 
 \section{Proposition : fonctionnement autonome incrémental}
 
-Proposition :\\
-proposition.
+Mettre en œuvre un système d’exploitation hybride entre un système installé et un système autonome :\\
+cumuler les avantages des deux, en images incrémentales ou complètes, sans les divers inconvénients.
 
 \begin{itmz}
 \item{\textbf{avantages} : redémarrage = restauration, mise à jour = sauvegarde, plus de partition système}
@@ -80,14 +80,14 @@ proposition.
 \subsubsection{Miroirs de dépôts officiels distribution et éditeurs}
 
 \begin{itmz}
-\item{synchronisation locale pour accès rapide, stable et hors-ligne : apt-mirror, debmirror, ftpsync}
+\item{synchronisation locale pour accès rapide, stable et hors-ligne : \textbf{apt-mirror}, \textbf{debmirror}, \textbf{ftpsync}}
 \item{vérification d’intégrité des dépôts avant utilisation des paquets synchronisés}
 \end{itmz}
 
 \subsubsection{Construction d’un système de fichiers}
 
 \begin{itmz}
-\item{prise en compte du type de machine cible : physique, virtuelle, conteneur}
+\item{prise en compte du type de machine hôte cible : physique, virtuelle, conteneur}
 \item{création d’un système de fichiers de base minimal de système d’exploitation : \textbf{debootstrap}}
 \item{intégration des paquets nécessaires à la construction de systèmes autonomes, si besoin}
 \item{transformation effective en système d’exploitation autonome : \textbf{live-boot}, \textbf{update-initramfs}}
