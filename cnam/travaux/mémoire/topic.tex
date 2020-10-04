@@ -71,8 +71,8 @@ Mettre en œuvre un système d’exploitation hybride entre un système install�
 cumuler les avantages des deux, en images incrémentales ou complètes, sans les divers inconvénients.
 
 \begin{itmz}
-\item{\textbf{avantages} : redémarrage = restauration, mise à jour = sauvegarde, plus de partition système}
-\item{\textbf{inconvénients} : maintenance exhaustive si effectuée manuellement}
+\item{\textbf{avantages} : redémarrage = restauration, mise à jour = sauvegarde, système ≠ données}
+\item{\textbf{inconvénients} : maintenance exhaustive si effectuée régulièrement de façon manuelle}
 \end{itmz}
 
 \subsection{Fabrication}
@@ -87,7 +87,7 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \subsubsection{Construction d’un système de fichiers}
 
 \begin{itmz}
-\item{prise en compte du type de machine hôte cible : physique, virtuelle, conteneur}
+\item{prise en compte du type de machine hôte pour les paquets de base : physique, virtuelle, conteneur}
 \item{création d’un système de fichiers de base minimal de système d’exploitation : \textbf{debootstrap}}
 \item{intégration des paquets nécessaires à la construction de systèmes autonomes, si besoin}
 \item{transformation effective en système d’exploitation autonome : \textbf{live-boot}, \textbf{update-initramfs}}
@@ -109,7 +109,7 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \item{garantir l’authenticité de l’image par une signature du fichier produit : \textbf{gpg}}
 \end{itmz}
 
-\subsection{Amorçage}
+\subsection{Amorçage de fichier d’encapsulation}
 
 \begin{itmz}
 \item{utilisation d’un chargeur de démarrage signé : \textbf{grub}, \textbf{bios}, \textbf{uefi}, secure boot}
@@ -122,8 +122,8 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 
 \begin{itmz}
 \item{fabrication d’une nouvelle image, à partir de la dernière, pour le prochain redémarrage}
-\item{si le redémarrage est différé, mise à jour du système d’exploitation en mémoire}
-\item{si le redémarrage est nécessaire et critique, réduction de sa durée : \textbf{kexec-tools}}
+\item{si le redémarrage est différé, mise à jour du système d’exploitation actuellement en mémoire}
+\item{si le redémarrage est nécessaire et critique, réduction de sa durée effective : \textbf{kexec-tools}}
 \end{itmz}
 
 \section{Scripts d’automatisation potentiels}
