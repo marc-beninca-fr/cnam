@@ -81,7 +81,7 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 
 \begin{itmz}
 \item{synchronisation locale pour accès rapide, stable et hors-ligne : \textbf{apt-mirror}, \textbf{debmirror}, \textbf{ftpsync}}
-\item{vérification d’intégrité des dépôts avant utilisation des paquets synchronisés}
+\item{vérification d’intégrité des dépôts locaux avant utilisation des paquets synchronisés}
 \end{itmz}
 
 \subsubsection{Construction d’un système de fichiers}
@@ -112,10 +112,10 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \subsection{Amorçage de fichier d’encapsulation}
 
 \begin{itmz}
-\item{utilisation d’un chargeur de démarrage signé : \textbf{grub}, \textbf{bios}, \textbf{uefi}, secure boot}
+\item{chargeur de démarrage avec signature numérique : \textbf{grub}, \textbf{bios}, \textbf{uefi}, \textbf{secure boot}}
 \item{création d’un menu de démarrage à choix multiple d’images : \textbf{grub.cfg}, \textbf{squash4}, \textbf{iso9660}}
-\item{vérification d’authenticité et d’intégrité des images}
-\item{chargement d’image(s) en mémoire vive : complet, partiel}
+\item{vérification d’authenticité et d’intégrité des images : \textbf{gcry\_sha256}, \textbf{gcry\_sha512}, \textbf{pgp}}
+\item{chargement d’image(s) dans la mémoire vive : complet, partiel avec \textbf{overlayfs}}
 \end{itmz}
 
 \subsection{Mise à niveau incrémentale}
