@@ -97,16 +97,16 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \subsection{Encapsulation dans un fichier image}
 
 \begin{itmz}
-\item{choix d’un format adapté au montage en lecture seule : \textbf{squashfs}}
-\item{algorithmes de compression disponibles : \textbf{gzip}, \textbf{lzma}, \textbf{lzo}, \textbf{lz4}, \textbf{xz}, \textbf{zstd}}
-\item{niveau supplémentaire d’encapsulation avec un format hybride : \textbf{iso}}
+\item{utilisation d’un format de fichier adapté au montage en lecture seule : \textbf{squashfs}}
+\item{algorithmes de compression des données disponibles : \textbf{gzip}, \textbf{lzma}, \textbf{lzo}, \textbf{lz4}, \textbf{xz}, \textbf{zstd}}
+\item{niveau supplémentaire d’encapsulation avec un format de fichier hybride : \textbf{iso}}
 \end{itmz}
 
 \subsection{Sécurité du fichier image produit}
 
 \begin{itmz}
-\item{intégrité par calcul de sommes de contrôle : \textbf{sha256}, \textbf{sha512}}
-\item{authenticité via signature des images produites : \textbf{gpg}}
+\item{assurer l’intégrité du fichier par le calcul d’une somme de contrôle : \textbf{sha256}, \textbf{sha512}}
+\item{garantir l’authenticité de l’image par une signature du fichier produit : \textbf{gpg}}
 \end{itmz}
 
 \subsection{Amorçage}
@@ -118,11 +118,12 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \item{chargement d’image(s) en mémoire vive : complet, partiel}
 \end{itmz}
 
-\subsection{Mise à niveau}
+\subsection{Mise à niveau incrémentale}
 
 \begin{itmz}
-\item{système d’exploitation en cours d’exécution}
-\item{nouvelle image pour le prochain redémarrage}
+\item{fabrication d’une nouvelle image, à partir de la dernière, pour le prochain redémarrage}
+\item{si le redémarrage est différé, mise à jour du système d’exploitation en mémoire}
+\item{si le redémarrage est nécessaire et critique, réduction de sa durée : \textbf{kexec-tools}}
 \end{itmz}
 
 \section{Scripts d’automatisation potentiels}
