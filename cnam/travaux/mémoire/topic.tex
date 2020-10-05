@@ -89,9 +89,9 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \subsection{Construction d’un système de fichiers autonome (debian gnu/linux)}
 
 \begin{itmz}
-\item{prise en compte du type de machine hôte pour les paquets de base : physique, virtuelle, conteneur}
-\item{création d’un système de fichiers de base minimal de système d’exploitation : \textbf{debootstrap}}
-\item{intégration des paquets nécessaires à la construction de systèmes autonomes, si besoin}
+\item{prise en compte du type de machine hôte pour le choix des paquets de base : physique, virtuelle}
+\item{création d’un système de fichiers de base minimal à partir des dépôts locaux : \textbf{debootstrap}}
+\item{intégration des paquets nécessaires à la construction d’autres systèmes autonomes, si besoin}
 \item{transformation effective en système d’exploitation autonome : \textbf{live-boot}, \textbf{update-initramfs}}
 \item{détermination des autres paquets logiciels à installer et à configurer, en fonction des besoins}
 \item{déport des données à rendre persistantes, avec des liens symboliques pointant vers partition(s)}
@@ -101,41 +101,41 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 
 \begin{itmz}
 \item{utilisation d’un format de fichier amorçable adapté au montage en lecture seule : \textbf{squashfs}}
-\item{algorithmes de compression disponibles pour ce format : \textbf{gzip}, \textbf{lzma}, \textbf{lzo}, \textbf{lz4}, \textbf{xz}, \textbf{zstd}}
+\item{choix d’un des divers algorithmes de compression disponibles : \textbf{gzip}, \textbf{lzma}, \textbf{lzo}, \textbf{lz4}, \textbf{xz}, \textbf{zstd}}
 \item{niveau supplémentaire d’encapsulation avec un format de fichier amorçable hybride : \textbf{iso}}
 \end{itmz}
 
 \subsection{Sécurité du fichier image produit}
 
 \begin{itmz}
-\item{assurer l’intégrité du fichier par le calcul d’une somme de contrôle : \textbf{sha256}, \textbf{sha512}}
-\item{garantir l’authenticité de l’image par une signature numérique du fichier produit : \textbf{gpg}}
+\item{assurer l’intégrité du fichier final par le calcul d’une somme de contrôle : \textbf{sha256}, \textbf{sha512}}
+\item{garantir l’authenticité de l’image grâce à une signature numérique associée au fichier : \textbf{gpg}}
 \end{itmz}
 
-\subsection{Amorçage de fichier d’encapsulation}
+\subsection{Amorçage de fichier(s) image(s) sécurisé(s)}
 
 \begin{itmz}
 \item{chargeur de démarrage avec gestion de signature numérique : \textbf{grub}, \textbf{bios}, \textbf{uefi}, \textbf{secure boot}}
 \item{création d’un menu de démarrage à choix multiple d’images : \textbf{grub.cfg}, \textbf{squash4}, \textbf{iso9660}}
-\item{vérification d’authenticité et d’intégrité des images : \textbf{gcry\_sha256}, \textbf{gcry\_sha512}, \textbf{pgp}}
-\item{chargement d’image(s) dans la mémoire vive de l’hôte : complet, partiel avec \textbf{overlayfs}}
+\item{vérification d’authenticité et d’intégrité de fichiers images : \textbf{gcry\_sha256}, \textbf{gcry\_sha512}, \textbf{pgp}}
+\item{chargement d’image(s) en mémoire vive d’une machine hôte : complet, partiel avec \textbf{overlayfs}}
 \end{itmz}
 
 \subsection{Mise à niveau incrémentale}
 
 \begin{itmz}
-\item{fabrication d’une nouvelle image, à partir de la dernière, pour le prochain redémarrage}
+\item{fabrication d’une nouvelle image, à partir de la plus récente, pour le prochain redémarrage}
 \item{si le redémarrage est différé, mise à jour du système d’exploitation actuellement en mémoire}
 \item{si le redémarrage est nécessaire et critique, réduction de sa durée effective : \textbf{kexec-tools}}
 \end{itmz}
 
-\section{Scripts d’automatisation potentiels implémentables}
+\section{Automatisations potentiellement implémentables}
 
 \begin{itmz}
-\item{vérification d’intégrité des dépôts, voire synchronisation locale, de façon parallélisée}
-\item{construction de systèmes de fichiers complets à partir de différents profils versionnés}
-\item{création de nouveaux fichiers images, par mise à jour à partir d’images existantes}
-\item{génération à la volée de menu de démarrage, à choix d’images amorçables multiples}
+\item{vérification d’intégrité des dépôts, voire le processus de synchronisation, de façon parallélisée}
+\item{construction de systèmes de fichiers autonomes complets, à partir de différents profils versionnés}
+\item{création de nouveaux fichiers images, par la mise à jour d’images amorçables déjà existantes}
+\item{génération à la volée de menus de démarrage, à choix multiples d’images amorçables détectées}
 \end{itmz}
 
 \hr
