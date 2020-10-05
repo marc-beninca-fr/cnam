@@ -33,7 +33,7 @@ mises à jour, indisponibilité, sauvegardes, tests, instantanés, restaurations
 \subsubsection{Système de fichiers conventionnel : ext2, ext3, ext4}
 
 \begin{itmz}
-\item{\textbf{avantages} : instantanéité des modifications apportées aux fichiers du système}
+\item{\textbf{avantages} : instantanéité de toutes les modifications apportées aux fichiers du système}
 \item{\textbf{inconvénients} : nécessité de régulièrement réaliser et tester des sauvegardes du système}
 \end{itmz}
 
@@ -63,9 +63,11 @@ mises à jour, indisponibilité, sauvegardes, tests, instantanés, restaurations
 \subsubsection{Amorçage avec gestion de persistance}
 
 \begin{itmz}
-\item{\textbf{avantages} : conservation sur une partition marquée des fichiers modifiés du système}
+\item{\textbf{avantages} : conservation sur une partition marquée des fichiers modifiés depuis le démarrage}
 \item{\textbf{inconvénients} : pas de séparation entre la persistance des fichiers systèmes et des données}
 \end{itmz}
+
+\hr
 
 \section{Proposition : fonctionnement autonome incrémental}
 
@@ -77,16 +79,14 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \item{\textbf{inconvénients} : maintenance exhaustive si effectuée régulièrement de façon manuelle}
 \end{itmz}
 
-\subsection{Fabrication}
-
-\subsubsection{Miroirs de dépôts officiels distribution et éditeurs}
+\subsection{Miroirs de dépôts officiels distribution et éditeurs}
 
 \begin{itmz}
 \item{synchronisation locale pour accès rapide, stable et hors-ligne : \textbf{apt-mirror}, \textbf{debmirror}, \textbf{ftpsync}}
-\item{vérification d’intégrité des dépôts locaux avant utilisation des paquets synchronisés}
+\item{vérification d’intégrité des dépôts locaux avant utilisation de leurs paquets synchronisés}
 \end{itmz}
 
-\subsubsection{Construction d’un système de fichiers}
+\subsection{Construction d’un système de fichiers autonome}
 
 \begin{itmz}
 \item{prise en compte du type de machine hôte pour les paquets de base : physique, virtuelle, conteneur}
@@ -94,6 +94,7 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \item{intégration des paquets nécessaires à la construction de systèmes autonomes, si besoin}
 \item{transformation effective en système d’exploitation autonome : \textbf{live-boot}, \textbf{update-initramfs}}
 \item{détermination des autres paquets logiciels à installer et à configurer, en fonction des besoins}
+\item{déport des données à rendre persistantes, avec des liens symboliques pointant vers partition(s)}
 \end{itmz}
 
 \subsection{Encapsulation dans un fichier image}
@@ -128,7 +129,7 @@ cumuler les avantages des deux, en images incrémentales ou complètes, sans les
 \item{si le redémarrage est nécessaire et critique, réduction de sa durée effective : \textbf{kexec-tools}}
 \end{itmz}
 
-\section{Scripts d’automatisation potentiels}
+\section{Scripts d’automatisation potentiels implémentables}
 
 \begin{itmz}
 \item{vérification d’intégrité des dépôts, voire synchronisation locale, de façon parallélisée}
