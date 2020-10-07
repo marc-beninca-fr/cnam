@@ -6,8 +6,12 @@ Sujet
 Livrables
 =========
 
-* :download:`Mémoire <mémoire.pdf>`
-* :download:`Présentation <présentation.pdf>`
+=========================================== ===========================================
+Français                                    English
+=========================================== ===========================================
+:download:`Mémoire <mémoire.pdf>`           :download:`Thesis <thesis.pdf>`
+:download:`Présentation <présentation.pdf>` :download:`Presentation <presentation.pdf>`
+=========================================== ===========================================
 
 Signatures numériques
 =====================
