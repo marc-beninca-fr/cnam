@@ -16,10 +16,11 @@ Français                                    English
 Signatures numériques
 =====================
 
-* :download:`Mémoire <mémoire.pdf.asc>`
-
 .. literalinclude:: mémoire.pdf.vrf
 
-* :download:`Présentation <présentation.pdf.asc>`
-
-.. literalinclude:: présentation.pdf.vrf
+=============================================== ===============================================
+Français                                        English
+=============================================== ===============================================
+:download:`Mémoire <mémoire.pdf.asc>`           :download:`Thesis <thesis.pdf.asc>`
+:download:`Présentation <présentation.pdf.asc>` :download:`Presentation <presentation.pdf.asc>`
+=============================================== ===============================================
