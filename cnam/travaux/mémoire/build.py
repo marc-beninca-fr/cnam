@@ -25,14 +25,15 @@ def errun(command):
 def build(sign):
     for en, fr in DOCUMENTS:
         command = ['xelatex', '-output-directory', TMP, en]
-        run(command)
-        run(['makeglossaries', '-d', TMP, en])
-        run(['biber',
-            '--input-directory', TMP,
-            '--output-directory', TMP,
-            en,
-        ])
-        run(command)
+        if en == 'document':
+            run(command)
+            run(['makeglossaries', '-d', TMP, en])
+            run(['biber',
+                '--input-directory', TMP,
+                '--output-directory', TMP,
+                en,
+            ])
+            run(command)
         run(command)
         pdf = f'{fr}.pdf'
         os.rename(os.path.join(TMP, f'{en}.pdf'),
