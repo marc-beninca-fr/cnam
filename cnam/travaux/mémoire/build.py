@@ -85,8 +85,9 @@ def build(directory, sign):
                               os.path.join(directory, f),
                               )
                 # verify the document signature
-                lines = errun(['gpg',
-                               '--verify', signature, pdf,
+                lines = errun(['gpg', '--verify',
+                               os.path.join(directory, signature),
+                               os.path.join(directory, pdf),
                                ]).decode('u8').splitlines()
                 id = lines[2].index('"')
                 lines = [
