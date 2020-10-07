@@ -5,10 +5,12 @@ import shutil
 import subprocess
 import sys
 
+ENGLISH='en'
+FRENCH='fr'
+LANGUAGES = [ENGLISH, FRENCH]
 DOCUMENTS = [
-    # ('topic', 'sujet'),
-    ('document', 'mémoire'),
-    # ('presentation', 'présentation'),
+    {ENGLISH: 'thesis', FRENCH: 'mémoire'},
+    # {ENGLISH: 'presentation', FRENCH: 'présentation'},
 ]
 TMP = 'tmp'
 
@@ -23,46 +25,47 @@ def errun(command):
 
 
 def build(sign):
-    for en, fr in DOCUMENTS:
-        command = ['xelatex', '-output-directory', TMP, en]
-        if en == 'document':
+    for language in LANGUAGES:
+        for document in DOCUMENTS:
+            command = ['xelatex', '-output-directory', TMP, document[ENGLISH]]
+            if document['en'] == 'thesis':
+                run(command)
+                run(['makeglossaries', '-d', TMP, document[ENGLISH]])
+                run(['biber',
+                    '--input-directory', TMP,
+                    '--output-directory', TMP,
+                    document['en'],
+                ])
+                run(command)
             run(command)
-            run(['makeglossaries', '-d', TMP, en])
-            run(['biber',
-                '--input-directory', TMP,
-                '--output-directory', TMP,
-                en,
-            ])
-            run(command)
-        run(command)
-        pdf = f'{fr}.pdf'
-        os.rename(os.path.join(TMP, f'{en}.pdf'),
-            os.path.join(TMP, pdf))
-        if not sign:
-            os.rename(os.path.join(TMP, pdf), pdf)
-        else:
-            run(['gpg',
-                '--armor',
-                '--detach-sign',
-                os.path.join(TMP, pdf),
-            ])
-            signature = f'{pdf}.asc'
-            for f in [pdf, signature]:
-                os.rename(os.path.join(TMP, f), f)
-            lines = errun(['gpg',
-                '--verify', signature, pdf,
-            ]).decode('u8').splitlines()
-            id = lines[2].index('"')
-            lines = [
-                lines[0],
-                lines[1],
-                lines[2][:id] + lines[4][id:]
-                .replace('@', ' @ ')
-                .replace('.', ' ⋅ ')
-            ] + lines[5:]
-            buffer = os.linesep.join(lines).encode('u8')
-            with open(f'{pdf}.vrf', 'bw') as f:
-                f.write(buffer)
+            pdf = f'{document[FRENCH]}.pdf'
+            os.rename(os.path.join(TMP, f'{document[ENGLISH]}.pdf'),
+                os.path.join(TMP, pdf))
+            if not sign:
+                os.rename(os.path.join(TMP, pdf), pdf)
+            else:
+                run(['gpg',
+                    '--armor',
+                    '--detach-sign',
+                    os.path.join(TMP, pdf),
+                ])
+                signature = f'{pdf}.asc'
+                for f in [pdf, signature]:
+                    os.rename(os.path.join(TMP, f), f)
+                lines = errun(['gpg',
+                    '--verify', signature, pdf,
+                ]).decode('u8').splitlines()
+                id = lines[2].index('"')
+                lines = [
+                    lines[0],
+                    lines[1],
+                    lines[2][:id] + lines[4][id:]
+                    .replace('@', ' @ ')
+                    .replace('.', ' ⋅ ')
+                ] + lines[5:]
+                buffer = os.linesep.join(lines).encode('u8')
+                with open(f'{pdf}.vrf', 'bw') as f:
+                    f.write(buffer)
 
 
 def clean():
