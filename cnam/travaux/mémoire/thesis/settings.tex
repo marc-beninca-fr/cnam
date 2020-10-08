@@ -6,12 +6,12 @@
 
 % set languages
 \setmainlanguage{\mainlanguage}
-\setotherlanguages{en,fr}
+\setotherlanguages{\otherlanguages}
 
 % language commands
 \newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
 
-\newcommand{\bi}[2]{%
+\newcommand{\ml}[2]{%
 \ifstr{\mainlanguage}{en}{\ifstrempty{#1}{TRANSLATE\_ME!}{#1}}{%
 \ifstr{\mainlanguage}{fr}{\ifstrempty{#2}{TRADUISEZ\_MOI\_!}{#2}}{%
 SHOULD\_NOT\_HAPPEN!%

@@ -30,8 +30,17 @@ def build(directory, sign):
     tmp = os.path.join(directory, TMP)
     # for each language
     for language in LANGUAGES:
+        # other languages
+        other_languages = ','.join(
+            [lang for lang in LANGUAGES if lang is not language])
+        # display languages
+        print()
+        print(language, other_languages)
         # for each document
         for document in DOCUMENTS:
+            # display language
+            print()
+            print(document[language])
             # clean
             os.chdir(directory)
             wipe(tmp)
@@ -39,8 +48,10 @@ def build(directory, sign):
             # move into document directory
             os.chdir(document[ENGLISH])
             # prepare variables
-            variables = {'mainlanguage': language,
-                         }
+            variables = {
+                'mainlanguage': language,
+                'otherlanguages': other_languages,
+            }
             # transform variables
             variables = ''.join([f'\\def\\{k}{{{v}}}'
                                  for k, v in variables.items()])
