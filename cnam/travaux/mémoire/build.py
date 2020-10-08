@@ -41,7 +41,7 @@ def build(directory, sign):
             # prepare build command
             command = ['xelatex',
                        '-output-directory', tmp,
-                       MAIN,
+                       f'\def\mainlanguage{{{language}}}\input{{{MAIN}}}',
                        ]
             # if it's the main document
             if document[ENGLISH] == 'thesis':
