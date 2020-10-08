@@ -6,3 +6,17 @@
 
 % set main language
 \setmainlanguage{\mainlanguage}
+
+% language commands
+
+\newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
+
+\newcommand{\bi}[2]{%
+\ifstr{\mainlanguage}{en}{#1}{%
+\ifstrempty{#2}{TRANSLATE ME!}{#2}%
+}%
+}
+
+\newcommand{\en}[1]{\textenglish{#1}}
+
+\newcommand{\fr}[1]{\textfrench{#1}}
