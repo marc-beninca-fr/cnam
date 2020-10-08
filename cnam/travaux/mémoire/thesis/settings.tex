@@ -15,6 +15,12 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \setmainlanguage{\mainlanguage}
 \setotherlanguages{\otherlanguages}
 
+% simple commands
+
+\newcommand{\hr}{\rule{\textwidth}{1pt}}
+
+\newcommand{\hrq}{\rule{.25\textwidth}{1pt}}
+
 % handle multiple languages
 
 \newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
@@ -22,8 +28,8 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \newcommand{\warn}[1]{/!\textbackslash #1 /!\textbackslash}
 
 \newcommand{\ml}[2]{%
-\ifstr{\mainlanguage}{en}{\ifstrempty{#1}{\warn{TRANSLATE ME}}{#1}}{%
-\ifstr{\mainlanguage}{fr}{\ifstrempty{#2}{\warn{TRADUISEZ-MOI}}{#2}}{%
+\ifstr{\mainlanguage}{en}{\ifstrempty{#1}{\warn{TRANSLATION}}{#1}}{%
+\ifstr{\mainlanguage}{fr}{\ifstrempty{#2}{\warn{TRADUCTION}}{#2}}{%
 SHOULD\_NOT\_HAPPEN!%
 }}%
 }
