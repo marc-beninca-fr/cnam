@@ -1,14 +1,18 @@
 % set default size and document class
 \documentclass[12pt]{extarticle}
 
-% handle multiple languages
-\usepackage{polyglossia}
+% set fonts
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
 
 % set languages
+\usepackage{polyglossia}
 \setmainlanguage{\mainlanguage}
 \setotherlanguages{\otherlanguages}
 
-% language commands
+% handle multiple languages
+
 \newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
 
 \newcommand{\ml}[2]{%
