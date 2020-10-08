@@ -38,10 +38,16 @@ def build(directory, sign):
             os.makedirs(tmp)
             # move into document directory
             os.chdir(document[ENGLISH])
+            # prepare variables
+            variables = {'mainlanguage': language,
+                         }
+            # transform variables
+            variables = ''.join([f'\\def\\{k}{{{v}}}'
+                                 for k, v in variables.items()])
             # prepare build command
             command = ['xelatex',
                        '-output-directory', tmp,
-                       f'\def\mainlanguage{{{language}}}\input{{{MAIN}}}',
+                       f'{variables}\\input{{{MAIN}}}',
                        ]
             # if it's the main document
             if document[ENGLISH] == 'thesis':
