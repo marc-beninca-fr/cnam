@@ -5,6 +5,7 @@ import shutil
 import subprocess
 import sys
 
+AUTHOR = 'Marc BENINCA'
 ENGLISH = 'en'
 FRENCH = 'fr'
 LANGUAGES = [ENGLISH, FRENCH]
@@ -49,6 +50,7 @@ def build(directory, sign):
             os.chdir(document[ENGLISH])
             # prepare variables
             variables = {
+                'author': AUTHOR,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
             }
