@@ -9,12 +9,10 @@
 
 % language commands
 
-\newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
-
 \newcommand{\bi}[2]{%
-\ifstr{\mainlanguage}{en}{#1}{%
-\ifstrempty{#2}{TRANSLATE ME!}{#2}%
-}%
+\expandafter\ifstrequal\expandafter{\mainlanguage}{en}%
+{\ifstrempty{#1}{\ifstrempty{#2}{}{TRANSLATE\_ME!}}{#1}}%
+{\ifstrempty{#2}{\ifstrempty{#1}{}{TRADUISEZ\_MOI\_!}}{#2}}%
 }
 
 \newcommand{\en}[1]{\textenglish{#1}}
