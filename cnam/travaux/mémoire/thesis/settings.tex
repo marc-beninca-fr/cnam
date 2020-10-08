@@ -1,5 +1,5 @@
 % set default size and document class
-\documentclass[12pt]{extarticle}
+\documentclass[12pt]{memoir}
 
 % set fonts
 \usepackage{fontspec}
@@ -15,9 +15,11 @@
 
 \newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
 
+\newcommand{\warn}[1]{/!\textbackslash #1 /!\textbackslash}
+
 \newcommand{\ml}[2]{%
-\ifstr{\mainlanguage}{en}{\ifstrempty{#1}{TRANSLATE\_ME!}{#1}}{%
-\ifstr{\mainlanguage}{fr}{\ifstrempty{#2}{TRADUISEZ\_MOI\_!}{#2}}{%
+\ifstr{\mainlanguage}{en}{\ifstrempty{#1}{\warn{TRANSLATE ME}}{#1}}{%
+\ifstr{\mainlanguage}{fr}{\ifstrempty{#2}{\warn{TRADUISEZ-MOI}}{#2}}{%
 SHOULD\_NOT\_HAPPEN!%
 }}%
 }
