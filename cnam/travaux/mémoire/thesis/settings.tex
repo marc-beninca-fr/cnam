@@ -1,5 +1,5 @@
 % set default size and document class
-\documentclass[12pt]{report}
+\documentclass[11pt]{report}
 
 % set paper geometry
 \usepackage[a4paper,portrait,
@@ -7,6 +7,8 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 
 % set fonts
 \usepackage{fontspec}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
 \setmainfont{DejaVu Sans}
 \setmonofont{DejaVu Sans Mono}
 
@@ -25,7 +27,7 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 
 \newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
 
-\newcommand{\warn}[1]{/!\textbackslash #1 /!\textbackslash}
+\newcommand{\warn}[1]{/!\textbackslash\_#1\_/!\textbackslash}
 
 \newcommand{\ml}[2]{%
 \ifstr{\mainlanguage}{en}{\ifstrempty{#1}{\warn{TRANSLATION}}{#1}}{%
