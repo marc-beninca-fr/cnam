@@ -6,15 +6,21 @@ import subprocess
 import sys
 
 AUTHOR = 'Marc BENINCA'
+MAIN = 'main'
+TMP = 'tmp'
+
 ENGLISH = 'en'
 FRENCH = 'fr'
 LANGUAGES = [ENGLISH, FRENCH]
+
 DOCUMENTS = [
     {ENGLISH: 'thesis', FRENCH: 'mémoire'},
     {ENGLISH: 'presentation', FRENCH: 'présentation'},
 ]
-MAIN = 'main'
-TMP = 'tmp'
+TITLE = {
+    ENGLISH: 'Incremental Live Operating Systems',
+    FRENCH: 'Systèmes d’exploitation autonomes incrémentaux',
+}
 
 
 def run(command):
@@ -57,6 +63,7 @@ def build(directory, sign):
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
                 'summaries': summaries,
+                'title': TITLE[language],
             }
             # transform variables
             variables = ''.join([f'\\def\\{k}{{{v}}}'
