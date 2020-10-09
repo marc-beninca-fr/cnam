@@ -22,8 +22,8 @@ Signatures numériques                           Digital signatures
 .. todo::
 
  * vérifier les marges
- * vérifier la taille
- * vérifier l’interligne
+ * interligne 1,5
+ * interligne simple pour résumés
  * réduire le décalage des chapitres
  * logo CNAM
  * séparer les éléments de l’objectif
