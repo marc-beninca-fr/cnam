@@ -24,7 +24,6 @@ Signatures numériques                           Digital signatures
  * vérifier les marges
  * réduire le décalage des chapitres
  * logo CNAM
- * séparer les éléments de l’objectif
  * terminer la page de garde
  * renommer la table des matières
  * terminer la quatrième de couverture
