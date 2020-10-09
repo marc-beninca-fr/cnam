@@ -31,12 +31,15 @@ def build(directory, sign):
     tmp = os.path.join(directory, TMP)
     # for each language
     for language in LANGUAGES:
-        # other languages
-        other_languages = ','.join(
-            [lang for lang in LANGUAGES if lang is not language])
+        # languages
+        other_languages = [lang for lang in LANGUAGES if lang is not language]
+        languages = [language, *other_languages]
+        other_languages = ','.join(other_languages)
+        summaries = ''.join(
+            [f'\input{{summary.{lang}}}' for lang in languages])
         # display languages
-        print()
-        print(language, other_languages)
+        for item in ['', language, other_languages, languages, summaries]:
+            print(item)
         # for each document
         for document in DOCUMENTS:
             # display language
@@ -53,6 +56,7 @@ def build(directory, sign):
                 'author': AUTHOR,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
+                'summaries': summaries,
             }
             # transform variables
             variables = ''.join([f'\\def\\{k}{{{v}}}'
