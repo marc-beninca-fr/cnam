@@ -25,6 +25,10 @@ SUBTITLE = {
     ENGLISH: '?',
     FRENCH: '?',
 }
+DATE = {
+    ENGLISH: 'Month DD, 2021',
+    FRENCH: 'JJ Mois 2021',
+}
 
 
 def run(command):
@@ -63,9 +67,10 @@ def build(directory, sign):
             os.chdir(document[ENGLISH])
             # prepare variables
             variables = {
+                'author': AUTHOR,
                 'title': TITLE[language],
                 'subtitle': SUBTITLE[language],
-                'author': AUTHOR,
+                'date': DATE[language],
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
                 'summaries': summaries,
