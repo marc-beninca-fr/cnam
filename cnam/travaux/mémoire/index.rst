@@ -19,6 +19,15 @@ Signatures numériques                           Digital signatures
 :download:`Présentation <présentation.pdf.asc>` :download:`Presentation <presentation.pdf.asc>`
 =============================================== ===============================================
 
-.. todo:: introduction
+.. todo::
 
-.. todo:: conclusion
+ * vérifier les marges
+ * vérifier la taille
+ * vérifier l’interligne
+ * réduire le décalage des chapitres
+ * logo CNAM
+ * séparer les éléments de l’objectif
+ * terminer la page de garde
+ * terminer la quatrième de couverture
+ * rédiger l’introduction
+ * rédiger la conclusion
