@@ -1,6 +1,13 @@
 % set default size and document class
 \documentclass[12pt]{report}
 
+% adjust chapter titles
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@makechapterhead}{50\p@}{0pt}{}{}
+\patchcmd{\@makeschapterhead}{50\p@}{0pt}{}{}
+\makeatother
+
 % set paper geometry
 \usepackage[a4paper,portrait,
 bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}

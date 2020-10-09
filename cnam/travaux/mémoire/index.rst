@@ -24,7 +24,6 @@ Signatures numériques                           Digital signatures
  * mémoire
 
    * vérifier les marges
-   * réduire le décalage des chapitres
    * terminer la page de garde
    * terminer la quatrième de couverture
    * rédiger l’introduction
