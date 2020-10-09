@@ -21,9 +21,20 @@ Signatures numériques                           Digital signatures
 
 .. todo::
 
- * vérifier les marges
- * réduire le décalage des chapitres
- * terminer la page de garde
- * terminer la quatrième de couverture
- * rédiger l’introduction
- * rédiger la conclusion
+ * mémoire
+
+   * vérifier les marges
+   * réduire le décalage des chapitres
+   * terminer la page de garde
+   * terminer la quatrième de couverture
+   * rédiger l’introduction
+   * rédiger la conclusion
+
+ * présentation
+
+   * logo du CNAM
+   * couleur des barres
+   * page de garde
+   * plan
+   * marges
+   * page de fin
