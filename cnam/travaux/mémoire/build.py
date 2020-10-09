@@ -21,6 +21,10 @@ TITLE = {
     ENGLISH: 'Incremental Live Operating Systems',
     FRENCH: 'Systèmes d’exploitation autonomes incrémentaux',
 }
+SUBTITLE = {
+    ENGLISH: '?',
+    FRENCH: '?',
+}
 
 
 def run(command):
@@ -59,11 +63,12 @@ def build(directory, sign):
             os.chdir(document[ENGLISH])
             # prepare variables
             variables = {
+                'title': TITLE[language],
+                'subtitle': SUBTITLE[language],
                 'author': AUTHOR,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
                 'summaries': summaries,
-                'title': TITLE[language],
             }
             # transform variables
             variables = ''.join([f'\\def\\{k}{{{v}}}'
