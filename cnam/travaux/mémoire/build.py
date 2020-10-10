@@ -22,8 +22,8 @@ TITLE = {
     FRENCH: 'Systèmes d’exploitation autonomes incrémentaux',
 }
 SUBTITLE = {
-    ENGLISH: '?',
-    FRENCH: '?',
+    ENGLISH: 'a reversal of conventional approaches',
+    FRENCH: 'une inversion des approches conventionnelles',
 }
 DATE = {
     ENGLISH: 'Month DD, 2021',
