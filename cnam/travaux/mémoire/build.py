@@ -88,7 +88,7 @@ def build(directory, sign):
                 # pre build
                 run(command)
                 # build glossaries
-                run(['makeglossaries', '-d', tmp, document[ENGLISH]])
+                run(['makeglossaries', '-d', tmp, MAIN])
                 # build references
                 run(['biber',
                      '--input-directory', tmp,
