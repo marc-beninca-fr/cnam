@@ -24,8 +24,7 @@ Signatures numériques                           Digital signatures
  * mémoire
 
    * vérifier les marges
-   * terminer la page de garde
-   * terminer la quatrième de couverture
+   * mettre en place les liens
    * séparer les chapitres
    * rédiger l’introduction
    * rédiger la conclusion
