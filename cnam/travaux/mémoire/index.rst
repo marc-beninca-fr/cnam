@@ -23,7 +23,6 @@ Signatures numériques                           Digital signatures
 
  * mémoire
 
-   * corriger le plan pdf
    * vérifier les marges
    * séparer les chapitres
    * rédiger l’introduction
