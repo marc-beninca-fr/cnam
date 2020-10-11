@@ -58,14 +58,14 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 
 % handle multiple languages
 
-\newcommand{\ifstr}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
+\newcommand{\ifstreq}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
 
-\newcommand{\warn}[1]{/!\textbackslash\_#1\_/!\textbackslash}
+\def\todo{TODO}
 
 \newcommand{\ml}[2]{%
-\ifstr{\mainlanguage}{en}{\ifstrempty{#1}{\warn{TRANSLATION}}{#1}}{%
-\ifstr{\mainlanguage}{fr}{\ifstrempty{#2}{\warn{TRADUCTION}}{#2}}{%
-SHOULD\_NOT\_HAPPEN!%
+\ifstreq{\mainlanguage}{en}{\ifstrempty{#1}{\todo}{#1}}{%
+\ifstreq{\mainlanguage}{fr}{\ifstrempty{#2}{\todo}{#2}}{%
+ERROR%
 }}%
 }
 
