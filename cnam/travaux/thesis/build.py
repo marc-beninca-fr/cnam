@@ -69,7 +69,7 @@ def build(directory, sign):
             variables = {
                 'author': AUTHOR,
                 'title': TITLE[language],
-                'subtitle': SUBTITLE[language],
+                'titlesub': SUBTITLE[language],
                 'date': DATE[language],
                 'name': MAIN,
                 'mainlanguage': language,
