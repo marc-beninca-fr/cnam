@@ -71,6 +71,7 @@ def build(directory, sign):
                 'title': TITLE[language],
                 'subtitle': SUBTITLE[language],
                 'date': DATE[language],
+                'name': MAIN,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
                 'summaries': summaries,
