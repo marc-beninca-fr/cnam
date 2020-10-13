@@ -17,7 +17,7 @@ DOCUMENTS = [
     {ENGLISH: 'thesis', FRENCH: 'mémoire'},
     {ENGLISH: 'presentation', FRENCH: 'présentation'},
 ]
-TITLE = {
+TITLE_LONG = {
     ENGLISH: 'Incremental Live Operating Systems',
     FRENCH: 'Systèmes d’exploitation autonomes incrémentaux',
 }
@@ -77,7 +77,7 @@ def build(directory, sign):
             # prepare variables
             variables = {
                 'author': AUTHOR,
-                'title': TITLE[language],
+                'titlelong': TITLE_LONG[language],
                 'titlesub': SUBTITLE[language],
                 'dateshort': DATE_SHORT,
                 'datelong': DATE_LONG[language],
