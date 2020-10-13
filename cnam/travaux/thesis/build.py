@@ -25,9 +25,18 @@ SUBTITLE = {
     ENGLISH: 'a reversal of conventional approaches',
     FRENCH: 'une inversion des approches conventionnelles',
 }
-DATE = {
-    ENGLISH: 'Month DD, 2021',
-    FRENCH: 'JJ Mois 2021',
+DATE_SHORT = '2021'
+DATE_LONG = {
+    ENGLISH: f'Month DD, {DATE_SHORT}',
+    FRENCH: f'JJ Mois {DATE_SHORT}',
+}
+TYPE_SHORT = {
+    ENGLISH: 'Thesis',
+    FRENCH: 'Mémoire',
+}
+TYPE_LONG = {
+    ENGLISH: f'CNAM Master\'s {TYPE_SHORT[ENGLISH]}',
+    FRENCH: f'{TYPE_SHORT[FRENCH]} d’Ingénieur CNAM',
 }
 
 
@@ -70,7 +79,10 @@ def build(directory, sign):
                 'author': AUTHOR,
                 'title': TITLE[language],
                 'titlesub': SUBTITLE[language],
-                'date': DATE[language],
+                'dateshort': DATE_SHORT,
+                'datelong': DATE_LONG[language],
+                'typeshort': TYPE_SHORT[language],
+                'typelong': TYPE_LONG[language],
                 'name': MAIN,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
