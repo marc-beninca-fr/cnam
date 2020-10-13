@@ -19,9 +19,13 @@ DOCUMENTS = [
     {ENGLISH: 'thesis', FRENCH: 'mémoire'},
     {ENGLISH: 'presentation', FRENCH: 'présentation'},
 ]
+TITLE_SHORT = {
+    ENGLISH: 'Incremental Live OS',
+    FRENCH: 'SE autonomes incrémentaux',
+}
 TITLE_LONG = {
     ENGLISH: 'Incremental Live Operating Systems',
-    FRENCH: 'Systèmes d’exploitation autonomes incrémentaux',
+    FRENCH: 'Systèmes d’Exploitation autonomes incrémentaux',
 }
 SUBTITLE = {
     ENGLISH: 'a reversal of conventional approaches',
@@ -80,6 +84,7 @@ def build(directory, sign):
             variables = {
                 'authorshort': AUTHOR_SHORT,
                 'authorlong': AUTHOR_LONG,
+                'titleshort': TITLE_SHORT[language],
                 'titlelong': TITLE_LONG[language],
                 'titlesub': SUBTITLE[language],
                 'dateshort': DATE_SHORT,
