@@ -5,7 +5,9 @@ import shutil
 import subprocess
 import sys
 
-AUTHOR = 'Marc BENINCA'
+AUTHOR_NAME = 'BENINCA'
+AUTHOR_SHORT = f'M. {AUTHOR_NAME}'
+AUTHOR_LONG = f'Marc {AUTHOR_NAME}'
 MAIN = 'main'
 TMP = 'tmp'
 
@@ -76,7 +78,8 @@ def build(directory, sign):
             os.chdir(document[ENGLISH])
             # prepare variables
             variables = {
-                'author': AUTHOR,
+                'authorshort': AUTHOR_SHORT,
+                'authorlong': AUTHOR_LONG,
                 'titlelong': TITLE_LONG[language],
                 'titlesub': SUBTITLE[language],
                 'dateshort': DATE_SHORT,
