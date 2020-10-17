@@ -28,15 +28,6 @@ SUBTITLE = {
     ENGLISH: 'a reversal of conventional approaches',
     FRENCH: 'une inversion des approches conventionnelles',
 }
-DATE_SHORT = '2021'
-DATE_LONG = {
-    ENGLISH: f'Month DD, {DATE_SHORT}',
-    FRENCH: f'JJ Mois {DATE_SHORT}',
-}
-TYPE_SHORT = {
-    ENGLISH: 'Thesis',
-    FRENCH: 'Mémoire',
-}
 
 
 def run(command):
@@ -78,9 +69,6 @@ def build(directory, sign):
                 'titleshort': TITLE_SHORT[language],
                 'titlelong': TITLE_LONG[language],
                 'titlesub': SUBTITLE[language],
-                'dateshort': DATE_SHORT,
-                'datelong': DATE_LONG[language],
-                'typeshort': TYPE_SHORT[language],
                 'name': MAIN,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
