@@ -40,10 +40,6 @@ TYPE_SHORT = {
     ENGLISH: 'Thesis',
     FRENCH: 'Mémoire',
 }
-TYPE_LONG = {
-    ENGLISH: f'CNAM Master\'s {TYPE_SHORT[ENGLISH]}',
-    FRENCH: f'{TYPE_SHORT[FRENCH]} d’Ingénieur CNAM',
-}
 
 
 def run(command):
@@ -90,7 +86,6 @@ def build(directory, sign):
                 'dateshort': DATE_SHORT,
                 'datelong': DATE_LONG[language],
                 'typeshort': TYPE_SHORT[language],
-                'typelong': TYPE_LONG[language],
                 'name': MAIN,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
