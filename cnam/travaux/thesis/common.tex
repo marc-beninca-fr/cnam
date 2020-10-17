@@ -1,2 +1,28 @@
+% set languages
+\usepackage{polyglossia}
+% recommended
+\usepackage{csquotes}
+\setmainlanguage{\mainlanguage}
+\setotherlanguages{\otherlanguages}
+
+% imports
+
 \input{settings}
 \input{variables}
+
+% handle multiple languages
+
+\newcommand{\ifstreq}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
+
+\def\todo{TODO}
+
+\newcommand{\ml}[2]{%
+\ifstreq{\mainlanguage}{english}{\ifstrempty{#1}{\todo}{#1}}{%
+\ifstreq{\mainlanguage}{french}{\ifstrempty{#2}{\todo}{#2}}{%
+ERROR%
+}}%
+}
+
+\newcommand{\en}[1]{\textenglish{#1}}
+
+\newcommand{\fr}[1]{\textfrench{#1}}

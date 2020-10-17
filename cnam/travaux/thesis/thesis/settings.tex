@@ -1,6 +1,3 @@
-% set default size and document class
-\documentclass[12pt]{report}
-
 % acronyms, glossary
 \usepackage[acronym,toc]{glossaries}
 \makeglossaries
@@ -45,13 +42,6 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 % lists of figures, tables
 \usepackage{tocbibind}
 
-% set languages
-\usepackage{polyglossia}
-% recommended
-\usepackage{csquotes}
-\setmainlanguage{\mainlanguage}
-\setotherlanguages{\otherlanguages}
-
 % references after polyglossia
 \usepackage[sorting=anyt]{biblatex}
 \bibliography{\name}
@@ -69,21 +59,3 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 %\setlength{\parsep}{0em}
 %\setlength{\parskip}{0em}
 }{\end{itemize}}
-
-
-% handle multiple languages
-
-\newcommand{\ifstreq}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
-
-\def\todo{TODO}
-
-\newcommand{\ml}[2]{%
-\ifstreq{\mainlanguage}{en}{\ifstrempty{#1}{\todo}{#1}}{%
-\ifstreq{\mainlanguage}{fr}{\ifstrempty{#2}{\todo}{#2}}{%
-ERROR%
-}}%
-}
-
-\newcommand{\en}[1]{\textenglish{#1}}
-
-\newcommand{\fr}[1]{\textfrench{#1}}

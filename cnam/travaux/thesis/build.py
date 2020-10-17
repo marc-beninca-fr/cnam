@@ -11,8 +11,8 @@ AUTHOR_LONG = f'Marc {AUTHOR_NAME}'
 MAIN = 'main'
 TMP = 'tmp'
 
-ENGLISH = 'en'
-FRENCH = 'fr'
+ENGLISH = 'english'
+FRENCH = 'french'
 LANGUAGES = [ENGLISH, FRENCH]
 
 DOCUMENTS = [
