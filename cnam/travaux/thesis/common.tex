@@ -10,12 +10,6 @@
 \def\instituteshort{CNAM}
 \def\institutelong{Conservatoire National des Arts et Métiers}
 
-\def\titleshort{\ml{Incremental Live OS}{SE autonomes incrémentaux}}
-\def\titlelong{\ml{Incremental Live Operating Systems}
-{Systèmes d’Exploitation autonomes incrémentaux}}
-\def\titlesub{\ml{a reversal of conventional approaches}
-{une inversion des approches conventionnelles}}
-
 \def\typeshort{\ml{Thesis}{Mémoire}}
 \def\typelong{\ml{\instituteshort\ Master's \typeshort}
 {\typeshort\ d’Ingénieur \instituteshort}}
@@ -47,3 +41,16 @@ ERROR%
 \newcommand{\en}[1]{\textenglish{#1}}
 
 \newcommand{\fr}[1]{\textfrench{#1}}
+
+% variables
+
+\def\titleshort{\ml{Incremental Live OS}{SE autonomes incrémentaux}}
+\ml
+{\def\titlelong{Incremental Live Operating Systems}
+\def\titlesub{a reversal of conventional approaches}}
+{\def\titlelong{Systèmes d’Exploitation autonomes incrémentaux}
+\def\titlesub{une inversion des approches conventionnelles}}
+
+% begin document
+
+\begin{document}
