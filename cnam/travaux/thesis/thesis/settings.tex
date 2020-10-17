@@ -56,11 +56,20 @@ bmargin=20mm,lmargin=20mm,rmargin=20mm,tmargin=20mm]{geometry}
 \usepackage[sorting=anyt]{biblatex}
 \bibliography{\name}
 
-% simple commands
+% commands
 
 \newcommand{\hr}{\rule{\textwidth}{1pt}}
 
 \newcommand{\hrq}{\rule{.25\textwidth}{1pt}}
+
+% environments
+
+\newenvironment{itmz}{\begin{itemize}
+%\setlength{\itemsep}{0em}
+%\setlength{\parsep}{0em}
+%\setlength{\parskip}{0em}
+}{\end{itemize}}
+
 
 % handle multiple languages
 
