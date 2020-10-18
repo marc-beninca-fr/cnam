@@ -21,10 +21,6 @@
 \setmainlanguage{\mainlanguage}
 \setotherlanguages{\otherlanguages}
 
-% imports
-
-\input{settings}
-
 % handle multiple languages
 
 \newcommand{\ifstreq}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
@@ -50,6 +46,10 @@ ERROR%
 \def\titlesub{a reversal of conventional approaches}}
 {\def\titlelong{Systèmes d’Exploitation autonomes incrémentaux}
 \def\titlesub{une inversion des approches conventionnelles}}
+
+% imports
+
+\input{settings}
 
 % begin document
 

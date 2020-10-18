@@ -4,5 +4,5 @@ DIRECTORY="$(dirname "${FILE}")"
 cd "${DIRECTORY}"
 
 gedit --new-window thesis/* &
-gedit --new-window index.rst build.py common.tex presentation/* &
+gedit --new-window index.rst build.py settings.tex presentation/* &
 evince mémoire.pdf présentation.pdf &
