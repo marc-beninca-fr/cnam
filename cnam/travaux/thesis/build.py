@@ -37,7 +37,7 @@ def build(directory, sign):
         languages = [language, *other_languages]
         other_languages = ','.join(other_languages)
         summaries = ''.join(
-            [f'\\input{{summary.{lang}}}' for lang in languages])
+            [f'\\summary{{{lang}}}' for lang in languages])
         # display languages
         for item in ['', language, other_languages, languages, summaries]:
             print(item)

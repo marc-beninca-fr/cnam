@@ -50,9 +50,16 @@ ERROR%
 {\def\typelong{\instituteshort\ Master's \typeshort}}
 {\def\typelong{\typeshort\ d’Ingénieur \instituteshort}}
 
-\ml
-{\def\kw{one, two, three, four, five, six, seven, eight}}
-{\def\kw{un, deux, trois, quatre, cinq, six, sept, huit}}
+% set key words
+
+\newcommand{\kwa}[1]{%
+\ifstreq{#1}{english}{one, two, three, four}{}%
+\ifstreq{#1}{french}{un, deux, trois, quatre}{}%
+}
+\newcommand{\kwb}[1]{%
+\ifstreq{#1}{english}{five, six, seven, eight}{}%
+\ifstreq{#1}{french}{cinq, six, sept, huit}{}%
+}
 
 % links and pdf metadata
 
@@ -60,7 +67,7 @@ ERROR%
 \hypersetup{
 pdfinfo={
 Subject={\typelong},
-Keywords={\kw},
+Keywords={\kwa{\mainlanguage}, \kwb{\mainlanguage}},
 },
 }
 
