@@ -1,4 +1,4 @@
-% set pdf metadata
+% set pdf and title page metadata
 \author[\authorshort]{\authorlong}
 \title[\titleshort]{\titlelong}
 \subtitle{\titlesub}
@@ -8,11 +8,23 @@
 \institute[\instituteshort]{\institutelong}
 \date[\typeshort \dateshort]{\typelong\\\datelong}
 
+% pdf
+\hypersetup{
+pdfinfo={
+Creator={XeLaTeX / beamer},
+},
+}
+
+% set theme
 \usetheme{Berkeley}
+% set theme color
 \usecolortheme{seahorse}
+% set background image
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../paper}}
 
+% remove navigation symbols
 \beamertemplatenavigationsymbolsempty
 
+% set page numbering
 \addtobeamertemplate{navigation symbols}{}{
 \color{black}\normalsize\textbf\insertframenumber}

@@ -13,15 +13,18 @@
 \usepackage{tocloft}
 
 % links
-\usepackage[
-pdfauthor={\authorlong},
-pdftitle={\titlelong - \titlesub},
+\hypersetup{
+pdfinfo={
+Title={\titlelong\ - \titlesub},
+Author={\authorlong},
+Creator={XeLaTeX / report},
+},
 colorlinks,
 citecolor=blue,
 filecolor=blue,
 linkcolor=blue,
 urlcolor=blue,
-]{hyperref}
+}
 
 % adjust chapter titles
 \usepackage{etoolbox}

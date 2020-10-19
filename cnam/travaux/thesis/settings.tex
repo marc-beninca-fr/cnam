@@ -10,10 +10,6 @@
 \def\instituteshort{CNAM}
 \def\institutelong{Conservatoire National des Arts et Métiers}
 
-\def\typeshort{\ml{Thesis}{Mémoire}}
-\def\typelong{\ml{\instituteshort\ Master's \typeshort}
-{\typeshort\ d’Ingénieur \instituteshort}}
-
 % set languages
 \usepackage{polyglossia}
 % recommended
@@ -46,6 +42,27 @@ ERROR%
 \def\titlesub{a reversal of conventional approaches}}
 {\def\titlelong{Systèmes d’Exploitation autonomes incrémentaux}
 \def\titlesub{une inversion des approches conventionnelles}}
+
+\ml
+{\def\typeshort{Thesis}}
+{\def\typeshort{Mémoire}}
+\ml
+{\def\typelong{\instituteshort\ Master's \typeshort}}
+{\def\typelong{\typeshort\ d’Ingénieur \instituteshort}}
+
+\ml
+{\def\kw{one, two, three, four, five, six, seven, eight}}
+{\def\kw{un, deux, trois, quatre, cinq, six, sept, huit}}
+
+% links and pdf metadata
+
+\usepackage{hyperref}
+\hypersetup{
+pdfinfo={
+Subject={\typelong},
+Keywords={\kw},
+},
+}
 
 % imports
 
