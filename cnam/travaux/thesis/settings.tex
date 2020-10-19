@@ -52,14 +52,24 @@ ERROR%
 
 % set key words
 
+\def\kwaen{one, two, three, four}
+\def\kwafr{un, deux, trois, quatre}
+
+\def\kwben{five, six, seven, eight}
+\def\kwbfr{cinq, six, sept, huit}
+
 \newcommand{\kwa}[1]{%
-\ifstreq{#1}{english}{one, two, three, four}{}%
-\ifstreq{#1}{french}{un, deux, trois, quatre}{}%
+\ifstreq{#1}{english}{\kwaen}{}%
+\ifstreq{#1}{french}{\kwafr}{}%
 }
 \newcommand{\kwb}[1]{%
-\ifstreq{#1}{english}{five, six, seven, eight}{}%
-\ifstreq{#1}{french}{cinq, six, sept, huit}{}%
+\ifstreq{#1}{english}{\kwben}{}%
+\ifstreq{#1}{french}{\kwbfr}{}%
 }
+
+\ml
+{\def\kw{\kwaen, \kwben}}
+{\def\kw{\kwafr, \kwbfr}}
 
 % links and pdf metadata
 
@@ -67,7 +77,7 @@ ERROR%
 \hypersetup{
 pdfinfo={
 Subject={\typelong},
-Keywords={\kwa{\mainlanguage}, \kwb{\mainlanguage}},
+Keywords={\kw},
 },
 }
 
