@@ -23,6 +23,7 @@ Signatures numériques                           Digital signatures
 
  * mémoire
 
+   * résumés sans fichiers
    * vérifier les marges
    * séparer les chapitres
    * rédiger l’introduction
@@ -30,9 +31,9 @@ Signatures numériques                           Digital signatures
 
  * présentation
 
-   * logo du CNAM
+   * taille papier
    * couleur des barres
-   * page de garde
+   * page de garde manuelle
    * plan
    * marges
    * page de fin
