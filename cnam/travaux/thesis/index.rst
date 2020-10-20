@@ -23,7 +23,6 @@ Signatures numériques                           Digital signatures
 
  * mémoire
 
-   * résumés sans fichiers
    * vérifier les marges
    * séparer les chapitres
    * rédiger l’introduction
@@ -31,7 +30,6 @@ Signatures numériques                           Digital signatures
 
  * présentation
 
-   * taille papier
    * couleur des barres
    * page de garde manuelle
    * plan
