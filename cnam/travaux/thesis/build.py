@@ -67,10 +67,10 @@ def build(directory, sign):
                        '-output-directory', tmp,
                        f'{variables}\\input{{{MAIN}}}',
                        ]
+            # pre build
+            run(command)
             # if it's the main document
             if document[ENGLISH] == 'thesis':
-                # pre build
-                run(command)
                 # build glossaries
                 run(['makeglossaries',
                      '-d', tmp,
