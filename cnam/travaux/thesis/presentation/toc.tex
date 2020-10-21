@@ -1,0 +1,17 @@
+\newcommand{\toc}[1]{%
+\tableofcontents[sections={#1},currentsection,currentsubsection]}
+
+\newcommand{\plan}{\begin{frame}%
+{\titlelong\\\titlesub}%
+\begin{multicols}{3}%
+{}\vspace{1em}\toc{1}%
+\columnbreak%
+{}\vspace{1em}\toc{2}%
+\columnbreak%
+{}\vspace{1em}\toc{3}%
+\end{multicols}%
+\end{frame}}
+
+\AtBeginSection{\plan}
+\AtBeginSubsection{\plan}
+\AtBeginSubsubsection{\plan}
