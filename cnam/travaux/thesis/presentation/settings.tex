@@ -29,4 +29,17 @@ Creator={XeLaTeX / beamer},
 \addtobeamertemplate{navigation symbols}{}{
 \color{black}\normalsize\textbf\insertframenumber}
 
+% handle multiple columns
 \usepackage{multicol}
+
+% set environments
+
+% set frame with automatic title
+\newenvironment{frm}{\begin{frame}\frametitle{%
+\insertsectionhead\\
+\ifx\insertsubsection\empty\else
+\insertsubsectionhead
+\ifx\insertsubsubsection\empty\else
+\ / \insertsubsubsectionhead
+\fi\fi
+}}{\end{frame}}
