@@ -3,13 +3,11 @@
 
 \newcommand{\plan}{\begin{frame}%
 {\titlelong\\\titlesub}%
+\begin{multicols}{3}\columnbreak\toc{1}\columnbreak\end{multicols}%
 \begin{multicols}{3}%
-{}\vspace{1em}\toc{1}%
-\columnbreak%
-{}\vspace{1em}\toc{2}%
-\columnbreak%
-{}\vspace{1em}\toc{3}%
+\toc{2}\columnbreak\toc{3}\columnbreak\toc{4}%
 \end{multicols}%
+\begin{multicols}{3}\columnbreak\toc{5}\columnbreak\end{multicols}%
 \end{frame}}
 
 \AtBeginSection{\plan}
