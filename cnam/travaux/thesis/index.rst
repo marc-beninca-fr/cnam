@@ -1,7 +1,8 @@
 Mémoire
 =======
 
-:download:`Sujet <sujet.pdf>`
+* :download:`Sujet <sujet.pdf>`
+* :download:`Planning <schedule.html>`
 
 +----------+---------------------------------------------+-------------------------------------------------+
 |          | Documents                                   | Signatures                                      |
