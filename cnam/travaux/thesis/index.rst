@@ -1,14 +1,15 @@
 Mémoire
 =======
 
-* :download:`Sujet <sujet.pdf>`
 * :download:`Planning <schedule.html>`
 
 +----------+---------------------------------------------+-------------------------------------------------+
 |          | Documents                                   | Signatures                                      |
 +----------+---------------------------------------------+-------------------------------------------------+
-|          | :download:`Mémoire <mémoire.pdf>`           | :download:`Mémoire <mémoire.pdf.asc>`           |
-| Français +---------------------------------------------+-------------------------------------------------+
+|          | :download:`Sujet <sujet.pdf>`               | :download:`Sujet <sujet.pdf.asc>`               |
+|          +---------------------------------------------+-------------------------------------------------+
+| Français | :download:`Mémoire <mémoire.pdf>`           | :download:`Mémoire <mémoire.pdf.asc>`           |
+|          +---------------------------------------------+-------------------------------------------------+
 |          | :download:`Présentation <présentation.pdf>` | :download:`Présentation <présentation.pdf.asc>` |
 +----------+---------------------------------------------+-------------------------------------------------+
 |          | :download:`Thesis <thesis.pdf>`             | :download:`Thesis <thesis.pdf.asc>`             |
