@@ -19,19 +19,23 @@ Mémoire
 
 .. literalinclude:: mémoire.pdf.vrf
 
-.. todo::
-
- * mémoire
-
-   * vérifier les marges
-   * séparer les chapitres
-   * rédiger l’introduction
-   * rédiger la conclusion
-
- * présentation
-
-   * couleur des barres
-   * page de garde manuelle
-   * plan
-   * marges
-   * page de fin
++-----------------------------------+-------------------------+
+|                                   |                         |
+| .. todo::                         | .. todo::               |
+|                                   |                         |
+|  * mémoire                        |  * thesis               |
+|                                   |                         |
+|    * vérifier les marges          |    * check margins      |
+|    * séparer les chapitres        |    * separate chapters  |
+|    * rédiger l’introduction       |    * write introduction |
+|    * rédiger la conclusion        |    * write conclusion   |
+|                                   |                         |
+|  * présentation                   |  * presentation         |
+|                                   |                         |
+|    * couleur des barres           |    * bars color         |
+|    * page de garde manuelle       |    * manual title page  |
+|    * plan                         |    * contents           |
+|    * marges                       |    * margins            |
+|    * page de fin                  |    * final page         |
+|                                   |                         |
++-----------------------------------+-------------------------+
