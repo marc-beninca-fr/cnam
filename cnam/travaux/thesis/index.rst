@@ -25,7 +25,6 @@ Mémoire
 |                                   |                         |
 |  * mémoire                        |  * thesis               |
 |                                   |                         |
-|    * vérifier les marges          |    * check margins      |
 |    * séparer les chapitres        |    * separate chapters  |
 |    * rédiger l’introduction       |    * write introduction |
 |    * rédiger la conclusion        |    * write conclusion   |
