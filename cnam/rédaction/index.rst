@@ -3,5 +3,4 @@ Rédaction
 
 .. toctree::
 
-   directives
    règles
