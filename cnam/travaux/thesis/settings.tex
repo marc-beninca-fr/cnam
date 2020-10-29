@@ -1,28 +1,34 @@
-% variables
+% define variables ─────────────────────────────────────────────────────────────
 
+\def\todo{TODO}
+
+% author
 \def\authorname{BENINCA}
 \def\authorshort{M. \authorname}
 \def\authorlong{Marc \authorname}
 
+% date
 \def\dateshort{2021}
 \def\datelong{\ml{Month DD, \dateshort}{JJ Mois \dateshort}}
 
+% institute
 \def\instituteshort{CNAM}
 \def\institutelong{Conservatoire National des Arts et Métiers}
 
-% set languages
+% manage languages ─────────────────────────────────────────────────────────────
+
+% use package
 \usepackage{polyglossia}
-% recommended
+% use recommended package
 \usepackage{csquotes}
+
+% set main
 \setmainlanguage{\mainlanguage}
+% set others
 \setotherlanguages{\otherlanguages}
 
-% handle multiple languages
-
+% expand function ifstrequal
 \newcommand{\ifstreq}[4]{\expandafter\ifstrequal\expandafter{#1}{#2}{#3}{#4}}
-
-\def\todo{TODO}
-
 % return text, according to variable mainlanguage
 % 1: english text
 % 2: french text
@@ -34,12 +40,17 @@ ERROR%
 }}%
 }
 
+% return text as english
+% 1: text
 \newcommand{\en}[1]{\textenglish{#1}}
 
+% return text as french
+% 1: text
 \newcommand{\fr}[1]{\textfrench{#1}}
 
-% variables
+% define multilingual variables ────────────────────────────────────────────────
 
+% title
 \def\titleshort{\ml{Incremental Live OS}{SE autonomes incrémentaux}}
 \ml
 {\def\titlelong{Incremental Live Operating Systems}
@@ -47,6 +58,7 @@ ERROR%
 {\def\titlelong{Systèmes d’Exploitation autonomes incrémentaux}
 \def\titlesub{une inversion des approches conventionnelles}}
 
+% type
 \ml
 {\def\typeshort{Thesis}}
 {\def\typeshort{Mémoire}}
@@ -54,28 +66,33 @@ ERROR%
 {\def\typelong{\instituteshort\ Master's \typeshort}}
 {\def\typelong{\typeshort\ d’Ingénieur \instituteshort}}
 
-% set key words
-
+% key words (part a)
 \def\kwaen{one, two, three, four}
 \def\kwafr{un, deux, trois, quatre}
 
+% key words (part b)
 \def\kwben{five, six, seven, eight}
 \def\kwbfr{cinq, six, sept, huit}
 
+% return key words (part a)
+% 1: language
 \newcommand{\kwa}[1]{%
 \ifstreq{#1}{\ENGLISH}{\kwaen}{}%
 \ifstreq{#1}{\FRENCH}{\kwafr}{}%
 }
+% return key words (part b)
+% 1: language
 \newcommand{\kwb}[1]{%
 \ifstreq{#1}{\ENGLISH}{\kwben}{}%
 \ifstreq{#1}{\FRENCH}{\kwbfr}{}%
 }
 
+% final variable kw
 \ml
 {\def\kw{\kwaen, \kwben}}
 {\def\kw{\kwafr, \kwbfr}}
 
-% links and pdf metadata
+% set links and pdf metadata ───────────────────────────────────────────────────
 
 \usepackage{hyperref}
 \hypersetup{
@@ -85,10 +102,10 @@ Keywords={\kw},
 },
 }
 
-% imports
+% include settings ─────────────────────────────────────────────────────────────
 
 \input{settings}
 
-% begin document
+% begin document ───────────────────────────────────────────────────────────────
 
 \begin{document}
