@@ -23,6 +23,10 @@
 
 \def\todo{TODO}
 
+% return text, according to variable mainlanguage
+% 1: english text
+% 2: french text
+% FIXME english→\ENGLISH, french→\FRENCH
 \newcommand{\ml}[2]{%
 \ifstreq{\mainlanguage}{english}{\ifstrempty{#1}{\todo}{#1}}{%
 \ifstreq{\mainlanguage}{french}{\ifstrempty{#2}{\todo}{#2}}{%
