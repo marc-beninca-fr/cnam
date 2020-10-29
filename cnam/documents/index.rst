@@ -1,11 +1,6 @@
 Documents
 =========
 
-Guide
------
-
-:download:`PDF <guide.pdf>`
-
 Rédaction
 ---------
 
