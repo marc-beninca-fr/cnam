@@ -55,6 +55,8 @@ def build(directory, sign):
             # prepare variables
             variables = {
                 'name': MAIN,
+                'ENGLISH': ENGLISH,
+                'FRENCH': FRENCH,
                 'mainlanguage': language,
                 'otherlanguages': other_languages,
                 'summaries': summaries,
