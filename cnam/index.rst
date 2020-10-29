@@ -5,7 +5,6 @@ CNAM
    :maxdepth: 2
 
    documents/index
-   pitch/index
    rédaction/index
    présentation/index
    soutenance/index
