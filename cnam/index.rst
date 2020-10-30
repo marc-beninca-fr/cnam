@@ -4,13 +4,16 @@ CNAM
 .. image:: cnam.png
 
 .. toctree::
+   :caption: Travaux
    :maxdepth: 2
 
    thesis/index
    probatoire/index
    blanc/index
+   gpg/index
 
 .. toctree::
+   :caption: Ressources
    :maxdepth: 2
 
    documents/index
