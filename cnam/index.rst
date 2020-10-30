@@ -1,7 +1,7 @@
 CNAM
 ====
 
-.. image:: cnam
+.. image:: cnam.png
 
 .. toctree::
    :maxdepth: 2
