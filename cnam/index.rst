@@ -5,7 +5,7 @@ CNAM
 
 .. toctree::
    :caption: Travaux
-   :maxdepth: 2
+   :maxdepth: 1
 
    thesis/index
    probatoire/index
