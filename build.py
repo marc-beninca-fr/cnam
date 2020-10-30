@@ -12,7 +12,7 @@ OUTPUT = 'out'
 
 
 def others():
-    travaux = os.path.join('cnam', 'travaux')
+    travaux = os.path.join('cnam')
     for travail in TRAVAUX:
         subprocess.call([os.path.join(travaux, travail, 'build.py')])
 
