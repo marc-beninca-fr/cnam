@@ -22,9 +22,3 @@ Signatures numériques
 * :download:`Présentation <présentation.pdf.asc>`
 
 .. literalinclude:: présentation.pdf.asc
-
-Clé publique personnelle
-========================
-* :download:`Fichier ASC <https://keys.openpgp.org/vks/v1/by-fingerprint/08EDA7006234A0EB29A3A8471DBD5EC4BADA5579>`
-
-.. literalinclude:: ../gpg.asc
