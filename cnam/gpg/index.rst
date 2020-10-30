@@ -19,4 +19,4 @@ Téléchargement direct
 ---------------------
 
 * :download:`meta.sr.ht <https://meta.sr.ht/~mspe.pgp>`
-* :download:`cnam.marc-beninca.fr <../gpg.asc>`
+* :download:`cnam.marc-beninca.fr <gpg.asc>`
