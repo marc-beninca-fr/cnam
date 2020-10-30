@@ -7,7 +7,6 @@ CNAM
    documents/index
    présentation/index
    soutenance/index
-   mémoire/index
 
 .. toctree::
    :maxdepth: 2
