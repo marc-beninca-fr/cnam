@@ -5,7 +5,6 @@ CNAM
    :maxdepth: 2
 
    documents/index
-   rédaction/index
    présentation/index
    soutenance/index
    mémoire/index

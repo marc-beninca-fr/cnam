@@ -1,6 +1,0 @@
-Rédaction
-=========
-
-.. toctree::
-
-   règles
