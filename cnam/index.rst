@@ -1,6 +1,8 @@
 CNAM
 ====
 
+.. image:: cnam
+
 .. toctree::
    :maxdepth: 2
 
@@ -11,7 +13,9 @@ CNAM
 .. toctree::
    :maxdepth: 2
 
-   travaux/index
+   thesis/index
+   probatoire/index
+   blanc/index
    unités/index
    cursus/index
    sites
