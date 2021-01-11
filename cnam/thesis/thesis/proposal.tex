@@ -1,0 +1,272 @@
+\ml
+{\chapter{Proposal: an incremental live workflow}}
+{\chapter{Proposition : un fonctionnement autonome incrémental}}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{reboot = restore}
+{redémarrage = restauration}}
+\item{\ml{update = backup}
+{mise à jour = sauvegarde}}
+\item{\ml{separation of system and data}
+{séparation système et données}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{exhaustive manual procedure}
+{maintenance manuelle exhaustive}}
+\end{itmz}
+
+\ml
+{\section{Implement the workflow}}
+{\section{Mettre en œuvre le fonctionnement}}
+
+\ml
+{\subsection{Mirror official and third-party repositories}}
+{\subsection{Cloner des dépôts officiels et d’éditeurs tiers}}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml
+{\subsubsection{Synchronize local mirrors}}
+{\subsubsection{Synchroniser des miroirs locaux}}
+
+\paragraph{apt-mirror}
+
+\begin{itmz}
+\item{\ml{translations}
+{traductions} (Translation-*.bz2)}
+\item{\ml{architecture independant contents}
+{contenus indépendants de l’architecture} (Contents-all.gz)}
+\item{InRelease \ml{with some third-party repositories}
+{avec certains dépôts éditeurs}}
+\end{itmz}
+
+\paragraph{debmirror}
+
+\paragraph{ftpsync}
+
+\ml
+{\subsubsection{Select useful architectures}}
+{\subsubsection{Choisir les architectures utiles}}
+
+\paragraph{amd64}
+
+\paragraph{arm64}
+
+\paragraph{armhf}
+
+\paragraph{i386}
+
+\ml
+{\subsubsection{Check integrity}}
+{\subsubsection{Vérifier l’intégrité}}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{avoid errors during future package installations}
+{éviter des erreurs lors de futures installations de paquets}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{no tool exists}
+{aucun outil n’existe}}
+\end{itmz}
+
+\ml
+{\subsection{Build a live file system}}
+{\subsection{Construire un système de fichiers autonome}}
+
+\paragraph{Debian GNU/Linux}
+
+\ml
+{\subsubsection{Install specific packages}}
+{\subsubsection{Installer les paquets spécifiques}}
+
+\paragraph{\ml{Bare metal}{Machine physique}}
+
+\paragraph{\ml{Virtual machine}{Machine virtuelle}}
+
+\paragraph{\ml{Container}{Conteneur}}
+
+\ml
+{\subsubsection{Create a minimal file system base}}
+{\subsubsection{Créer un système de fichiers minimal}}
+
+\paragraph{debootstrap}
+
+\ml
+{\subsubsection{Turn a system into a systems factory}}
+{\subsubsection{Équiper un système pour en fabriquer d’autres}}
+
+\ml
+{\subsubsection{Turn a file system into a live one}}
+{\subsubsection{Rendre un système de fichiers autonome}}
+
+\paragraph{live-boot}
+
+\paragraph{update-initramfs}
+
+\ml
+{\subsubsection{Install additional packages}}
+{\subsubsection{Installer des paquets supplémentaires}}
+
+\ml
+{\subsubsection{Link specific data to persistent storage}}
+{\subsubsection{Lier certaines données à du stockage persistant}}
+
+\ml
+{\subsection{Encapsulate in an image file}}
+{\subsection{Encapsuler dans un fichier image}}
+
+\ml
+{\subsubsection{Use a format suited for read-only mounting}}
+{\subsubsection{Utiliser un format adapté au montage en lecture}}
+
+\paragraph{SquashFS}
+
+\ml
+{\subsubsection{Choose a compression algorithm}}
+{\subsubsection{Choisir un algorithme de compression}}
+
+\paragraph{gzip}
+
+\paragraph{lzma}
+
+\paragraph{lzo}
+
+\paragraph{lz4}
+
+\paragraph{xz}
+
+\paragraph{zstd}
+
+\ml
+{\subsubsection{Encapsulate in a hybrid image file}}
+{\subsubsection{Encapsuler dans un fichier image hybride}}
+
+\paragraph{ISO}
+
+\ml
+{\subsection{Secure the produced image file}}
+{\subsection{Sécuriser un fichier image produit}}
+
+\ml
+{\subsubsection{Compute an integrity checksum}}
+{\subsubsection{Calculer une somme de contrôle d’intégrité}}
+
+\paragraph{SHA-256}
+
+\paragraph{SHA-512}
+
+\ml
+{\subsubsection{Sign to certify authenticity}}
+{\subsubsection{Signer pour certifier l’authenticité}}
+
+\ml
+{\subsection{Boot secure image files}}
+{\subsection{Amorcer des fichiers images sécurisés}}
+
+\ml
+{\subsubsection{Create standalone boot images}}
+{\subsubsection{Créer des images de démarrage}}
+
+\paragraph{GRUB}
+
+\paragraph{BIOS}
+
+\paragraph{UEFI}
+
+\paragraph{Secure boot}
+
+\ml
+{\subsubsection{Create a boot menu}}
+{\subsubsection{Créer un menu de démarrage}}
+
+\paragraph{grub.cfg}
+
+\paragraph{loopback}
+
+\paragraph{squash4}
+
+\paragraph{iso9660}
+
+\ml
+{\subsubsection{Check integrity and authenticity}}
+{\subsubsection{Vérifier intégrité et authentiticté}}
+
+\paragraph{gcry\_sha256}
+
+\paragraph{gcry\_sha512}
+
+\paragraph{pgp}
+
+\ml
+{\subsubsection{Load images in random access memory}}
+{\subsubsection{Charger des images en mémoire vive}}
+
+\paragraph{overlayfs}
+
+\ml
+{\subsection{Incremental updating}}
+{\subsection{Mise à niveau incrémentale}}
+
+\ml
+{\subsubsection{Create a new image file}}
+{\subsubsection{Fabriquer une nouvelle image}}
+
+\ml
+{\subsubsection{Avoid an unnecessary reboot}}
+{\subsubsection{Éviter un redémarrage facultatif}}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{no down time}
+{aucune indisponibilité}}
+\item{\ml{just replay the modifications on the system in memory}
+{répéter simplement les modifications sur le système en mémoire}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml
+{\subsubsection{Reduce the duration of a mandatory reboot}}
+{\subsubsection{Réduire la durée d’un redémarrage obligatoire}}
+
+\paragraph{kexec-tools}
+
+\ml
+{\section{Automate the workflow}}
+{\section{Automatiser le fonctionnement}}
+
+\ml
+{\subsection{Check integrity of local repositories}}
+{\subsection{Vérifier l’intégrité des dépôts locaux}}
+
+\ml
+{\subsection{Build complete live file systems from scratch}}
+{\subsection{Construire des systèmes de fichiers autonomes complets}}
+
+\ml
+{\subsection{Create new files by updating existing images}}
+{\subsection{Créer de nouveaux fichiers par mise à jour d’images}}
+
+\ml
+{\subsection{Generate a boot menu on-the-fly}}
+{\subsection{Générer un menu de démarrage à la volée}}
