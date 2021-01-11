@@ -6,36 +6,36 @@
 \hr
 
 \textbf{%
-\ifstreq{#1}{\ENGLISH}{SUMMARY}{%
-\ifstreq{#1}{\FRENCH}{RÉSUMÉ}{%
+\ifstreq{#1}{english}{SUMMARY}{%
+\ifstreq{#1}{french}{RÉSUMÉ}{%
 }}%
 }
 
 \end{center}
 
-\ifstreq{#1}{\ENGLISH}{%
+\ifstreq{#1}{english}{%
 Line 1.\\
 Line 2.\\
 Line 3.}{%
-\ifstreq{#1}{\FRENCH}{%
+\ifstreq{#1}{french}{%
 Ligne 1.\\
 Ligne 2.\\
 Ligne 3.}{%
 }}
 
-\ifstreq{#1}{\ENGLISH}{%
+\ifstreq{#1}{english}{%
 Line 4.\\
 Line 5.\\
 Line 6…}{%
-\ifstreq{#1}{\FRENCH}{%
+\ifstreq{#1}{french}{%
 Ligne 4.\\
 Ligne 5.\\
 Ligne 6…}{%
 }}
 
 \textbf{%
-\ifstreq{#1}{\ENGLISH}{Key words:}{%
-\ifstreq{#1}{\FRENCH}{Mots clés :}{%
+\ifstreq{#1}{english}{Key words:}{%
+\ifstreq{#1}{french}{Mots clés :}{%
 }} \kwa{#1},\\\kwb{#1}.%
 }
 

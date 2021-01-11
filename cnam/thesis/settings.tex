@@ -32,7 +32,6 @@
 % return text, according to variable mainlanguage
 % 1: english text
 % 2: french text
-% FIXME english→\ENGLISH, french→\FRENCH
 \newcommand{\ml}[2]{%
 \ifstreq{\mainlanguage}{english}{\ifstrempty{#1}{\todo}{#1}}{%
 \ifstreq{\mainlanguage}{french}{\ifstrempty{#2}{\todo}{#2}}{%
@@ -77,14 +76,14 @@ ERROR%
 % return key words (part a)
 % 1: language
 \newcommand{\kwa}[1]{%
-\ifstreq{#1}{\ENGLISH}{\kwaen}{}%
-\ifstreq{#1}{\FRENCH}{\kwafr}{}%
+\ifstreq{#1}{english}{\kwaen}{}%
+\ifstreq{#1}{french}{\kwafr}{}%
 }
 % return key words (part b)
 % 1: language
 \newcommand{\kwb}[1]{%
-\ifstreq{#1}{\ENGLISH}{\kwben}{}%
-\ifstreq{#1}{\FRENCH}{\kwbfr}{}%
+\ifstreq{#1}{english}{\kwben}{}%
+\ifstreq{#1}{french}{\kwbfr}{}%
 }
 
 % final variable kw
