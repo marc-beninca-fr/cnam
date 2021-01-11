@@ -44,13 +44,68 @@
 {\subsection{Conventional file systems}}
 {\subsection{Système de fichiers conventionnel}}
 
+\begin{itmz}
+\item{ext2}
+\item{ext3}
+\item{ext4}
+\item{jfs}
+\item{xfs}
+\end{itmz}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
 \ml
 {\subsection{File systems managed with configuration recipes}}
 {\subsection{Système de fichiers géré par des recettes configuration}}
 
+\begin{itmz}
+\item{ansible}
+\item{chef}
+\item{puppet}
+\end{itmz}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
 \ml
 {\subsection{File systems supporting snapshots}}
 {\subsection{Système de fichiers avec gestion d’instantanés}}
+
+\begin{itmz}
+\item{btrfs}
+\item{zfs}
+\end{itmz}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
 
 \ml
 {\section{Live images, installationless, with read access}}
@@ -60,13 +115,41 @@
 {\subsection{Boot without persistence}}
 {\subsection{Amorçage sans gestion de persistance}}
 
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
 \ml
 {\subsection{Boot with persistence}}
 {\subsection{Amorçage avec gestion de persistance}}
 
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
 \ml
-{\chapter{Proposal: incremental live workflow}}
-{\chapter{Proposition : fonctionnement autonome incrémental}}
+{\section{Existing alternatives}}
+{\section{Alternatives existantes}}
+
+\ml
+{\chapter{Proposal: an incremental live workflow}}
+{\chapter{Proposition : un fonctionnement autonome incrémental}}
 
 \ml{Pros}{Avantages}:
 \begin{itmz}
@@ -85,14 +168,30 @@
 \end{itmz}
 
 \ml
-{\section{Implementation}}
-{\section{Mise en œuvre}}
+{\section{Implement the workflow}}
+{\section{Mettre en œuvre le fonctionnement}}
 
 \ml
 {\subsection{Mirrors of official and third-party repositories}}
 {\subsection{Miroirs de dépôts officiels et éditeurs tiers}}
 
-\subsubsection{apt-mirror}
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
+
+\ml
+{\subsubsection{Local synchronization}}
+{\subsubsection{Synchronisation locale}}
+
+\paragraph{apt-mirror}
 
 \begin{itmz}
 \item{\ml{translations}
@@ -103,47 +202,223 @@
 {avec certains dépôts éditeurs}}
 \end{itmz}
 
+\paragraph{debmirror}
+
+\paragraph{ftpsync}
+
+\ml
+{\subsubsection{Select useful architectures}}
+{\subsubsection{Choisir les architectures utiles}}
+
+\paragraph{amd64}
+
+\paragraph{arm64}
+
+\paragraph{armhf}
+
+\paragraph{i386}
+
+\ml
+{\subsubsection{Check integrity}}
+{\subsubsection{Vérifier l’intégrité}}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{avoid errors during future package installations}
+{éviter des erreurs lors de futures installations de paquets}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{no tool exists}
+{aucun outil n’existe}}
+\end{itmz}
+
 \ml
 {\subsection{Building a live file system}}
 {\subsection{Construction d’un système de fichiers autonome}}
 
-Debian GNU/Linux.
+\paragraph{Debian GNU/Linux}
 
 \ml
-{\subsection{Encapsulating in an image file}}
-{\subsection{Encapsulation dans un fichier image}}
+{\subsubsection{Install specific packages}}
+{\subsubsection{Installer les paquets spécifiques}}
+
+\paragraph{\ml{Bare metal}{Machine physique}}
+
+\paragraph{\ml{Virtual machine}{Machine virtuelle}}
+
+\paragraph{\ml{Container}{Conteneur}}
 
 \ml
-{\subsection{Securing the image file produced}}
-{\subsection{Sécurité du fichier image produit}}
+{\subsubsection{Create a minimal file system base}}
+{\subsubsection{Créer un système de fichiers minimal}}
+
+\paragraph{debootstrap}
 
 \ml
-{\subsection{Booting secure image file(s)}}
-{\subsection{Amorçage de fichier(s) image(s) sécurisé(s)}}
+{\subsubsection{Turn a system into a systems factory}}
+{\subsubsection{Équiper un système pour en fabriquer d’autres}}
+
+\ml
+{\subsubsection{Turn a file system into a live one}}
+{\subsubsection{Rendre un système de fichiers autonome}}
+
+\paragraph{live-boot}
+
+\paragraph{update-initramfs}
+
+\ml
+{\subsubsection{Install additional packages}}
+{\subsubsection{Installer des paquets supplémentaires}}
+
+\ml
+{\subsubsection{Data persistence through symbolic links}}
+{\subsubsection{Déport des données persistantes avec liens symboliques}}
+
+\ml
+{\subsection{Encapsulate in an image file}}
+{\subsection{Encapsuler dans un fichier image}}
+
+\ml
+{\subsubsection{Use a format suited for read-only mounting}}
+{\subsubsection{Utiliser un format adapté au montage en lecture}}
+
+\paragraph{SquashFS}
+
+\ml
+{\subsubsection{Choose a compression algorithm}}
+{\subsubsection{Choisir un algorithme de compression}}
+
+\paragraph{gzip}
+
+\paragraph{lzma}
+
+\paragraph{lzo}
+
+\paragraph{lz4}
+
+\paragraph{xz}
+
+\paragraph{zstd}
+
+\ml
+{\subsubsection{Encapsulate in a hybrid image file}}
+{\subsubsection{Encapsuler dans un fichier image hybride}}
+
+\paragraph{ISO}
+
+\ml
+{\subsection{Secure the image file produced}}
+{\subsection{Sécuriser un fichier image produit}}
+
+\ml
+{\subsubsection{Compute an integrity checksum}}
+{\subsubsection{Calculer une somme de contrôle d’intégrité}}
+
+\paragraph{SHA-256}
+
+\paragraph{SHA-512}
+
+\ml
+{\subsubsection{Sign to certify authenticity}}
+{\subsubsection{Signer pour certifier l’authenticité}}
+
+\ml
+{\subsection{Boot secure image files}}
+{\subsection{Amorcer des fichiers images sécurisés}}
+
+\ml
+{\subsubsection{Create standalone boot images}}
+{\subsubsection{Créer des images de démarrage}}
+
+\paragraph{GRUB}
+
+\paragraph{BIOS}
+
+\paragraph{UEFI}
+
+\paragraph{Secure boot}
+
+\ml
+{\subsubsection{Create a boot menu}}
+{\subsubsection{Créer un menu de démarrage}}
+
+\paragraph{grub.cfg}
+
+\paragraph{loopback}
+
+\paragraph{squash4}
+
+\paragraph{iso9660}
+
+\ml
+{\subsubsection{Check integrity and authenticity}}
+{\subsubsection{Vérifier intégrité et authentiticté}}
+
+\paragraph{gcry\_sha256}
+
+\paragraph{gcry\_sha512}
+
+\paragraph{pgp}
+
+\ml
+{\subsubsection{Load images in random access memory}}
+{\subsubsection{Charger des images en mémoire vive}}
+
+\paragraph{overlayfs}
 
 \ml
 {\subsection{Incremental updating}}
 {\subsection{Mise à niveau incrémentale}}
 
 \ml
-{\section{Possibilities of automation}}
-{\section{Automatisations potentiellement implémentables}}
+{\subsubsection{Create a new image file}}
+{\subsubsection{Fabriquer une nouvelle image}}
 
 \ml
-{\subsection{Repositories integrity checking}}
-{\subsection{Vérification d’intégrité de dépôts}}
+{\subsubsection{Avoid an unnecessary reboot}}
+{\subsubsection{Éviter un redémarrage facultatif}}
+
+\ml{Pros}{Avantages}:
+\begin{itmz}
+\item{\ml{no down time}
+{aucune indisponibilité}}
+\item{\ml{just replay the modifications on the system in memory}
+{répéter simplement les modifications sur le système en mémoire}}
+\end{itmz}
+
+\ml{Cons}{Inconvénients}:
+\begin{itmz}
+\item{\ml{\todo}
+{\todo}}
+\end{itmz}
 
 \ml
-{\subsection{Building complete live file systems from scratch}}
-{\subsection{Construction de systèmes de fichiers autonomes complets}}
+{\subsubsection{Reduce the duration of a mandatory reboot}}
+{\subsubsection{Réduire la durée d’un redémarrage obligatoire}}
+
+\paragraph{kexec-tools}
 
 \ml
-{\subsection{Creation of new images by updating the existing}}
-{\subsection{Création de nouveaux fichiers par mise à jour d’images}}
+{\section{Automate the workflow}}
+{\section{Automatiser le fonctionnement}}
 
 \ml
-{\subsection{On-the-fly generation of boot menus}}
-{\subsection{Génération à la volée de menus de démarrage}}
+{\subsection{Check integrity of local repositories}}
+{\subsection{Vérifier l’intégrité des dépôts locaux}}
+
+\ml
+{\subsection{Build complete live file systems from scratch}}
+{\subsection{Construire des systèmes de fichiers autonomes complets}}
+
+\ml
+{\subsection{Create new files by updating existing images}}
+{\subsection{Créer de nouveaux fichiers par mise à jour d’images}}
+
+\ml
+{\subsection{Generate a boot menu on-the-fly}}
+{\subsection{Générer un menu de démarrage à la volée}}
 
 \ml
 {\chapter{Results}}
