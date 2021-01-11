@@ -16,81 +16,81 @@
 \input{introduction}
 
 \ml
-{\chapter{\todo}}
+{\chapter{Problem: maintenance of operating systems}}
 {\chapter{Problématique : maintenance des systèmes d’exploitation}}
 
 \begin{itmz}
-\item{\ml{}
+\item{\ml{updates}
 {mises à jour}}
-\item{\ml{}
+\item{\ml{unavailability}
 {indisponibilité}}
-\item{\ml{}
-{sauvegardes}}
-\item{\ml{}
-{tests}}
-\item{\ml{}
+\item{\ml{backups policy}
+{politique de sauvegardes}}
+\item{\ml{testing backups}
+{tests des sauvegardes}}
+\item{\ml{snapshots}
 {instantanés}}
-\item{\ml{}
+\item{\ml{restorations}
 {restaurations}}
-\item{\ml{}
+\item{\ml{configuration recipes}
 {recettes de configuration}}
 \end{itmz}
 
 \ml
-{\section{\todo}}
+{\section{File systems, installed on partitions, with write access}}
 {\section{Systèmes de fichiers, installés sur partitions, avec accès en écriture}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Conventional file systems}}
 {\subsection{Système de fichiers conventionnel}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{File systems managed with configuration recipes}}
 {\subsection{Système de fichiers géré par des recettes configuration}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{File systems supporting snapshots}}
 {\subsection{Système de fichiers avec gestion d’instantanés}}
 
 \ml
-{\section{\todo}}
+{\section{Live images, installationless, with read access}}
 {\section{Images autonomes, sans installation, avec accès en lecture seule}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Boot without persistence}}
 {\subsection{Amorçage sans gestion de persistance}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Boot with persistence}}
 {\subsection{Amorçage avec gestion de persistance}}
 
 \ml
-{\chapter{\todo}}
+{\chapter{Proposal: incremental live workflow}}
 {\chapter{Proposition : fonctionnement autonome incrémental}}
 
 \ml{Pros}{Avantages}:
 \begin{itmz}
-\item{\ml{}
+\item{\ml{reboot = restore}
 {redémarrage = restauration}}
-\item{\ml{}
-{Mise à jour = sauvegarde}}
-\item{\ml{}
+\item{\ml{update = backup}
+{mise à jour = sauvegarde}}
+\item{\ml{separation of system and data}
 {séparation système et données}}
 \end{itmz}
 
 \ml{Cons}{Inconvénients}:
 \begin{itmz}
-\item{\ml{}
+\item{\ml{exhaustive manual procedure}
 {maintenance manuelle exhaustive}}
 \end{itmz}
 
 \ml
-{\section{\todo}}
+{\section{Implementation}}
 {\section{Mise en œuvre}}
 
 \ml
-{\subsection{\todo}}
-{\subsection{Miroirs de dépôts officiels distribution et éditeurs tiers}}
+{\subsection{Mirrors of official and third-party repositories}}
+{\subsection{Miroirs de dépôts officiels et éditeurs tiers}}
 
 \subsubsection{apt-mirror}
 
@@ -104,43 +104,45 @@
 \end{itmz}
 
 \ml
-{\subsection{\todo}}
-{\subsection{Construction d’un système de fichiers autonome (Debian GNU/Linux)}}
+{\subsection{Building a live file system}}
+{\subsection{Construction d’un système de fichiers autonome}}
+
+Debian GNU/Linux.
 
 \ml
-{\subsection{\todo}}
+{\subsection{Encapsulating in an image file}}
 {\subsection{Encapsulation dans un fichier image}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Securing the image file produced}}
 {\subsection{Sécurité du fichier image produit}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Booting secure image file(s)}}
 {\subsection{Amorçage de fichier(s) image(s) sécurisé(s)}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Incremental updating}}
 {\subsection{Mise à niveau incrémentale}}
 
 \ml
-{\section{\todo}}
+{\section{Possibilities of automation}}
 {\section{Automatisations potentiellement implémentables}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Repositories integrity checking}}
 {\subsection{Vérification d’intégrité de dépôts}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Building complete live file systems from scratch}}
 {\subsection{Construction de systèmes de fichiers autonomes complets}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{Creation of new images by updating the existing}}
 {\subsection{Création de nouveaux fichiers par mise à jour d’images}}
 
 \ml
-{\subsection{\todo}}
+{\subsection{On-the-fly generation of boot menus}}
 {\subsection{Génération à la volée de menus de démarrage}}
 
 \ml
