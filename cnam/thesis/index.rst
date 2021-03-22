@@ -36,5 +36,3 @@ Mémoire
 |    * page de fin                  |    * final page         |
 |                                   |                         |
 +-----------------------------------+-------------------------+
-
-* :download:`Planning <schedule.html>`
