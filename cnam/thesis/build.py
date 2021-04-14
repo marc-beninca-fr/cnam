@@ -14,7 +14,7 @@ LANGUAGES = [ENGLISH, FRENCH]
 
 DOCUMENTS = [
     {ENGLISH: 'thesis', FRENCH: 'mémoire'},
-    {ENGLISH: 'presentation', FRENCH: 'présentation'},
+    # {ENGLISH: 'presentation', FRENCH: 'présentation'},
 ]
 
 
